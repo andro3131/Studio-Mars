@@ -67,57 +67,51 @@
             </div>
         </header>
 
-        <!-- Slider -->
-        <div class="relative h-96 md:h-[500px] overflow-hidden">
-            <div id="slider">
-                <div class="slider-item absolute inset-0">
-                    <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                        <div class="absolute inset-0 dot-pattern"></div>
-                        <div class="text-center z-10">
-                            <svg class="w-32 h-32 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <h2 class="text-6xl font-bold text-white">Režija</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item absolute inset-0 opacity-0">
-                    <div class="w-full h-full bg-gradient-to-br from-red-800 to-orange-900 flex items-center justify-center">
-                        <div class="absolute inset-0 dot-pattern"></div>
-                        <div class="text-center z-10">
-                            <svg class="w-32 h-32 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-                            </svg>
-                            <h2 class="text-6xl font-bold text-white">Snemalni prostor</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item absolute inset-0 opacity-0">
-                    <div class="w-full h-full bg-gradient-to-br from-blue-800 to-indigo-900 flex items-center justify-center">
-                        <div class="absolute inset-0 dot-pattern"></div>
-                        <div class="text-center z-10">
-                            <svg class="w-32 h-32 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
-                            </svg>
-                            <h2 class="text-6xl font-bold text-white">Studio MARS</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 p-3 rounded-full">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-            <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 p-3 rounded-full">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </div>
-
         <!-- Main Content -->
         <main class="max-w-7xl mx-auto px-4 py-12">
+            <!-- Slider -->
+            <div class="relative h-96 md:h-[500px] overflow-hidden rounded-xl shadow-2xl mb-12">
+                <div id="slider">
+                    <div class="slider-item absolute inset-0">
+                        <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                    </div>
+                    <div class="slider-item absolute inset-0 opacity-0">
+                        <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                    </div>
+                    <div class="slider-item absolute inset-0 opacity-0">
+                        <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                    </div>
+                    <div class="slider-item absolute inset-0 opacity-0">
+                        <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                    </div>
+                    <div class="slider-item absolute inset-0 opacity-0">
+                        <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                    </div>
+                </div>
+                <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-3 rounded-full transition-all">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-3 rounded-full transition-all">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                <!-- Slider Indicators -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white transition-all" data-slide="0"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all" data-slide="1"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all" data-slide="2"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all" data-slide="3"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all" data-slide="4"></button>
+                </div>
+            </div>
             <div class="text-center mb-12">
                 <h3 class="text-4xl font-bold text-white mb-6">DOBRODOŠLI!</h3>
                 <div class="max-w-4xl mx-auto text-lg text-gray-300 space-y-4">
@@ -199,14 +193,43 @@
     <script>
         let current = 0;
         const slides = document.querySelectorAll('.slider-item');
+        const dots = document.querySelectorAll('.slider-dot');
+        
         function show(n) {
-            slides.forEach((s, i) => s.style.opacity = i === n ? '1' : '0');
+            slides.forEach((s, i) => {
+                s.style.opacity = i === n ? '1' : '0';
+            });
+            dots.forEach((d, i) => {
+                if (i === n) {
+                    d.classList.remove('bg-opacity-50');
+                    d.classList.add('w-8');
+                } else {
+                    d.classList.add('bg-opacity-50');
+                    d.classList.remove('w-8');
+                }
+            });
         }
-        function next() { current = (current + 1) % slides.length; show(current); }
-        function prev() { current = (current - 1 + slides.length) % slides.length; show(current); }
+        
+        function next() { 
+            current = (current + 1) % slides.length; 
+            show(current); 
+        }
+        function prev() { 
+            current = (current - 1 + slides.length) % slides.length; 
+            show(current); 
+        }
+        
         setInterval(next, 5000);
         document.getElementById('next').onclick = next;
         document.getElementById('prev').onclick = prev;
+        
+        dots.forEach((dot, i) => {
+            dot.onclick = () => {
+                current = i;
+                show(current);
+            };
+        });
+        
         document.getElementById('menu-btn').onclick = () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         };
