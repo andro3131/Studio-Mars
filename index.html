@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio MARS - Snemalni Studio Trebnje</title>
+    <meta name="description" content="Profesionalni snemalni studio v Trebnjem. Snemanje, mix, mastering, video produkcija.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #000; }
+        .bg-pattern {
+            position: fixed; inset: 0; z-index: 0; opacity: 0.3;
+            background-image: url('https://images.unsplash.com/photo-1577657254137-b81fccd70587?q=80&w=3474');
+            background-size: cover; background-position: center; background-attachment: fixed;
+        }
+        .bg-overlay { position: fixed; inset: 0; z-index: 0; background: black; opacity: 0.6; }
+        .content { position: relative; z-index: 10; }
+        .slider-item { transition: opacity 1s; }
+        .dot-pattern {
+            background-image: radial-gradient(circle, white 1px, transparent 1px);
+            background-size: 30px 30px; opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-overlay"></div>
+    
+    <div class="content">
+        <!-- Header -->
+        <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-orange-500 rounded-full flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-gray-300">SNEMALNI</h1>
+                            <h2 class="text-2xl font-bold text-red-500">STUDIO MARS</h2>
+                        </div>
+                    </div>
+                    <nav class="hidden lg:flex space-x-1">
+                        <a href="#domov" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">DOMOV</a>
+                        <a href="#studio" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">STUDIO</a>
+                        <a href="#bio" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">BIO</a>
+                        <a href="#projekti" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">PROJEKTI</a>
+                        <a href="#ponudba" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">PONUDBA</a>
+                        <a href="#galerija" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">GALERIJA</a>
+                        <a href="#kontakt" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">KONTAKT</a>
+                    </nav>
+                    <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="lg:hidden hidden bg-gray-900 mt-2 rounded">
+                    <a href="#domov" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">DOMOV</a>
+                    <a href="#studio" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">STUDIO</a>
+                    <a href="#bio" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BIO</a>
+                    <a href="#ponudba" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PONUDBA</a>
+                    <a href="#kontakt" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">KONTAKT</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Slider -->
+        <div class="relative h-96 md:h-[500px] overflow-hidden">
+            <div id="slider">
+                <div class="slider-item absolute inset-0">
+                    <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+                        <div class="absolute inset-0 dot-pattern"></div>
+                        <div class="text-center z-10">
+                            <svg class="w-32 h-32 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <h2 class="text-6xl font-bold text-white">Režija</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item absolute inset-0 opacity-0">
+                    <div class="w-full h-full bg-gradient-to-br from-red-800 to-orange-900 flex items-center justify-center">
+                        <div class="absolute inset-0 dot-pattern"></div>
+                        <div class="text-center z-10">
+                            <svg class="w-32 h-32 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                            </svg>
+                            <h2 class="text-6xl font-bold text-white">Snemalni prostor</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item absolute inset-0 opacity-0">
+                    <div class="w-full h-full bg-gradient-to-br from-blue-800 to-indigo-900 flex items-center justify-center">
+                        <div class="absolute inset-0 dot-pattern"></div>
+                        <div class="text-center z-10">
+                            <svg class="w-32 h-32 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                            <h2 class="text-6xl font-bold text-white">Studio MARS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 p-3 rounded-full">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 p-3 rounded-full">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 py-12">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-white mb-6">DOBRODOŠLI!</h3>
+                <div class="max-w-4xl mx-auto text-lg text-gray-300 space-y-4">
+                    <p>Studio MARS je pričel s svojim delovanjem v začetku leta 2008 in od takrat se je tukaj mudilo že kar nekaj priznanih glasbenikov -- Oto Pestner, Nuša Derenda, Blaž Jurjevčič, Tomaž Kozlevčar, Jože Burnik, Gianni Rijavec in drugi.</p>
+                    <p>Studio ponuja snemanje vseh zvrsti glasbe, na voljo pa je tudi široka paleta dodatnih storitev, ki vključuje mix & mastering, izdelavo avtorskih pesmi, video snemanje in produkcijo ter najem glasbenikov.</p>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="group rounded-xl shadow-xl cursor-pointer transform hover:-translate-y-2 transition-all">
+                    <div class="h-72 bg-gradient-to-br from-slate-700 to-slate-900 flex flex-col items-center justify-center p-8 rounded-xl">
+                        <svg class="w-20 h-20 text-white mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <h4 class="text-2xl font-bold text-white mb-2">Režija</h4>
+                        <p class="text-sm text-white opacity-80 text-center">Moderna nadzorna soba</p>
+                    </div>
+                </div>
+                <div class="group rounded-xl shadow-xl cursor-pointer transform hover:-translate-y-2 transition-all">
+                    <div class="h-72 bg-gradient-to-br from-red-700 to-orange-900 flex flex-col items-center justify-center p-8 rounded-xl">
+                        <svg class="w-20 h-20 text-white mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                        </svg>
+                        <h4 class="text-2xl font-bold text-white mb-2">Snemalni prostor</h4>
+                        <p class="text-sm text-white opacity-80 text-center">50m² akustičnega prostora</p>
+                    </div>
+                </div>
+                <div class="group rounded-xl shadow-xl cursor-pointer transform hover:-translate-y-2 transition-all">
+                    <div class="h-72 bg-gradient-to-br from-blue-700 to-indigo-900 flex flex-col items-center justify-center p-8 rounded-xl">
+                        <svg class="w-20 h-20 text-white mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                        </svg>
+                        <h4 class="text-2xl font-bold text-white mb-2">Oprema</h4>
+                        <p class="text-sm text-white opacity-80 text-center">Profesionalna oprema</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Box -->
+            <div class="bg-gradient-to-r from-red-900 to-orange-900 rounded-xl p-8 border border-red-800">
+                <div class="text-center">
+                    <svg class="w-16 h-16 text-red-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                    </svg>
+                    <h4 class="text-2xl font-bold text-white mb-4">Profesionalno snemanje glasbe</h4>
+                    <p class="text-gray-200 max-w-2xl mx-auto">Studio MARS ponuja celostne rešitve za glasbeno produkcijo. Od snemanja, miksanja do masteringa - vse na enem mestu.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-black bg-opacity-90 border-t border-gray-800 mt-12">
+            <div class="max-w-7xl mx-auto px-4 py-8">
+                <div class="flex flex-col items-center space-y-4">
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" class="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/studiomars31" class="w-12 h-12 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </a>
+                        <a href="mailto:snemalni.studio.mars@gmail.com" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">© 2008 by Studio Mars</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let current = 0;
+        const slides = document.querySelectorAll('.slider-item');
+        function show(n) {
+            slides.forEach((s, i) => s.style.opacity = i === n ? '1' : '0');
+        }
+        function next() { current = (current + 1) % slides.length; show(current); }
+        function prev() { current = (current - 1 + slides.length) % slides.length; show(current); }
+        setInterval(next, 5000);
+        document.getElementById('next').onclick = next;
+        document.getElementById('prev').onclick = prev;
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>
