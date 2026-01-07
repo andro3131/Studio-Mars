@@ -126,43 +126,51 @@
         <main class="max-w-5xl mx-auto px-4 py-8">
             <h1 class="text-4xl font-bold text-white mb-8">Studio</h1>
 
-     <!-- Photo Grid -->
+ <!-- Photo Grid -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 <!-- Row 1 -->
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(0)">
                     <img src="https://i.ibb.co/m5rGGYfP/e8efd0-f4bb6fbad6cb4d12979362e673953194-mv2-jpg.avif" alt="Studio MARS - Režija" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(1)">
                     <img src="https://i.ibb.co/5XVTc2PP/e8efd0-2f78c55214124e79850d2d49af304cc4-jpg.avif" alt="Studio MARS - Snemalni prostor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(2)">
                     <img src="https://i.ibb.co/p6My7GJM/e8efd0-9f7804b94eb0441f8a9a0b8760d63434-mv2-jpg.avif" alt="Studio MARS - Režija" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(3)">
                     <img src="https://i.ibb.co/LXT6SzqW/e8efd0-a6f5ed2534e944b886d08c16bb992909-jpg.avif" alt="Studio MARS - Snemalni prostor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
 
                 <!-- Row 2 -->
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(4)">
                     <img src="https://i.ibb.co/N2kXSr5y/e8efd0-a49ee588d28b4d0e92261dbe58377eda-jpg.avif" alt="Studio MARS - Vhod v kabini" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(5)">
                     <img src="https://i.ibb.co/wFFmBn8Q/e8efd0-907a099b7e054a34aeafd6ed4b478d92.jpg" alt="Studio MARS - Studijsko okno" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(6)">
                     <img src="https://i.ibb.co/m7q9CFd/e8efd0-9f9648c950d6433591bfc7e1374aea78-jpg.avif" alt="Studio MARS - Kuhinja" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
-                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48" onclick="openLightbox(7)">
                     <img src="https://i.ibb.co/0VqZNWvD/e8efd0-dbd34708adc245dba75b0c09a9cc9441.jpg" alt="Studio MARS - Kabina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
                 </div>
+            </div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <span class="lightbox-prev" onclick="changeImage(-1)">&#10094;</span>
+                <img id="lightbox-img" src="" alt="">
+                <span class="lightbox-next" onclick="changeImage(1)">&#10095;</span>
             </div>
 
             <!-- Text Content -->
@@ -209,10 +217,54 @@
         </footer>
     </div>
 
-    <script>
+   <script>
         // Mobile menu
         document.getElementById('menu-btn').onclick = () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+
+        // Lightbox functionality
+        const images = [
+            'https://i.ibb.co/m5rGGYfP/e8efd0-f4bb6fbad6cb4d12979362e673953194-mv2-jpg.avif',
+            'https://i.ibb.co/5XVTc2PP/e8efd0-2f78c55214124e79850d2d49af304cc4-jpg.avif',
+            'https://i.ibb.co/p6My7GJM/e8efd0-9f7804b94eb0441f8a9a0b8760d63434-mv2-jpg.avif',
+            'https://i.ibb.co/LXT6SzqW/e8efd0-a6f5ed2534e944b886d08c16bb992909-jpg.avif',
+            'https://i.ibb.co/N2kXSr5y/e8efd0-a49ee588d28b4d0e92261dbe58377eda-jpg.avif',
+            'https://i.ibb.co/wFFmBn8Q/e8efd0-907a099b7e054a34aeafd6ed4b478d92.jpg',
+            'https://i.ibb.co/m7q9CFd/e8efd0-9f9648c950d6433591bfc7e1374aea78-jpg.avif',
+            'https://i.ibb.co/0VqZNWvD/e8efd0-dbd34708adc245dba75b0c09a9cc9441.jpg'
+        ];
+        let currentImageIndex = 0;
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            document.getElementById('lightbox-img').src = images[index];
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+            if (currentImageIndex >= images.length) currentImageIndex = 0;
+            document.getElementById('lightbox-img').src = images[currentImageIndex];
+        }
+
+        // Close lightbox on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+
+        // Close lightbox on background click
+        document.getElementById('lightbox').onclick = (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
         };
     </script>
 </body>
