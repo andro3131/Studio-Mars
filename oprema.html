@@ -137,7 +137,7 @@
             <!-- Title with underline -->
             <div class="mb-8">
                 <h1 class="text-4xl font-bold text-white mb-2">OPREMA</h1>
-                <div class="w-20 h-1 bg-red-600"></div>
+                <div class="w-20 h-1" style="background-color: rgb(235, 70, 47);"></div>
             </div>
 
             <!-- Gallery Grid - 12 slotov z rotacijo -->
@@ -162,7 +162,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
                         <!-- Studijska oprema -->
                         <div>
-                            <h3 class="text-red-500 font-bold text-base mb-3">Studijska oprema:</h3>
+                            <h3 class="font-bold text-base mb-3" style="color: rgb(235, 70, 47);">Studijska oprema:</h3>
                             <ul class="space-y-1.5 text-xs">
                                 <li>• MAC PRO i9 12900 32GB 5TB 5xLCD</li>
                                 <li>• TASCAM DM4800 mixer</li>
@@ -191,7 +191,7 @@
 
                         <!-- Mikrofoni -->
                         <div>
-                            <h3 class="text-red-500 font-bold text-base mb-3">Mikrofoni:</h3>
+                            <h3 class="font-bold text-base mb-3" style="color: rgb(235, 70, 47);">Mikrofoni:</h3>
                             <ul class="space-y-1.5 text-xs">
                                 <li>• Brauner VM1</li>
                                 <li>• Brauner Phantom Classic</li>
@@ -223,7 +223,7 @@
 
                         <!-- Instrumenti -->
                         <div>
-                            <h3 class="text-red-500 font-bold text-base mb-3">Instrumenti:</h3>
+                            <h3 class="font-bold text-base mb-3" style="color: rgb(235, 70, 47);">Instrumenti:</h3>
                             <ul class="space-y-1.5 text-xs">
                                 <li>• KAWAI Concert Performer CP95</li>
                                 <li>• Yamaha MX49 II keyboard</li>
@@ -243,7 +243,7 @@
 
                         <!-- Video oprema -->
                         <div>
-                            <h3 class="text-red-500 font-bold text-base mb-3">Video oprema:</h3>
+                            <h3 class="font-bold text-base mb-3" style="color: rgb(235, 70, 47);">Video oprema:</h3>
                             <ul class="space-y-1.5 text-xs">
                                 <li>• Lumix GH5</li>
                                 <li>• LEICA 12-60MM F2.8 OS</li>
@@ -321,6 +321,7 @@
 
         // Current images in 12 slots (initially first 12)
         let currentSlots = allImages.slice(0, 12).map((img, i) => i);
+        let showingFirstBatch = true; // Track which batch is showing
         
         // Initialize gallery
         const galleryGrid = document.getElementById('gallery-grid');
@@ -342,33 +343,39 @@
             galleryGrid.appendChild(createSlot(i));
         }
 
-        // Rotate images every 5 seconds
+        // Swap ALL 12 images every 7 seconds
         setInterval(() => {
-            // Pick random slot to change
-            const slotIndex = Math.floor(Math.random() * 12);
+            const slots = galleryGrid.children;
             
-            // Pick random image from all 24
-            const newImageIndex = Math.floor(Math.random() * 24);
-            
-            const slot = galleryGrid.children[slotIndex];
-            const img = slot.querySelector('img');
-            
-            // Fade out
-            img.classList.add('fading');
+            // Fade out all images
+            for (let i = 0; i < 12; i++) {
+                const img = slots[i].querySelector('img');
+                img.classList.add('fading');
+            }
             
             setTimeout(() => {
-                // Change image and update slot tracking
-                currentSlots[slotIndex] = newImageIndex;
-                img.src = allImages[newImageIndex];
-                img.alt = `Studio MARS - Oprema ${newImageIndex + 1}`;
+                // Toggle between first batch (0-11) and second batch (12-23)
+                showingFirstBatch = !showingFirstBatch;
+                const startIndex = showingFirstBatch ? 0 : 12;
                 
-                // Update click handler
-                slot.onclick = () => openLightbox(newImageIndex);
-                
-                // Fade in
-                img.classList.remove('fading');
-            }, 1000);
-        }, 5000);
+                // Update all 12 slots
+                for (let i = 0; i < 12; i++) {
+                    const slot = slots[i];
+                    const img = slot.querySelector('img');
+                    const newImageIndex = startIndex + i;
+                    
+                    currentSlots[i] = newImageIndex;
+                    img.src = allImages[newImageIndex];
+                    img.alt = `Studio MARS - Oprema ${newImageIndex + 1}`;
+                    
+                    // Update click handler
+                    slot.onclick = () => openLightbox(newImageIndex);
+                    
+                    // Fade in
+                    img.classList.remove('fading');
+                }
+            }, 1000); // Wait 1s for fade out to complete
+        }, 7000); // Every 7 seconds
 
         // Lightbox functionality with all 24 images
         let currentImageIndex = 0;
