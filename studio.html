@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio - Studio MARS</title>
+    <meta name="description" content="Spoznajte Studio MARS - profesionalno opremljen snemalni studio v Trebnjem.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #0a0a0a; }
+        .bg-pattern {
+            position: fixed; 
+            inset: 0; 
+            z-index: 0; 
+            opacity: 0.8;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .bg-overlay { 
+            position: fixed; 
+            inset: 0; 
+            z-index: 0; 
+            background: black; 
+            opacity: 0.3; 
+        }
+        .content { 
+            position: relative; 
+            z-index: 10; 
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-overlay"></div>
+    
+    <div class="content">
+        <!-- Header -->
+        <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
+            <div class="max-w-5xl mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-14 h-14 bg-gradient-to-br from-red-600 to-orange-500 rounded-full flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-lg font-bold text-gray-300">SNEMALNI</h1>
+                            <h2 class="text-xl font-bold text-red-500">STUDIO MARS</h2>
+                        </div>
+                    </a>
+                    <nav class="hidden lg:flex space-x-1">
+                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">DOMOV</a>
+                        <a href="studio.html" class="px-3 py-2 text-sm font-medium text-red-500">STUDIO</a>
+                        <a href="ponudba.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">PONUDBA</a>
+                        <a href="projekti.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">PROJEKTI</a>
+                        <a href="galerija.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">GALERIJA</a>
+                        <a href="blog.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">BLOG</a>
+                        <a href="kontakt.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">KONTAKT</a>
+                    </nav>
+                    <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="lg:hidden hidden bg-gray-900 mt-2 rounded">
+                    <a href="index.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">DOMOV</a>
+                    <a href="studio.html" class="block px-4 py-2 text-red-500 hover:bg-gray-800">STUDIO</a>
+                    <a href="ponudba.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PONUDBA</a>
+                    <a href="projekti.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PROJEKTI</a>
+                    <a href="galerija.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">GALERIJA</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BLOG</a>
+                    <a href="kontakt.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">KONTAKT</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold text-white mb-8">Studio</h1>
+
+            <!-- Photo Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <!-- Row 1 -->
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_1_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_2_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_3_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_4_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_5_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_6_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_7_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer h-48">
+                    <img src="SLIKA_8_URL" alt="Studio MARS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+                <div class="text-gray-300 space-y-4 text-sm leading-relaxed">
+                    <p>Studio MARS se nahaja dober kilometer izven Trebnjega. Začetek delovanja sega v leto 2008 in od takrat se je tukaj mudilo že kar nekaj priznanih slovenskih glasbenikov, če jih naštejemo samo nekaj - Oto Pestner, Nuša Derenda, Blaž Jurjevčič, Gianni Rijavec, Primož Kosec, Tomaž Kozlevčar, Tomaž Zlobko in drugi.</p>
+                    
+                    <p>Studio sestavljata dva večja prostora v skupni velikosti 50m². V prvem je režija, od koder je prehod v studijski snemalni prostor. Studio ima potrebne pomožne prostore in prostor za oddih.</p>
+                    
+                    <p>Prefinjen zvočni design je oblikovan z nameščenimi akustičnimi elementi, ki so bili določeni z natančnimi meritvami in izračuni idealne akustike prostorov. V letu 2015 sta bila dograjena še dva manjša prostora (vocal booth) za boljšo izolacijo med skupinskim snemanjem.</p>
+                    
+                    <p class="pt-4 border-t border-gray-700">
+                        <strong class="text-red-400">Zakaj ime studio MARS?</strong><br>
+                        Preprosto: <span class="text-red-400">M</span>ežan <span class="text-red-400">A</span>ndrej <span class="text-red-400">R</span>ecording <span class="text-red-400">S</span>tudio.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-black bg-opacity-90 border-t border-gray-800 mt-12">
+            <div class="max-w-5xl mx-auto px-4 py-6">
+                <div class="flex flex-col items-center space-y-4">
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank" class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/studiomars31" target="_blank" class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </a>
+                        <a href="mailto:snemalni.studio.mars@gmail.com" class="w-10 h-10 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">© 2008 by Studio Mars</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>
