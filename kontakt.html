@@ -227,20 +227,56 @@
         </footer>
     </div>
 
+   <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("1uqnzr8kLJtPkA2gY");
+        })();
+    </script>
+
     <script>
         // Mobile menu
         document.getElementById('menu-btn').onclick = () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         };
 
-        // Form handling (basic - you'll need backend for actual email)
+        // Form handling with EmailJS
         document.getElementById('contact-form').onsubmit = (e) => {
             e.preventDefault();
+            
+            const btn = e.target.querySelector('button[type="submit"]');
             const msg = document.getElementById('form-message');
-            msg.textContent = 'Zahvaljujemo se za vaše sporočilo! Odgovorili bomo v najkrajšem možnem času.';
-            msg.classList.remove('hidden', 'text-gray-400');
-            msg.classList.add('text-green-400');
-            e.target.reset();
+            
+            // Disable button
+            btn.disabled = true;
+            btn.textContent = 'Pošiljam...';
+            
+            // Get form data
+            const formData = {
+                from_name: e.target.querySelector('input[type="text"]').value,
+                from_email: e.target.querySelector('input[type="email"]').value,
+                phone: e.target.querySelector('input[type="tel"]').value,
+                message: e.target.querySelector('textarea').value
+            };
+            
+            // Send email via EmailJS
+            emailjs.send('service_dt3mw37', 'template_i0g2e98', formData)
+                .then(() => {
+                    msg.textContent = '✓ Sporočilo uspešno poslano! Odgovorili bomo v najkrajšem času.';
+                    msg.classList.remove('hidden', 'text-gray-400', 'text-red-400');
+                    msg.classList.add('text-green-400');
+                    e.target.reset();
+                    btn.disabled = false;
+                    btn.textContent = 'Pošlji sporočilo';
+                }, (error) => {
+                    msg.textContent = '✗ Napaka pri pošiljanju. Poskusite ponovno ali nas kontaktirajte preko emaila.';
+                    msg.classList.remove('hidden', 'text-gray-400', 'text-green-400');
+                    msg.classList.add('text-red-400');
+                    btn.disabled = false;
+                    btn.textContent = 'Pošlji sporočilo';
+                    console.error('EmailJS error:', error);
+                });
         };
     </script>
 </body>
