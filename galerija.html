@@ -57,13 +57,45 @@
         .gallery-item {
             break-inside: avoid;
             margin-bottom: 1rem;
+            position: relative;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            min-height: 150px;
+        }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            animation: shimmer 1.5s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
         }
 
         .gallery-item img {
-            transition: transform 0.3s ease, filter 0.3s ease;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.3s ease, filter 0.3s ease;
         }
 
-        .gallery-item:hover img {
+        .gallery-item img.loaded {
+            opacity: 1;
+        }
+
+        .gallery-item img.loaded+.gallery-item::before {
+            display: none;
+        }
+
+        .gallery-item:hover img.loaded {
             transform: scale(1.02);
             filter: brightness(1.1);
         }
@@ -637,6 +669,38 @@
         document.getElementById('menu-btn').onclick = () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         };
+
+        // Progressive image loading with Intersection Observer
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    // Start loading the image
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                    }
+                    img.onload = () => {
+                        img.classList.add('loaded');
+                        img.parentElement.style.minHeight = 'auto';
+                        img.parentElement.style.background = 'none';
+                    };
+                    imageObserver.unobserve(img);
+                }
+            });
+        }, {
+            rootMargin: '200px 0px', // Start loading 200px before visible
+            threshold: 0.01
+        });
+
+        // Observe all gallery images
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            // Move src to data-src for lazy loading
+            if (!img.dataset.src && img.src) {
+                img.dataset.src = img.src;
+                img.removeAttribute('src');
+            }
+            imageObserver.observe(img);
+        });
 
         // Lightbox functions
         function openLightbox(src) {
