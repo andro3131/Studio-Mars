@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekti - STUDIO MARS</title>
+    <meta name="description" content="Projekti STUDIO MARS - pregled vseh studijskih projektov od leta 2008.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #0a0a0a;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.8;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: black;
+            opacity: 0.3;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .year-btn {
+            transition: all 0.2s ease;
+        }
+
+        .year-btn:hover {
+            background: rgba(235, 70, 47, 0.2);
+        }
+
+        .year-btn.active {
+            background: rgba(235, 70, 47, 0.3);
+            border-left: 3px solid #EB462F;
+        }
+
+        .project-item {
+            transition: all 0.2s ease;
+        }
+
+        .project-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        audio {
+            height: 32px;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background: #1f2937;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-overlay"></div>
+
+    <div class="content">
+        <!-- Header -->
+        <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
+            <div class="max-w-5xl mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="relative w-14 h-14">
+                            <div class="absolute inset-0 bg-orange-400 rounded-full blur-md opacity-40"></div>
+                            <img src="https://i.ibb.co/k2dyLNwQ/mars3.png" alt="STUDIO MARS Logo"
+                                class="relative w-14 h-14 rounded-full object-cover"
+                                style="filter: drop-shadow(4px 3px 4px rgba(0,0,0,0.5));">
+                        </div>
+                        <div>
+                            <h1 class="text-sm font-medium text-white tracking-wider" style="margin-left: -0.5em;">
+                                SNEMALNI</h1>
+                            <h2 class="text-xl font-bold">
+                                <span class="text-white">STUDIO </span>
+                                <span class="text-[#EB462F]">MARS</span>
+                            </h2>
+                        </div>
+                    </a>
+                    <nav class="hidden lg:flex space-x-0">
+                        <a href="index.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
+                        <a href="studio.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
+                        <a href="oprema.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">OPREMA</a>
+                        <a href="bio.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
+                        <a href="ponudba.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
+                        <a href="video.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">VIDEO</a>
+                        <a href="projekti.html" class="px-2 py-2 text-sm font-medium text-[#EB462F]">PROJEKTI</a>
+                        <a href="galerija.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">GALERIJA</a>
+                        <a href="blog.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
+                        <a href="kontakt.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">KONTAKT</a>
+                    </nav>
+                    <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="lg:hidden hidden bg-gray-900 mt-2 rounded">
+                    <a href="index.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">DOMOV</a>
+                    <a href="studio.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">STUDIO</a>
+                    <a href="oprema.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">OPREMA</a>
+                    <a href="bio.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BIO</a>
+                    <a href="ponudba.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PONUDBA</a>
+                    <a href="video.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">VIDEO</a>
+                    <a href="projekti.html" class="block px-4 py-2 text-[#EB462F] hover:bg-gray-800">PROJEKTI</a>
+                    <a href="galerija.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">GALERIJA</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BLOG</a>
+                    <a href="kontakt.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">KONTAKT</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto px-4 py-8">
+            <!-- Title with underline -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-medium text-white mb-2">Projekti</h1>
+                <div class="w-20 h-1 bg-[#EB462F] rounded-full"></div>
+            </div>
+
+            <!-- Main Layout: Sidebar + Content -->
+            <div class="flex flex-col lg:flex-row gap-6">
+                <!-- Year Sidebar -->
+                <div class="lg:w-24 flex-shrink-0">
+                    <div
+                        class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl border border-gray-800 overflow-hidden lg:sticky lg:top-24">
+                        <div class="p-2">
+                            <button onclick="showYear(2024)"
+                                class="year-btn active w-full text-left px-3 py-2 text-sm font-medium text-[#EB462F] rounded"
+                                data-year="2024">
+                                2024
+                            </button>
+                            <button onclick="showYear(2023)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2023">
+                                2023
+                            </button>
+                            <button onclick="showYear(2022)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2022">
+                                2022
+                            </button>
+                            <button onclick="showYear(2021)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2021">
+                                2021
+                            </button>
+                            <button onclick="showYear(2020)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2020">
+                                2020
+                            </button>
+                            <button onclick="showYear(2019)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2019">
+                                2019
+                            </button>
+                            <button onclick="showYear(2018)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2018">
+                                2018
+                            </button>
+                            <button onclick="showYear(2017)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2017">
+                                2017
+                            </button>
+                            <button onclick="showYear(2016)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2016">
+                                2016
+                            </button>
+                            <button onclick="showYear(2015)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2015">
+                                2015
+                            </button>
+                            <button onclick="showYear(2014)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2014">
+                                2014
+                            </button>
+                            <button onclick="showYear(2013)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2013">
+                                2013
+                            </button>
+                            <button onclick="showYear(2012)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2012">
+                                2012
+                            </button>
+                            <button onclick="showYear(2011)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2011">
+                                2011
+                            </button>
+                            <button onclick="showYear(2010)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2010">
+                                2010
+                            </button>
+                            <button onclick="showYear(2009)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2009">
+                                2009
+                            </button>
+                            <button onclick="showYear(2008)"
+                                class="year-btn w-full text-left px-3 py-2 text-sm font-medium text-gray-400 rounded"
+                                data-year="2008">
+                                2008
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Content -->
+                <div class="flex-1">
+                    <!-- Year 2024 -->
+                    <div id="year-2024" class="year-content">
+                        <div
+                            class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-6">
+                            <h2 class="text-xl font-medium text-white mb-4">Projekti 2024</h2>
+
+                            <!-- Project List -->
+                            <div class="space-y-2">
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Maja Marinčič</span>
+                                    <span class="text-gray-400"> – mix in mastering koncerta</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Marjan Brcar</span>
+                                    <span class="text-gray-400"> – snemanje priredb</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Duo SASI</span>
+                                    <span class="text-gray-400"> – snemanje kitare in orglic</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Oktet Bori</span>
+                                    <span class="text-gray-400"> – snemanje za zgoščenko</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Dare Acoustic</span>
+                                    <span class="text-gray-400"> – snemanje avtorskih pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Ansambel Suha solza in Pihalni orkester Trebnje</span>
+                                    <span class="text-gray-400"> – snemanje avtorskih pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Revije otroških, mladinskih in odraslih pevskih zborov
+                                        Trebnje</span>
+                                    <span class="text-gray-400"> – snem. audio in video</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">MePZ DU Mirna</span>
+                                    <span class="text-gray-400"> – snemanje (audio in video) koncerta ob 25.
+                                        letnici</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Barb band</span>
+                                    <span class="text-gray-400"> – snemanje promo pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Ansambel Od Dn's</span>
+                                    <span class="text-gray-400"> – snemanje materiala za izdajo zgoščenke</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Drugi vagon</span>
+                                    <span class="text-gray-400"> – snemanje materiala za izdajo zgoščenke</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Dean</span>
+                                    <span class="text-gray-400"> – snemanje avtorskih pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Ema Suhadolnik</span>
+                                    <span class="text-gray-400"> – snemanje avtorske pesmi</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Kristina Žgur</span>
+                                    <span class="text-gray-400"> – snemanje operne glasbe</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">MePZ Leo Fortis</span>
+                                    <span class="text-gray-400"> – snemanje avtorskih pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Blaž in Keli</span>
+                                    <span class="text-gray-400"> – snemanje cover pesmi</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Kailash Kokoppelli</span>
+                                    <span class="text-gray-400"> – snemanje avtorske pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Šmarnogorski kvintet</span>
+                                    <span class="text-gray-400"> – snemanje avtorske pesmi</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">CIK CAK kvintet</span>
+                                    <span class="text-gray-400"> – snemanje avtorske pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Uroš Ržišnik trio</span>
+                                    <span class="text-gray-400"> – snemanje avtorske pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Soreline</span>
+                                    <span class="text-gray-400"> – koncert v cerkvi</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Navex</span>
+                                    <span class="text-gray-400"> – snemanje tečajev za podjetja</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Ingenium Ensemble</span>
+                                    <span class="text-gray-400"> – snemanje avtorske pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                                <div class="project-item px-3 py-2 rounded">
+                                    <span class="text-[#EB462F]">Meh Express</span>
+                                    <span class="text-gray-400"> – snemanje avtorske pesmi</span>
+                                    <span class="text-yellow-500 text-xs">*</span>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-500 text-xs mt-4">* projekt v delu</p>
+                        </div>
+
+                        <!-- Audio Section -->
+                        <div
+                            class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-6">
+                            <h3 class="text-lg font-medium text-white mb-4">Izbrani posnetki</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-4 bg-gray-800 bg-opacity-50 rounded-lg p-3">
+                                    <div class="flex-1">
+                                        <p class="text-white text-sm font-medium">Test posnetek</p>
+                                        <p class="text-gray-400 text-xs">STUDIO MARS</p>
+                                    </div>
+                                    <audio controls class="w-48">
+                                        <source
+                                            src="https://docs.google.com/uc?export=download&id=1UaTwtKrObrHy7lXZZkPvXu5LGqGxolOr"
+                                            type="audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- YouTube Section -->
+                        <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+                            <h3 class="text-lg font-medium text-white mb-4">Video posnetki</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <div class="aspect-video rounded-lg overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/4V_AuR5o84s"
+                                        title="Video 1" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="aspect-video rounded-lg overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/Q8PzJWbPHFI"
+                                        title="Video 2" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="aspect-video rounded-lg overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/cp3JzwAER5s"
+                                        title="Video 3" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder for other years -->
+                    <div id="year-2023" class="year-content hidden">
+                        <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+                            <h2 class="text-xl font-medium text-white mb-4">Projekti 2023</h2>
+                            <p class="text-gray-400">Podatki za leto 2023 bodo dodani kmalu.</p>
+                        </div>
+                    </div>
+
+                    <div id="year-2022" class="year-content hidden">
+                        <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+                            <h2 class="text-xl font-medium text-white mb-4">Projekti 2022</h2>
+                            <p class="text-gray-400">Podatki za leto 2022 bodo dodani kmalu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Generic placeholder for years 2008-2021 -->
+                    <div id="year-placeholder" class="year-content hidden">
+                        <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
+                            <h2 class="text-xl font-medium text-white mb-4">Projekti <span id="placeholder-year"></span>
+                            </h2>
+                            <p class="text-gray-400">Podatki za to leto bodo dodani kmalu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-black bg-opacity-90 border-t border-gray-800 mt-12">
+            <div class="max-w-5xl mx-auto px-4 py-6">
+                <div class="flex flex-col items-center space-y-4">
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank"
+                            class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/studiomars31" target="_blank"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="mailto:studiomars@siol.net"
+                            class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">© 2008 by STUDIO Mars</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+
+        // Year switching
+        function showYear(year) {
+            // Hide all year content
+            document.querySelectorAll('.year-content').forEach(el => el.classList.add('hidden'));
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.year-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.remove('text-[#EB462F]');
+                btn.classList.add('text-gray-400');
+            });
+
+            // Show selected year
+            const yearContent = document.getElementById('year-' + year);
+            if (yearContent) {
+                yearContent.classList.remove('hidden');
+            } else {
+                // Show placeholder
+                document.getElementById('year-placeholder').classList.remove('hidden');
+                document.getElementById('placeholder-year').textContent = year;
+            }
+
+            // Set active button
+            const activeBtn = document.querySelector(`[data-year="${year}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+                activeBtn.classList.add('text-[#EB462F]');
+                activeBtn.classList.remove('text-gray-400');
+            }
+        }
+    </script>
+</body>
+
+</html>
