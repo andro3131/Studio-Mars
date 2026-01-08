@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="sl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio MARS - Snemalni Studio Trebnje</title>
-    <meta name="description" content="Profesionalni snemalni studio v Trebnjem. Snemanje, mix, mastering, video produkcija.">
+    <meta name="description"
+        content="Profesionalni snemalni studio v Trebnjem. Snemanje, mix, mastering, video produkcija.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #0a0a0a; }
+        body {
+            background: #0a0a0a;
+        }
+
         .bg-pattern {
-            position: fixed; 
-            inset: 0; 
-            z-index: 0; 
+            position: fixed;
+            inset: 0;
+            z-index: 0;
             opacity: 0.8;
             background-image: url('images/background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
-        .bg-overlay { 
-            position: fixed; 
-            inset: 0; 
-            z-index: 0; 
-            background: black; 
-            opacity: 0.3; 
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: black;
+            opacity: 0.3;
         }
-        .content { 
-            position: relative; 
-            z-index: 10; 
+
+        .content {
+            position: relative;
+            z-index: 10;
         }
-        .slider-item { 
-            transition: opacity 1s; 
+
+        .slider-item {
+            transition: opacity 1s;
         }
     </style>
 </head>
+
 <body>
     <div class="bg-pattern"></div>
     <div class="bg-overlay"></div>
-    
+
     <div class="content">
         <!-- Header -->
         <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
             <div class="max-w-5xl mx-auto px-4 py-4">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-3">
-                        <div class="w-14 h-14 bg-gradient-to-br from-red-600 to-orange-500 rounded-full flex items-center justify-center">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-500 rounded-full flex items-center justify-center">
                             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
                             </svg>
                         </div>
                         <div>
                             <h1 class="text-lg font-bold text-gray-300">SNEMALNI</h1>
-                            <h2 class="text-xl font-bold text-red-500">STUDIO MARS</h2>
+                            <h2 class="text-xl font-bold text-[#EB462F]">STUDIO MARS</h2>
                         </div>
                     </div>
                     <nav class="hidden lg:flex space-x-1">
-                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">DOMOV</a>
-                        <a href="studio.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">STUDIO</a>
-                        <a href="oprema.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">OPREMA</a>
-                        <a href="bio.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">BIO</a>
-                        <a href="ponudba.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">PONUDBA</a>
-                        <a href="projekti.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">PROJEKTI</a>
-                        <a href="galerija.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">GALERIJA</a>
-                        <a href="blog.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">BLOG</a>
-                        <a href="kontakt.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-red-500">KONTAKT</a>
+                        <a href="index.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
+                        <a href="studio.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
+                        <a href="oprema.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">OPREMA</a>
+                        <a href="bio.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
+                        <a href="ponudba.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
+                        <a href="projekti.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PROJEKTI</a>
+                        <a href="galerija.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">GALERIJA</a>
+                        <a href="blog.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
+                        <a href="kontakt.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">KONTAKT</a>
                     </nav>
                     <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
@@ -91,70 +113,94 @@
             <div class="relative h-80 md:h-96 overflow-hidden rounded-xl shadow-2xl mb-8">
                 <div id="slider-main">
                     <div class="slider-item absolute inset-0">
-                        <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Studio MARS"
+                            class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
                     </div>
                     <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Studio MARS"
+                            class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
                     </div>
                     <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Studio MARS"
+                            class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
                     </div>
                     <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Studio MARS"
+                            class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
                     </div>
                     <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Studio MARS" class="w-full h-full object-cover">
+                        <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Studio MARS"
+                            class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
                     </div>
                 </div>
-                <button id="prev-main" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
+                <button id="prev-main"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
                     </svg>
                 </button>
-                <button id="next-main" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
+                <button id="next-main"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>
                 <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white transition-all" data-slide="0"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all" data-slide="1"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all" data-slide="2"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all" data-slide="3"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all" data-slide="4"></button>
+                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white transition-all"
+                        data-slide="0"></button>
+                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                        data-slide="1"></button>
+                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                        data-slide="2"></button>
+                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                        data-slide="3"></button>
+                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                        data-slide="4"></button>
                 </div>
             </div>
 
             <!-- Secondary Thumbnails Slider -->
             <div class="relative mb-8 overflow-hidden">
                 <div id="slider-thumbs" class="flex gap-3 transition-transform duration-500">
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-red-500 transition-all" data-slide="0">
-                        <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Slide 1" class="w-full h-full object-cover">
+                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                        data-slide="0">
+                        <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Slide 1"
+                            class="w-full h-full object-cover">
                     </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-red-500 transition-all" data-slide="1">
+                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                        data-slide="1">
                         <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Slide 2" class="w-full h-full object-cover">
                     </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-red-500 transition-all" data-slide="2">
+                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                        data-slide="2">
                         <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Slide 3" class="w-full h-full object-cover">
                     </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-red-500 transition-all" data-slide="3">
-                        <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Slide 4" class="w-full h-full object-cover">
+                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                        data-slide="3">
+                        <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Slide 4"
+                            class="w-full h-full object-cover">
                     </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-red-500 transition-all" data-slide="4">
-                        <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Slide 5" class="w-full h-full object-cover">
+                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                        data-slide="4">
+                        <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Slide 5"
+                            class="w-full h-full object-cover">
                     </div>
                 </div>
-                <button id="prev-thumbs" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-r-lg transition-all">
+                <button id="prev-thumbs"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-r-lg transition-all">
                     <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
                     </svg>
                 </button>
-                <button id="next-thumbs" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-l-lg transition-all">
+                <button id="next-thumbs"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-l-lg transition-all">
                     <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
@@ -165,8 +211,12 @@
             <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-8">
                 <h2 class="text-2xl font-bold text-white mb-4">Dobrodošli v Studiu MARS</h2>
                 <div class="text-gray-300 space-y-3 text-sm leading-relaxed">
-                    <p>Studio MARS je pričel s svojim delovanjem v začetku leta 2008 in od takrat se je tukaj mudilo že kar nekaj priznanih glasbenikov -- Oto Pestner, Nuša Derenda, Blaž Jurjevčič, Tomaž Kozlevčar, Jože Burnik, Gianni Rijavec in drugi.</p>
-                    <p>Studio ponuja snemanje vseh zvrsti glasbe, na voljo pa je tudi široka paleta dodatnih storitev, ki vključuje mix & mastering, izdelavo avtorskih pesmi, video snemanje in produkcijo ter najem glasbenikov.</p>
+                    <p>Studio MARS je pričel s svojim delovanjem v začetku leta 2008 in od takrat se je tukaj mudilo že
+                        kar nekaj priznanih glasbenikov: <span class="text-[#EB462F]">Oto Pestner, Nuša Derenda, Blaž
+                            Jurjevčič, Tomaž Kozlevčar, Jože Burnik, Gianni Rijavec</span> in drugi.</p>
+                    <p>Studio ponuja snemanje vseh zvrsti glasbe, na voljo pa je tudi široka paleta dodatnih storitev,
+                        ki vključuje mix & mastering, izdelavo avtorskih pesmi, video snemanje in produkcijo ter najem
+                        glasbenikov.</p>
                 </div>
             </div>
         </main>
@@ -176,19 +226,28 @@
             <div class="max-w-5xl mx-auto px-4 py-6">
                 <div class="flex flex-col items-center space-y-4">
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank" class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank"
+                            class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
                             </svg>
                         </a>
-                        <a href="https://soundcloud.com/studiomars31" target="_blank" class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="https://soundcloud.com/studiomars31" target="_blank"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
                             </svg>
                         </a>
-                        <a href="mailto:snemalni.studio.mars@gmail.com" class="w-10 h-10 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="mailto:snemalni.studio.mars@gmail.com"
+                            class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
                             </svg>
                         </a>
                     </div>
@@ -204,7 +263,7 @@
         const slidesMain = document.querySelectorAll('#slider-main .slider-item');
         const dotsMain = document.querySelectorAll('.slider-dot-main');
         const thumbs = document.querySelectorAll('.slider-thumb-item');
-        
+
         function showSlideMain(n) {
             slidesMain.forEach((s, i) => {
                 s.style.opacity = i === n ? '1' : '0';
@@ -220,29 +279,29 @@
             });
             thumbs.forEach((t, i) => {
                 if (i === n) {
-                    t.classList.add('border-red-500');
+                    t.classList.add('border-[#EB462F]');
                     t.classList.remove('border-transparent');
                 } else {
-                    t.classList.remove('border-red-500');
+                    t.classList.remove('border-[#EB462F]');
                     t.classList.add('border-transparent');
                 }
             });
         }
-        
+
         function nextMain() {
             currentMain = (currentMain + 1) % slidesMain.length;
             showSlideMain(currentMain);
         }
-        
+
         function prevMain() {
             currentMain = (currentMain - 1 + slidesMain.length) % slidesMain.length;
             showSlideMain(currentMain);
         }
-        
+
         setInterval(nextMain, 5000);
         document.getElementById('next-main').onclick = nextMain;
         document.getElementById('prev-main').onclick = prevMain;
-        
+
         dotsMain.forEach((dot, i) => {
             dot.onclick = () => {
                 currentMain = i;
@@ -283,4 +342,5 @@
         };
     </script>
 </body>
+
 </html>
