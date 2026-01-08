@@ -61,6 +61,10 @@
             overflow: hidden;
         }
 
+        .gallery-item.hidden-item {
+            display: none;
+        }
+
         .gallery-item img {
             transition: transform 0.3s ease, filter 0.3s ease;
         }
@@ -776,6 +780,15 @@
                         loading="lazy">
                 </div>
             </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-8">
+                <button id="load-more-btn"
+                    class="px-8 py-3 bg-[#EB462F] hover:bg-[#C83C28] text-white font-medium rounded-lg transition-all transform hover:scale-105">
+                    Naloži več fotografij
+                </button>
+                <p id="image-counter" class="text-gray-500 text-sm mt-2"></p>
+            </div>
         </main>
 
         <!-- Lightbox -->
@@ -825,6 +838,37 @@
         document.getElementById('menu-btn').onclick = () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         };
+
+        // Pagination - Load More functionality
+        const IMAGES_PER_PAGE = 30;
+        let visibleCount = 0;
+        const allItems = document.querySelectorAll('.gallery-item');
+        const totalImages = allItems.length;
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        const counter = document.getElementById('image-counter');
+
+        function updateCounter() {
+            counter.textContent = `Prikazanih ${Math.min(visibleCount, totalImages)} od ${totalImages} fotografij`;
+        }
+
+        function showMoreImages() {
+            const endIndex = Math.min(visibleCount + IMAGES_PER_PAGE, totalImages);
+            for (let i = visibleCount; i < endIndex; i++) {
+                allItems[i].classList.remove('hidden-item');
+            }
+            visibleCount = endIndex;
+            updateCounter();
+
+            if (visibleCount >= totalImages) {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+        // Initially hide all items, then show first batch
+        allItems.forEach(item => item.classList.add('hidden-item'));
+        showMoreImages();
+
+        loadMoreBtn.onclick = showMoreImages;
 
         // Lightbox functions
         function openLightbox(src) {
