@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video - STUDIO MARS</title>
+    <meta name="description"
+        content="Video produkcija v STUDIO MARS - snemanje videospotov, dogodkov in obdelava materiala.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #0a0a0a;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.8;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: black;
+            opacity: 0.3;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .video-card {
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(235, 70, 47, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-overlay"></div>
+
+    <div class="content">
+        <!-- Header -->
+        <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
+            <div class="max-w-5xl mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="relative w-14 h-14">
+                            <div class="absolute inset-0 bg-orange-400 rounded-full blur-md opacity-40"></div>
+                            <img src="https://i.ibb.co/k2dyLNwQ/mars3.png" alt="STUDIO MARS Logo"
+                                class="relative w-14 h-14 rounded-full object-cover"
+                                style="filter: drop-shadow(4px 3px 4px rgba(0,0,0,0.5));">
+                        </div>
+                        <div>
+                            <h1 class="text-sm font-medium text-white tracking-wider" style="margin-left: -0.5em;">
+                                SNEMALNI</h1>
+                            <h2 class="text-xl font-bold">
+                                <span class="text-white">STUDIO </span>
+                                <span class="text-[#EB462F]">MARS</span>
+                            </h2>
+                        </div>
+                    </a>
+                    <nav class="hidden lg:flex space-x-0">
+                        <a href="index.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
+                        <a href="studio.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
+                        <a href="oprema.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">OPREMA</a>
+                        <a href="bio.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
+                        <a href="ponudba.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
+                        <a href="video.html" class="px-2 py-2 text-sm font-medium text-[#EB462F]">VIDEO</a>
+                        <a href="projekti.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PROJEKTI</a>
+                        <a href="galerija.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">GALERIJA</a>
+                        <a href="blog.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
+                        <a href="kontakt.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">KONTAKT</a>
+                    </nav>
+                    <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="lg:hidden hidden bg-gray-900 mt-2 rounded">
+                    <a href="index.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">DOMOV</a>
+                    <a href="studio.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">STUDIO</a>
+                    <a href="oprema.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">OPREMA</a>
+                    <a href="bio.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BIO</a>
+                    <a href="ponudba.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PONUDBA</a>
+                    <a href="video.html" class="block px-4 py-2 text-[#EB462F] hover:bg-gray-800">VIDEO</a>
+                    <a href="projekti.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PROJEKTI</a>
+                    <a href="galerija.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">GALERIJA</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BLOG</a>
+                    <a href="kontakt.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">KONTAKT</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto px-4 py-8">
+            <!-- Title with underline -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-medium text-white mb-2">
+                    <span class="text-[#EB462F]">VIDEO</span> produkcija
+                </h1>
+                <div class="w-20 h-1 bg-[#EB462F] rounded-full"></div>
+            </div>
+
+            <!-- Intro Text -->
+            <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-8">
+                <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                    Studio MARS ponuja tudi storitve video produkcije, med katere spada snemanje videospotov in dogodkov
+                    v živo ter obdelava posnetega materiala v končen izdelek. Razpolagamo z video opremo, ki zagotavlja
+                    visoko kvalitetne posnetke z resolucijo 4K in 50 sličic na sekundo:
+                </p>
+
+                <!-- Equipment List -->
+                <div class="space-y-3">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-2 h-2 bg-[#EB462F] rounded-full mt-2 flex-shrink-0"></div>
+                        <p class="text-gray-300 text-sm">
+                            <span class="text-[#EB462F] font-medium">Videokamera / Fotoaparat Panasonic GH5</span> z
+                            objektivom LEICA 12-60MM F/2,8-4
+                        </p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="w-2 h-2 bg-[#EB462F] rounded-full mt-2 flex-shrink-0"></div>
+                        <p class="text-gray-300 text-sm">
+                            <span class="text-[#EB462F] font-medium">Dron DJI MINI 3 PRO</span> z NFP filtri za lepšo
+                            barvno reprodukcijo panoramskih posnetkov
+                        </p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="w-2 h-2 bg-[#EB462F] rounded-full mt-2 flex-shrink-0"></div>
+                        <p class="text-gray-300 text-sm">
+                            <span class="text-[#EB462F] font-medium">Stabilizator (gimbal) Weebill S</span> s sistemom
+                            ULANZI Falcam F38 za hitro menjavo kamere
+                        </p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="w-2 h-2 bg-[#EB462F] rounded-full mt-2 flex-shrink-0"></div>
+                        <p class="text-gray-300 text-sm">
+                            <span class="text-[#EB462F] font-medium">Dodatna oprema</span> kot so dimna naprava, LED
+                            luči, stojala itd.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Videos Section -->
+            <div class="mb-8">
+                <p class="text-gray-400 text-sm mb-6">Nekatere od posnetih projektov si lahko ogledate spodaj:</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Video 1 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/sJwyKHxBbGc"
+                                title="Video 1" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Cc6rkpOcj6g"
+                                title="Video 2" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/fRAyi2URKtA"
+                                title="Video 3" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ZoDM7zJEvE0"
+                                title="Video 4" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/KyI8ZtnqV8I"
+                                title="Video 5" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 6 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Yq-PbAYq3f4"
+                                title="Video 6" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 7 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/P03MxT6H_Xo"
+                                title="Video 7" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 8 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ebabOuYP6XI"
+                                title="Video 8" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 9 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/2Y-ZYdAuKdQ"
+                                title="Video 9" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 10 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/EJYPq4STQ6w"
+                                title="Video 10" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 11 -->
+                    <div
+                        class="video-card bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+                        <div class="aspect-video bg-gray-800">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/L439NaJv2as"
+                                title="Video 11" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <a href="kontakt.html"
+                    class="inline-block bg-gradient-to-r from-[#EB462F] to-orange-600 hover:from-[#C83C28] hover:to-orange-700 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                    Povpraševanje za video produkcijo
+                </a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-black bg-opacity-90 border-t border-gray-800 mt-12">
+            <div class="max-w-5xl mx-auto px-4 py-6">
+                <div class="flex flex-col items-center space-y-4">
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank"
+                            class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/studiomars31" target="_blank"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="mailto:studiomars@siol.net"
+                            class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">© 2008 by STUDIO Mars</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+    </script>
+</body>
+
+</html>
