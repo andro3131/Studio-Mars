@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija - STUDIO MARS</title>
+    <meta name="description" content="Galerija fotografij iz snemalnega studia MARS v Trebnjem.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #0a0a0a;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.8;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: black;
+            opacity: 0.3;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Masonry Grid */
+        .gallery-grid {
+            column-count: 2;
+            column-gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-grid {
+                column-count: 3;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery-grid {
+                column-count: 4;
+            }
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.95);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-overlay"></div>
+
+    <div class="content">
+        <!-- Header -->
+        <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
+            <div class="max-w-5xl mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="relative w-14 h-14">
+                            <div class="absolute inset-0 bg-orange-400 rounded-full blur-md opacity-40"></div>
+                            <img src="https://i.ibb.co/k2dyLNwQ/mars3.png" alt="Studio MARS Logo"
+                                class="relative w-14 h-14 rounded-full object-cover"
+                                style="filter: drop-shadow(4px 3px 4px rgba(0,0,0,0.5));">
+                        </div>
+                        <div>
+                            <h1 class="text-sm font-medium text-white tracking-wider" style="margin-left: -0.5em;">
+                                SNEMALNI</h1>
+                            <h2 class="text-xl font-bold">
+                                <span class="text-white">STUDIO </span>
+                                <span class="text-[#EB462F]">MARS</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <nav class="hidden lg:flex space-x-0">
+                        <a href="index.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
+                        <a href="studio.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
+                        <a href="oprema.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">OPREMA</a>
+                        <a href="bio.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
+                        <a href="ponudba.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
+                        <a href="video.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">VIDEO</a>
+                        <a href="projekti.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PROJEKTI</a>
+                        <a href="galerija.html" class="px-2 py-2 text-sm font-medium text-[#EB462F]">GALERIJA</a>
+                        <a href="blog.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
+                        <a href="kontakt.html"
+                            class="px-2 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">KONTAKT</a>
+                    </nav>
+                    <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="lg:hidden hidden bg-gray-900 mt-2 rounded">
+                    <a href="index.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">DOMOV</a>
+                    <a href="studio.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">STUDIO</a>
+                    <a href="oprema.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">OPREMA</a>
+                    <a href="bio.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BIO</a>
+                    <a href="ponudba.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PONUDBA</a>
+                    <a href="video.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">VIDEO</a>
+                    <a href="projekti.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">PROJEKTI</a>
+                    <a href="galerija.html" class="block px-4 py-2 text-[#EB462F] bg-gray-800">GALERIJA</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">BLOG</a>
+                    <a href="kontakt.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-800">KONTAKT</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-6xl mx-auto px-4 py-8">
+            <!-- Page Title -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-medium text-white mb-2">Galerija</h1>
+                <p class="text-gray-400">Fotografije iz studia in projektov</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <!-- NOVE SLIKE DODAJAJ NA VRH TEGA SEZNAMA -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/YT3HVQRW" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/m5RBnPpw" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Rw1518X" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/d0nS9dc2" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Sw2rLq3g" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Z1XdYgs4" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/rKBCp3GV" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/wrK7SVb5" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Wpdr7csx" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/SZQbxLV" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/x85ts0sb" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/hJm33NBR" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/GvkFt5ZK" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/pBW1w9NT" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/fd8Wh9m8" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/xKp3d79w" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/20J0LyyK" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/nM85QFgy" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/hxK8p4M6" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/S45Fq5Z6" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/LhPRpTpQ" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/1tXmrjhf" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/27975Qq2" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/bjQZZqm4" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Xxt77FHR" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/YFStQDDC" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/xq03bYVS" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/SX7gfDKr" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Y40jpxXR" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/6JYnb8Wp" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/4gT60PrF" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Tx1L3Z4F" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/1fWTcJ02" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/27wPkzWS" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/YFPsr49b" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/pB390Sw5" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/R4CGwsw5" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/KxyBTH4Q" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/yCrvHnj" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/MxG0yxwn" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/wXJ8rzN" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/FpvhXzz" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/qYtbhxh3" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/YF4tJ8dT" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Xk4r3sfm" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/PsrSTPx8" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/W4Sdq34q" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/21R9Zpyn" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/BHM2KdQN" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/d4fKrJhq" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/HLcYGcfh" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/0yZRvXxx" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/zV7gCcZ1" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/mCR0P1Tm" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/nsSHXz03" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/0p2KxKPY" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/6fT64vY" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/0VBkbG4D" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/qLcmN8G9" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/4wxPhd9p" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/S4xCDd7m" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/JRdsg8WC" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/7JxnrxP8" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/XfyT24rv" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/NgWYnxKH" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/9H9P6wtj" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Ps1SnpGy" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/3Y5rQ9km" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/N6b1Zcbc" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/qLXZFVn2" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/0yYZsyxR" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/KJwZW2L" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/MyyBvDs6" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/NgtxSkR8" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/r2rsB7MK" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/PZZpV0Hk" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/B5bb8jBD" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/q39r0h9Q" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/NnmDjB7Y" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/8DGMwhLS" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/TB2xxZXC" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/v4pDFSqT" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Ld2Bd8kD" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/spDKQmgm" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/8LQyv5tw" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/XZZhtkcx" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/0P4JJHg" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/sd67s5n6" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/nq8SBrvs" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/Lh01jtZz" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/JjHRD2Mf" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/BK6sc0F3" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/jPGDqv6r" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/4nbqPk35" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/zTrytZPr" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/zVhSHnQc" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/0pRV3MPp" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/gFgnrmXw" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/QL2ZW5D" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/NcYmncW" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/SXzsLfV1" alt="Studio MARS" class="w-full rounded-lg cursor-pointer"
+                        onclick="openLightbox(this.src)" loading="lazy">
+                </div>
+            </div>
+        </main>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <button class="absolute top-4 right-4 text-white text-4xl hover:text-[#EB462F]">&times;</button>
+            <img id="lightbox-img" src="" alt="Lightbox image">
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-black bg-opacity-90 border-t border-gray-800 mt-12">
+            <div class="max-w-5xl mx-auto px-4 py-6">
+                <div class="flex flex-col items-center space-y-4">
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank"
+                            class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/studiomars31" target="_blank"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="mailto:snemalni.studio.mars@gmail.com"
+                            class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">© 2008 by STUDIO Mars</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+
+        // Lightbox functions
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>
