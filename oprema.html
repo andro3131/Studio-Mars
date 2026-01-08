@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="sl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oprema - Studio MARS</title>
-    <meta name="description" content="Profesionalna studijska oprema v Studiu MARS - mikrofoni, instrumenti, video oprema.">
+    <meta name="description"
+        content="Profesionalna studijska oprema v Studiu MARS - mikrofoni, instrumenti, video oprema.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #0a0a0a; }
+        body {
+            background: #0a0a0a;
+        }
+
         .bg-pattern {
-            position: fixed; 
-            inset: 0; 
-            z-index: 0; 
+            position: fixed;
+            inset: 0;
+            z-index: 0;
             opacity: 0.8;
             background-image: url('images/background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
-        .bg-overlay { 
-            position: fixed; 
-            inset: 0; 
-            z-index: 0; 
-            background: black; 
-            opacity: 0.3; 
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: black;
+            opacity: 0.3;
         }
-        .content { 
-            position: relative; 
-            z-index: 10; 
+
+        .content {
+            position: relative;
+            z-index: 10;
         }
+
         /* Lightbox styles */
         .lightbox {
             display: none;
@@ -42,15 +50,18 @@
             justify-content: center;
             align-items: center;
         }
+
         .lightbox.active {
             display: flex;
         }
+
         .lightbox img {
             max-width: 90%;
             max-height: 90vh;
             object-fit: contain;
             border-radius: 8px;
         }
+
         .lightbox-close {
             position: absolute;
             top: 20px;
@@ -61,7 +72,9 @@
             cursor: pointer;
             z-index: 10000;
         }
-        .lightbox-prev, .lightbox-next {
+
+        .lightbox-prev,
+        .lightbox-next {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -71,31 +84,42 @@
             padding: 20px;
             user-select: none;
         }
-        .lightbox-prev { left: 20px; }
-        .lightbox-next { right: 20px; }
-        
+
+        .lightbox-prev {
+            left: 20px;
+        }
+
+        .lightbox-next {
+            right: 20px;
+        }
+
         /* Fade animation for rotating images */
         .gallery-slot img {
             transition: opacity 1s ease-in-out;
         }
+
         .gallery-slot img.fading {
             opacity: 0;
         }
     </style>
 </head>
+
 <body>
     <div class="bg-pattern"></div>
     <div class="bg-overlay"></div>
-    
+
     <div class="content">
         <!-- Header -->
         <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
             <div class="max-w-5xl mx-auto px-4 py-4">
                 <div class="flex justify-between items-center">
                     <a href="index.html" class="flex items-center space-x-3">
-                        <div class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-500 rounded-full flex items-center justify-center">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-500 rounded-full flex items-center justify-center">
                             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
                             </svg>
                         </div>
                         <div>
@@ -104,19 +128,28 @@
                         </div>
                     </a>
                     <nav class="hidden lg:flex space-x-1">
-                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
-                        <a href="studio.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
+                        <a href="index.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
+                        <a href="studio.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
                         <a href="oprema.html" class="px-3 py-2 text-sm font-medium text-[#EB462F]">OPREMA</a>
-                        <a href="bio.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
-                        <a href="ponudba.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
-                        <a href="projekti.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PROJEKTI</a>
-                        <a href="galerija.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">GALERIJA</a>
-                        <a href="blog.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
-                        <a href="kontakt.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">KONTAKT</a>
+                        <a href="bio.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
+                        <a href="ponudba.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
+                        <a href="projekti.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PROJEKTI</a>
+                        <a href="galerija.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">GALERIJA</a>
+                        <a href="blog.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
+                        <a href="kontakt.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">KONTAKT</a>
                     </nav>
                     <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
@@ -138,7 +171,7 @@
         <main class="max-w-5xl mx-auto px-4 py-8">
             <!-- Title with underline -->
             <div class="mb-8">
-                <h1 class="text-3xl font-bold text-white mb-2">OPREMA</h1>
+                <h1 class="text-3xl font-bold text-white mb-2">Oprema</h1>
                 <div class="w-20 h-1 bg-[#EB462F] rounded-full"></div>
             </div>
 
@@ -158,8 +191,12 @@
             <!-- Text Content -->
             <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
                 <div class="text-gray-300 space-y-6 text-sm leading-relaxed">
-                    <p>Zvok je najpomembnejša kvaliteta vsakega snemalnega studia, k temu pa veliko pripomore vrhunska oprema. Znamke v našem arzenalu, kot so Brauner, UAD, Telefunken, Manley, Apogee, Neumann, Chandler, Shadow Hills in MindPrint povedo veliko. Z enako navdušenostjo pa pridno širimo tudi asortima video opreme. Verjamemo, da imamo le najboljše zadovoljstvo naših strank in jih razvajamo samo z najboljšim.</p>
-                    
+                    <p>Zvok je najpomembnejša kvaliteta vsakega snemalnega studia, k temu pa veliko pripomore vrhunska
+                        oprema. Znamke v našem arzenalu, kot so Brauner, UAD, Telefunken, Manley, Apogee, Neumann,
+                        Chandler, Shadow Hills in MindPrint povedo veliko. Z enako navdušenostjo pa pridno širimo tudi
+                        asortima video opreme. Verjamemo, da imamo le najboljše zadovoljstvo naših strank in jih
+                        razvajamo samo z najboljšim.</p>
+
                     <!-- Equipment Lists -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1fr] gap-6 pt-4">
                         <!-- Studijska oprema -->
@@ -265,19 +302,28 @@
             <div class="max-w-5xl mx-auto px-4 py-6">
                 <div class="flex flex-col items-center space-y-4">
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank" class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank"
+                            class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
                             </svg>
                         </a>
-                        <a href="https://soundcloud.com/studiomars31" target="_blank" class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="https://soundcloud.com/studiomars31" target="_blank"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
                             </svg>
                         </a>
-                        <a href="mailto:studiomars@siol.net" class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="mailto:studiomars@siol.net"
+                            class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
                             </svg>
                         </a>
                     </div>
@@ -324,10 +370,10 @@
         // Current images in 12 slots (initially first 12)
         let currentSlots = allImages.slice(0, 12).map((img, i) => i);
         let showingFirstBatch = true; // Track which batch is showing
-        
+
         // Initialize gallery
         const galleryGrid = document.getElementById('gallery-grid');
-        
+
         function createSlot(index) {
             const slot = document.createElement('div');
             slot.className = 'gallery-slot group relative overflow-hidden rounded-lg cursor-pointer aspect-square';
@@ -348,31 +394,31 @@
         // Swap ALL 12 images every 7 seconds
         setInterval(() => {
             const slots = galleryGrid.children;
-            
+
             // Fade out all images
             for (let i = 0; i < 12; i++) {
                 const img = slots[i].querySelector('img');
                 img.classList.add('fading');
             }
-            
+
             setTimeout(() => {
                 // Toggle between first batch (0-11) and second batch (12-23)
                 showingFirstBatch = !showingFirstBatch;
                 const startIndex = showingFirstBatch ? 0 : 12;
-                
+
                 // Update all 12 slots
                 for (let i = 0; i < 12; i++) {
                     const slot = slots[i];
                     const img = slot.querySelector('img');
                     const newImageIndex = startIndex + i;
-                    
+
                     currentSlots[i] = newImageIndex;
                     img.src = allImages[newImageIndex];
                     img.alt = `Studio MARS - Oprema ${newImageIndex + 1}`;
-                    
+
                     // Update click handler
                     slot.onclick = () => openLightbox(newImageIndex);
-                    
+
                     // Fade in
                     img.classList.remove('fading');
                 }
@@ -414,4 +460,5 @@
         };
     </script>
 </body>
+
 </html>
