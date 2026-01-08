@@ -857,7 +857,14 @@
         function showMoreImages() {
             const endIndex = Math.min(visibleCount + IMAGES_PER_PAGE, totalImages);
             for (let i = visibleCount; i < endIndex; i++) {
-                allItems[i].classList.remove('hidden-item');
+                const item = allItems[i];
+                const img = item.querySelector('img');
+                // Restore src from data-src if it was deferred
+                if (img.dataset.lazySrc) {
+                    img.src = img.dataset.lazySrc;
+                    delete img.dataset.lazySrc;
+                }
+                item.classList.remove('hidden-item');
             }
             visibleCount = endIndex;
             updateCounter();
@@ -867,8 +874,20 @@
             }
         }
 
-        // Initially hide all items, then show first batch
-        allItems.forEach(item => item.classList.add('hidden-item'));
+        // Initially: defer loading for images beyond first batch
+        allItems.forEach((item, index) => {
+            if (index >= IMAGES_PER_PAGE) {
+                const img = item.querySelector('img');
+                // Move src to data-lazy-src to prevent browser from loading
+                if (img.src) {
+                    img.dataset.lazySrc = img.src;
+                    img.removeAttribute('src');
+                }
+            }
+            item.classList.add('hidden-item');
+        });
+
+        // Show first batch (these have normal src, will load immediately)
         showMoreImages();
 
         loadMoreBtn.onclick = showMoreImages;
