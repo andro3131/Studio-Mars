@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,52 @@
     <meta name="description" content="Kontaktirajte Studio MARS za rezervacijo termina ali več informacij.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #0a0a0a; }
+        body {
+            background: #0a0a0a;
+        }
+
         .bg-pattern {
-            position: fixed; 
-            inset: 0; 
-            z-index: 0; 
+            position: fixed;
+            inset: 0;
+            z-index: 0;
             opacity: 0.8;
             background-image: url('images/background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
-        .bg-overlay { 
-            position: fixed; 
-            inset: 0; 
-            z-index: 0; 
-            background: black; 
-            opacity: 0.3; 
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: black;
+            opacity: 0.3;
         }
-        .content { 
-            position: relative; 
-            z-index: 10; 
+
+        .content {
+            position: relative;
+            z-index: 10;
         }
     </style>
 </head>
+
 <body>
     <div class="bg-pattern"></div>
     <div class="bg-overlay"></div>
-    
+
     <div class="content">
         <!-- Header -->
         <header class="bg-black bg-opacity-90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
             <div class="max-w-5xl mx-auto px-4 py-4">
                 <div class="flex justify-between items-center">
                     <a href="index.html" class="flex items-center space-x-3">
-                        <div class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-500 rounded-full flex items-center justify-center">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-500 rounded-full flex items-center justify-center">
                             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
                             </svg>
                         </div>
                         <div>
@@ -52,19 +62,29 @@
                         </div>
                     </a>
                     <nav class="hidden lg:flex space-x-1">
-                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
-                        <a href="studio.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
-                        <a href="oprema.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">OPREMA</a>
-                        <a href="bio.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
-                        <a href="ponudba.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
-                        <a href="projekti.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PROJEKTI</a>
-                        <a href="galerija.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">GALERIJA</a>
-                        <a href="blog.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
-                        <a href="kontakt.html" class="px-3 py-2 text-sm font-medium text-[#EB462F] hover:text-[#EB462F]">KONTAKT</a>
+                        <a href="index.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">DOMOV</a>
+                        <a href="studio.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">STUDIO</a>
+                        <a href="oprema.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">OPREMA</a>
+                        <a href="bio.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BIO</a>
+                        <a href="ponudba.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PONUDBA</a>
+                        <a href="projekti.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">PROJEKTI</a>
+                        <a href="galerija.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">GALERIJA</a>
+                        <a href="blog.html"
+                            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-[#EB462F]">BLOG</a>
+                        <a href="kontakt.html"
+                            class="px-3 py-2 text-sm font-medium text-[#EB462F] hover:text-[#EB462F]">KONTAKT</a>
                     </nav>
                     <button id="menu-btn" class="lg:hidden p-2 text-gray-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
@@ -84,7 +104,10 @@
 
         <!-- Main Content -->
         <main class="max-w-5xl mx-auto px-4 py-8">
-            <h1 class="text-4xl font-bold text-white mb-8">Kontakt</h1>
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-white mb-2">Kontakt</h1>
+                <div class="w-20 h-1 bg-[#EB462F] rounded-full"></div>
+            </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Contact Form -->
@@ -93,21 +116,30 @@
                     <form id="contact-form" class="space-y-4">
                         <div>
                             <label class="block text-gray-300 text-sm font-medium mb-2">Ime in priimek *</label>
-                            <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors" placeholder="Vaše ime">
+                            <input type="text" required
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors"
+                                placeholder="Vaše ime">
                         </div>
                         <div>
                             <label class="block text-gray-300 text-sm font-medium mb-2">Email *</label>
-                            <input type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors" placeholder="vas@email.com">
+                            <input type="email" required
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors"
+                                placeholder="vas@email.com">
                         </div>
                         <div>
                             <label class="block text-gray-300 text-sm font-medium mb-2">Telefon</label>
-                            <input type="tel" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors" placeholder="+386 ...">
+                            <input type="tel"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors"
+                                placeholder="+386 ...">
                         </div>
                         <div>
                             <label class="block text-gray-300 text-sm font-medium mb-2">Sporočilo *</label>
-                            <textarea required rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors resize-none" placeholder="Vaše sporočilo..."></textarea>
+                            <textarea required rows="5"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#EB462F] transition-colors resize-none"
+                                placeholder="Vaše sporočilo..."></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-gradient-to-r from-[#EB462F] to-orange-600 hover:from-[#C83C28] hover:to-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-[#EB462F] to-orange-600 hover:from-[#C83C28] hover:to-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
                             Pošlji sporočilo
                         </button>
                         <p id="form-message" class="text-sm text-gray-400 hidden"></p>
@@ -121,10 +153,15 @@
                         <h2 class="text-2xl font-bold text-white mb-6">Kontaktni podatki</h2>
                         <div class="space-y-4">
                             <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-[#EB462F] rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <div
+                                    class="w-10 h-10 bg-[#EB462F] rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
                                 </div>
                                 <div>
@@ -136,21 +173,30 @@
                             </div>
 
                             <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-[#EB462F] rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <div
+                                    class="w-10 h-10 bg-[#EB462F] rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div>
                                     <p class="text-gray-300 font-medium">Email</p>
-                                    <a href="mailto:snemalni.studio.mars@gmail.com" class="text-[#EB462F] hover:text-[#EB462F] transition-colors text-sm">snemalni.studio.mars@gmail.com</a>
+                                    <a href="mailto:snemalni.studio.mars@gmail.com"
+                                        class="text-[#EB462F] hover:text-[#EB462F] transition-colors text-sm">snemalni.studio.mars@gmail.com</a>
                                 </div>
                             </div>
 
                             <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-[#EB462F] rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                <div
+                                    class="w-10 h-10 bg-[#EB462F] rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div>
@@ -169,14 +215,20 @@
 
                         <h3 class="text-xl font-bold text-white mb-4">Sledite nam</h3>
                         <div class="flex space-x-3">
-                            <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank" class="flex-1 bg-blue-600 hover:bg-blue-700 rounded-lg p-3 flex items-center justify-center transition-all transform hover:scale-105">
+                            <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank"
+                                class="flex-1 bg-blue-600 hover:bg-blue-700 rounded-lg p-3 flex items-center justify-center transition-all transform hover:scale-105">
                                 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                    </path>
                                 </svg>
                             </a>
-                            <a href="https://soundcloud.com/studiomars31" target="_blank" class="flex-1 bg-orange-500 hover:bg-orange-600 rounded-lg p-3 flex items-center justify-center transition-all transform hover:scale-105">
+                            <a href="https://soundcloud.com/studiomars31" target="_blank"
+                                class="flex-1 bg-orange-500 hover:bg-orange-600 rounded-lg p-3 flex items-center justify-center transition-all transform hover:scale-105">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                    </path>
                                 </svg>
                             </a>
                         </div>
@@ -185,21 +237,17 @@
             </div>
 
             <!-- Google Maps -->
-            <div class="mt-8 bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
+            <div
+                class="mt-8 bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800">
                 <div class="p-4">
                     <h2 class="text-2xl font-bold text-white mb-4">Lokacija</h2>
                 </div>
                 <div class="h-96">
-                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.7195089577735!2d15.015648369609677!3d45.901880794965176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765289e5c4e5555%3A0x5555555555555555!2sDolenja%20Nem%C5%A1ka%20vas%2055%2C%208210%20Trebnje!5e0!3m2!1sen!2ssi!4v1736288901234!5m2!1sen!2ssi"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    class="w-full h-full">
-                </iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.7195089577735!2d15.015648369609677!3d45.901880794965176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765289e5c4e5555%3A0x5555555555555555!2sDolenja%20Nem%C5%A1ka%20vas%2055%2C%208210%20Trebnje!5e0!3m2!1sen!2ssi!4v1736288901234!5m2!1sen!2ssi"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-full h-full">
+                    </iframe>
                 </div>
             </div>
         </main>
@@ -209,19 +257,28 @@
             <div class="max-w-5xl mx-auto px-4 py-6">
                 <div class="flex flex-col items-center space-y-4">
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank" class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="https://www.facebook.com/SnemalniStudioMars" target="_blank"
+                            class="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
                             </svg>
                         </a>
-                        <a href="https://soundcloud.com/studiomars31" target="_blank" class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="https://soundcloud.com/studiomars31" target="_blank"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                </path>
                             </svg>
                         </a>
-                        <a href="mailto:snemalni.studio.mars@gmail.com" class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+                        <a href="mailto:snemalni.studio.mars@gmail.com"
+                            class="w-10 h-10 bg-[#EB462F] hover:bg-[#C83C28] rounded-full flex items-center justify-center transition-all transform hover:scale-110">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
                             </svg>
                         </a>
                     </div>
@@ -231,10 +288,10 @@
         </footer>
     </div>
 
-   <!-- EmailJS SDK -->
+    <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init("1uqnzr8kLJtPkA2gY");
         })();
     </script>
@@ -248,14 +305,14 @@
         // Form handling with EmailJS
         document.getElementById('contact-form').onsubmit = (e) => {
             e.preventDefault();
-            
+
             const btn = e.target.querySelector('button[type="submit"]');
             const msg = document.getElementById('form-message');
-            
+
             // Disable button
             btn.disabled = true;
             btn.textContent = 'Pošiljam...';
-            
+
             // Get form data
             const formData = {
                 from_name: e.target.querySelector('input[type="text"]').value,
@@ -263,7 +320,7 @@
                 phone: e.target.querySelector('input[type="tel"]').value,
                 message: e.target.querySelector('textarea').value
             };
-            
+
             // Send email via EmailJS
             emailjs.send('service_dt3mw37', 'template_i0g2e98', formData)
                 .then(() => {
@@ -284,4 +341,5 @@
         };
     </script>
 </body>
+
 </html>
