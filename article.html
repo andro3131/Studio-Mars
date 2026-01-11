@@ -84,6 +84,17 @@
             opacity: 1;
             transform: translateX(0);
         }
+
+        /* Image Zoom Styles */
+        .article-content img {
+            cursor: zoom-in;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .article-content img:hover {
+            transform: scale(1.01);
+            filter: brightness(1.1);
+        }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -213,7 +224,7 @@
                         
                         <div class="p-6 md:p-10">
                             <!-- Injected Content -->
-                            <div class="prose prose-invert prose-lg max-w-none text-gray-300">
+                            <div class="prose prose-invert prose-lg max-w-none text-gray-300 article-content">
                                 <p class="lead text-xl text-white font-medium mb-8">${post.excerpt}</p>
                                 ${post.content}
                             </div>
@@ -292,7 +303,48 @@
 
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll);
+
+        // Lightbox Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const articleContainer = document.getElementById('article-container');
+
+        articleContainer.addEventListener('click', (e) => {
+            const img = e.target.closest('.article-content img');
+            if (img) {
+                lightboxImg.src = img.src;
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+                setTimeout(() => {
+                    lightboxImg.classList.remove('scale-95', 'opacity-0');
+                    lightboxImg.classList.add('scale-100', 'opacity-100');
+                }, 10);
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        });
+
+        lightbox.onclick = () => {
+            lightboxImg.classList.remove('scale-100', 'opacity-100');
+            lightboxImg.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                document.body.style.overflow = '';
+            }, 300);
+        };
     </script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox"
+        class="fixed inset-0 z-[100] bg-black bg-opacity-95 hidden items-center justify-center cursor-pointer backdrop-blur-md transition-all duration-300">
+        <div class="absolute top-6 right-6 text-white hover:text-[#EB462F] transition-colors p-2 z-[110]">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+        <img id="lightbox-img" src="" alt="Zoomed view"
+            class="max-w-[95%] max-h-[95%] object-contain rounded-lg shadow-2xl transform transition-all duration-300 scale-95 opacity-0">
+    </div>
 </body>
 
 </html>
