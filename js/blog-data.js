@@ -1,21 +1,5 @@
 const blogPosts = [
     {
-        id: 3,
-        title: "Novo v Studiu Mars",
-        date: "20.03.2025",
-        readTime: "1 min branja",
-        excerpt: "V našem studiu se vedno nekaj dogaja. Poglejte si utrinke z našega zadnjega projekta...",
-        content: `
-            <p class="mb-4">V studiu Mars smo vedno zaposleni z novimi in zanimivimi projekti. Trudimo se ustvarjati najboljše pogoje za glasbenike in ustvarjalce, ki nas obiščejo.</p>
-            <p class="mb-4">Oglejte si nekaj utrinkov z našega zadnjega snemanja. Vedno nas veseli sodelovanje z nadarjenimi posamezniki in skupinami.</p>
-            <div class="mt-8">
-                <img src="https://i.ibb.co/QFWwbmf3/e8efd0-79df432de86347d68e59a51e9d83dc0d-mv2-2.jpg" alt="Novo v studiu" class="rounded-lg shadow-lg w-full">
-            </div>
-        `,
-        image: "https://i.ibb.co/QFWwbmf3/e8efd0-79df432de86347d68e59a51e9d83dc0d-mv2-2.jpg",
-        tags: ["Studio", "Dogajanje"]
-    },
-    {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
         date: "17.03.2025",
@@ -56,6 +40,22 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/Z6r2Ddgt/Podari-pesem-LOGO-simbol1.jpg",
         tags: ["Storitev", "Podari pesem"]
+    },
+    {
+        id: 3,
+        title: "Novo v Studiu Mars",
+        date: "29.10.2024",
+        readTime: "1 min branja",
+        excerpt: "V našem studiu se vedno nekaj dogaja. Poglejte si utrinke z našega zadnjega projekta...",
+        content: `
+            <p class="mb-4">V studiu Mars smo vedno zaposleni z novimi in zanimivimi projekti. Trudimo se ustvarjati najboljše pogoje za glasbenike in ustvarjalce, ki nas obiščejo.</p>
+            <p class="mb-4">Oglejte si nekaj utrinkov z našega zadnjega snemanja. Vedno nas veseli sodelovanje z nadarjenimi posamezniki in skupinami.</p>
+            <div class="mt-8">
+                <img src="https://i.ibb.co/QFWwbmf3/e8efd0-79df432de86347d68e59a51e9d83dc0d-mv2-2.jpg" alt="Novo v studiu" class="rounded-lg shadow-lg w-full">
+            </div>
+        `,
+        image: "https://i.ibb.co/6RVbfsrw/e8efd0-aaa7d3d9cb01473c9203ec214eba8a73-mv2-2.jpg",
+        tags: ["Studio", "Dogajanje"]
     }
 ];
 
