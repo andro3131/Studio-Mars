@@ -283,6 +283,40 @@
                 </div>
             </div> <!-- End above-fold content -->
 
+            <!-- Statistics Section -->
+            <div class="reveal mb-12">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div
+                        class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 text-center group hover:border-[#EB462F] transition-all">
+                        <div class="text-3xl md:text-4xl font-bold text-[#EB462F] mb-1">
+                            <span class="counter" data-target="400">0</span>+
+                        </div>
+                        <div class="text-gray-400 text-sm">Projektov</div>
+                    </div>
+                    <div
+                        class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 text-center group hover:border-[#EB462F] transition-all">
+                        <div class="text-3xl md:text-4xl font-bold text-[#EB462F] mb-1">
+                            <span class="counter" data-target="17">0</span>+
+                        </div>
+                        <div class="text-gray-400 text-sm">Let izkušenj</div>
+                    </div>
+                    <div
+                        class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 text-center group hover:border-[#EB462F] transition-all">
+                        <div class="text-3xl md:text-4xl font-bold text-[#EB462F] mb-1">
+                            <span class="counter" data-target="200">0</span>+
+                        </div>
+                        <div class="text-gray-400 text-sm">Izvajalcev</div>
+                    </div>
+                    <div
+                        class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 text-center group hover:border-[#EB462F] transition-all">
+                        <div class="text-3xl md:text-4xl font-bold text-[#EB462F] mb-1">
+                            <span class="counter" data-target="30">0</span>+
+                        </div>
+                        <div class="text-gray-400 text-sm">Video produkcij</div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Latest Blog Posts -->
             <div class="reveal mb-8">
                 <h3 class="text-xl font-medium text-white mb-4 flex items-center">
@@ -293,7 +327,7 @@
                     </svg>
                     Zadnje novice
                 </h3>
-                <div id="blog-posts-container" class="flex flex-col gap-4">
+                <div id="blog-posts-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Blog posts will be injected here -->
                 </div>
             </div>
@@ -431,8 +465,35 @@
 
                 if (elementTop < windowHeight - revealPoint) {
                     element.classList.add('active');
+
+                    // Trigger counter animation for counters inside this element
+                    const counters = element.querySelectorAll('.counter:not(.counted)');
+                    counters.forEach(counter => {
+                        counter.classList.add('counted');
+                        animateCounter(counter);
+                    });
                 }
             });
+        }
+
+        // Counter Animation
+        function animateCounter(counter) {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000; // 2 seconds
+            const step = target / (duration / 16); // 60fps
+            let current = 0;
+
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    counter.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+
+            updateCounter();
         }
 
         // Run on scroll and on load
@@ -442,7 +503,7 @@
         // Load Latest Blog Posts (up to 3)
         if (typeof blogPosts !== 'undefined' && blogPosts.length > 0) {
             const container = document.getElementById('blog-posts-container');
-            const postsToShow = blogPosts.slice(0, 3);
+            const postsToShow = blogPosts.slice(0, 2);
 
             postsToShow.forEach(post => {
                 const card = document.createElement('a');
