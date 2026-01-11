@@ -1,5 +1,25 @@
 const blogPosts = [
     {
+        id: 4,
+        title: "Ansambel OD D'NS - Najina leta",
+        date: "11.01.2026",
+        readTime: "2 min branja",
+        excerpt: "Ansambel OD D'NS predstavlja svojo novo skladbo z naslovom 'Najina leta'. Skladba je bila posneta v našem studiu Mars pod taktirko Gregorja Hrena...",
+        content: `
+            <p class="mb-4">Z veseljem predstavljamo najnovejši projekt, ki je nastal v našem studiu. Ansambel OD D'NS je posnel svojo novo avtorsko skladbo z naslovom "Najina leta".</p>
+            <p class="mb-4">Glasbo in besedilo za skladbo je prispeval Gregor Hren, za produkcijo pa smo poskrbeli v Studiu Mars. Videospot, ki si ga lahko ogledate spodaj, je delo Maje Ječnik.</p>
+            <p class="mb-6">Povezava do njihove Facebook strani: <a href="https://www.facebook.com/ansambel.OD.DNS" class="text-[#EB462F] hover:underline" target="_blank">Facebook - Ansambel OD D'NS</a></p>
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/80d35b-ohBI" title="Ansambel OD D'NS - Najina leta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/gLYj1jBz/Screenshot-2026-01-11-at-22-12-14.png",
+        tags: ["Glasba", "Snemanje", "Ansambel"]
+    },
+    {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
         date: "17.03.2025",
@@ -7,7 +27,7 @@ const blogPosts = [
         excerpt: "Pred kratkim se je v studiu mudil zanimiv mož po imenu Roman Opara. Kitarist in vokalist, ki je začel s svojim glasbenim udejstvovanjem...",
         content: `
             <p class="mb-4">Pred kratkim se je v studiu mudil zanimiv mož po imenu Roman Opara. Kitarist in vokalist, ki je začel s svojim glasbenim udejstvovanjem že v sedemdesetih letih prejšnjega tisočletja, je v svojem življenju počel še marsikaj drugega, kot samo prepevanje in igranje kitare.</p>
-            <p class="mb-4">V prvi vrsti uspešen programer, v prostem času pa kolesar, hribolazec in vsestranski športnik, se je v časih, ko je nastajala skupina Agropop, aktivno udejstvoval v glasbenem ustvarjanju, potem pa ga je pot ponesla predvsem v podjetniške vode.</p>
+            <p class="mb-4">V prvi vrsti uspešen programer, v prostem času pa kolesar, hribolazec and vsestranski športnik, se je v časih, ko je nastajala skupina Agropop, aktivno udejstvoval v glasbenem ustvarjanju, potem pa ga je pot ponesla predvsem v podjetniške vode.</p>
             <p class="mb-4">Glasba pa vendar vedno najde pot in po dolgih letih, lahko bi celo rekli desetletjih, je zopet obiskal snemalni studio, in to praktično v rodnem kraju, saj mi je povedal, da je svoje prvo desetletje življenja preživel na domačiji blizu Trebnjega, le streljaj od mojega studia.</p>
             <p class="mb-6">Prva skladba je ravnokar dobila končno podobo in je na voljo za predvajanje na različnih platformah, seveda pa tudi tukaj na straneh studia Mars. Lahko rečemo, da Roman prisega na pristen rock-n-roll, njegov melos pa spominja na mešanico Janeza Zmazka Žana in Perota Lovšina, le z občutno bolj uglašenim in točnim vokalom :).</p>
             <div class="mt-8">
