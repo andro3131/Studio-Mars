@@ -348,6 +348,7 @@
         </footer>
     </div>
 
+    <script src="js/blog-data.js"></script>
     <script>
         // Main Slider
         let currentMain = 0;
@@ -452,23 +453,16 @@
         window.addEventListener('load', revealOnScroll);
 
         // Load Latest Blog Post
-        fetch('js/blog-data.js')
-            .then(response => response.text())
-            .then(text => {
-                // Extract blog data from JS file
-                eval(text);
-                if (blogPosts && blogPosts.length > 0) {
-                    const latest = blogPosts[0];
-                    document.getElementById('blog-image').src = latest.image;
-                    document.getElementById('blog-image').alt = latest.title;
-                    document.getElementById('blog-title').textContent = latest.title;
-                    document.getElementById('blog-date').textContent = latest.date;
-                    document.getElementById('blog-readtime').textContent = latest.readTime;
-                    document.getElementById('blog-excerpt').textContent = latest.excerpt;
-                    document.getElementById('latest-blog-card').href = `article.html?id=${latest.id}`;
-                }
-            })
-            .catch(err => console.log('Blog data not loaded:', err));
+        if (typeof blogPosts !== 'undefined' && blogPosts.length > 0) {
+            const latest = blogPosts[0];
+            document.getElementById('blog-image').src = latest.image;
+            document.getElementById('blog-image').alt = latest.title;
+            document.getElementById('blog-title').textContent = latest.title;
+            document.getElementById('blog-date').textContent = latest.date;
+            document.getElementById('blog-readtime').textContent = latest.readTime;
+            document.getElementById('blog-excerpt').textContent = latest.excerpt;
+            document.getElementById('latest-blog-card').href = `article.html?id=${latest.id}`;
+        }
     </script>
 </body>
 
