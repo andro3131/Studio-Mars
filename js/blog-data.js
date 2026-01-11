@@ -96,6 +96,28 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/Rk0vGnLZ/e8efd0-8b857c3371a44b8d978c28dee659393d-mv2.jpg",
         tags: ["Oprema", "Studio"]
+    },
+    {
+        id: 6,
+        title: "Maja Marinčič - Divana v studiu",
+        date: "09.01.2024",
+        readTime: "1 min branja",
+        excerpt: "Maja Marinčič, bolj znana pod umetniškim imenom Divana, je pričela s studijskim snemanjem priredb ter svojih avtorskih pesmi. Izkušena vokalistka iz Trebnjega...",
+        content: `
+            <p class="mb-4">Maja Marinčič, bolj znana pod umetniškim imenom Divana, je pričela s studijskim snemanjem priredb ter svojih avtorskih pesmi. Izkušena vokalistka iz Trebnjega, ki zna poprijeti tudi za kitaro, že vrsto let nastopa širom po Sloveniji kot tudi v tujini na različnih prireditvah, nazadnje pa smo jo lahko slišali tudi na njenem samostojnem koncertu v Trebnjem v začetku decembra 2023. Maja z lahkoto prepriča svoje občinstvo s svojim mehkim in preciznim vokalom, ki naravnost zaživi v baladnih pesmih, vendar naj vas prvi vtis ne vara - z lahkoto se lahko spoprime tudi z bolj poskočnimii žanri, kar smo poslušalci še kako dobro slišali tudi na njenem razgibanem koncertu.</p>
+            <p class="mb-4">Maji energije vsekakor ne manjka, ima vrsto načrtov za prihodnost, predvsem pa rada poje in nastopa. Če potrebujete popestritev za vašo poroko, obletnico ali drugačno slavje, bo Maja zagotovo pravi naslov za to.</p>
+            <p class="mb-6">Spodaj si lahko ogledate eno izmed pesmi, ki jo je Maja posnela v studiu, ter eno od skladb, posnetih na njenem koncertu v Trebnjem.</p>
+            <div class="mt-8 space-y-4">
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vORLuHL3a3s" title="Maja Marinčič - Studio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T0pP3zQ8b-w" title="Maja Marinčič - Koncert" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/YFcP6bBJ/Screenshot-2026-01-11-at-22-44-55.png",
+        tags: ["Glasba", "Snemanje", "Koncert"]
     }
 ];
 
