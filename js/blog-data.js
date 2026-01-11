@@ -43,19 +43,21 @@ const blogPosts = [
     },
     {
         id: 3,
-        title: "Novo v Studiu Mars",
+        title: "Čudovit koncert skupine Sorelin",
         date: "29.10.2024",
         readTime: "1 min branja",
-        excerpt: "V našem studiu se vedno nekaj dogaja. Poglejte si utrinke z našega zadnjega projekta...",
+        excerpt: "Vokalna skupina Soreline, ki prihaja iz Trebnjega, že več kot 15 let prepeva in s svojimi ubranimi glasovi razvaja svoje občinstvo...",
         content: `
-            <p class="mb-4">V studiu Mars smo vedno zaposleni z novimi in zanimivimi projekti. Trudimo se ustvarjati najboljše pogoje za glasbenike in ustvarjalce, ki nas obiščejo.</p>
-            <p class="mb-4">Oglejte si nekaj utrinkov z našega zadnjega snemanja. Vedno nas veseli sodelovanje z nadarjenimi posamezniki in skupinami.</p>
+            <p class="mb-4">Vokalna skupina Soreline, ki prihaja iz Trebnjega, že več kot 15 let prepeva in s svojimi ubranimi glasovi razvaja svoje občinstvo. Dekleta se lahko pohvalijo s širokim asortimanom glasbe, ki jo izvajajo na svojih koncertih. Prepevajo namreč tako ljudske pesmi, kot tudi priredbe znanih slovenskih in svetovnih popevk, med naborom pa se najde tudi kakšna črnska duhovna pesem, pa še kaj bi se našlo.</p>
+            <p class="mb-4">Pred kratkim so v Trebanjski cerkvi priredile čudovit koncert po imenu En lep romantičen večer, ki je odzvanjal v duhu ljubezni. Punce so imele tudi glasbeno spremljavo na kohon, kitaro in bas kitaro, poslušalci pa so uživali v zvokih lepih romantičnih melodij, kot so Dan ljubezni, Oh Happy Day in Kaj je ljubezen.</p>
+            <p class="mb-4">Prireditev je bila tudi posneta in zapis bo kmalu izdan na zgoščenki. Če ste koncert zamudili, ali pa bi si radi dogodek še enkrat poslušali, vam bodo dekleta z veseljem pomagale:</p>
+            <p class="mb-6"><a href="https://www.facebook.com/p/Soreline-100032044192481/" class="text-[#EB462F] hover:underline" target="_blank">https://www.facebook.com/p/Soreline-100032044192481/</a></p>
             <div class="mt-8">
-                <img src="https://i.ibb.co/QFWwbmf3/e8efd0-79df432de86347d68e59a51e9d83dc0d-mv2-2.jpg" alt="Novo v studiu" class="rounded-lg shadow-lg w-full">
+                <img src="https://i.ibb.co/QFWwbmf3/e8efd0-79df432de86347d68e59a51e9d83dc0d-mv2-2.jpg" alt="Čudovit koncert skupine Sorelin" class="rounded-lg shadow-lg w-full">
             </div>
         `,
         image: "https://i.ibb.co/6RVbfsrw/e8efd0-aaa7d3d9cb01473c9203ec214eba8a73-mv2-2.jpg",
-        tags: ["Studio", "Dogajanje"]
+        tags: ["Glasba", "Koncert"]
     }
 ];
 
