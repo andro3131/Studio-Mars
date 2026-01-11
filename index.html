@@ -160,116 +160,128 @@
 
         <!-- Main Content -->
         <main class="max-w-5xl mx-auto px-4 py-8">
-            <!-- Main Slider -->
-            <div class="reveal-left relative h-80 md:h-96 overflow-hidden rounded-xl shadow-2xl mb-8">
-                <div id="slider-main">
-                    <div class="slider-item absolute inset-0">
-                        <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Studio MARS"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            <!-- Above-fold content - takes at least full viewport height -->
+            <div class="min-h-[calc(100vh-120px)]">
+                <!-- Main Slider -->
+                <div class="reveal-left relative h-80 md:h-96 overflow-hidden rounded-xl shadow-2xl mb-8">
+                    <div id="slider-main">
+                        <div class="slider-item absolute inset-0">
+                            <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Studio MARS"
+                                class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                        </div>
+                        <div class="slider-item absolute inset-0 opacity-0">
+                            <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Studio MARS"
+                                class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                        </div>
+                        <div class="slider-item absolute inset-0 opacity-0">
+                            <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Studio MARS"
+                                class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                        </div>
+                        <div class="slider-item absolute inset-0 opacity-0">
+                            <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Studio MARS"
+                                class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                        </div>
+                        <div class="slider-item absolute inset-0 opacity-0">
+                            <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Studio MARS"
+                                class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                        </div>
                     </div>
-                    <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Studio MARS"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-                    </div>
-                    <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Studio MARS"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-                    </div>
-                    <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Studio MARS"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-                    </div>
-                    <div class="slider-item absolute inset-0 opacity-0">
-                        <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Studio MARS"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                    <button id="prev-main"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="next-main"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+                        <button class="slider-dot-main w-2 h-2 rounded-full bg-white transition-all"
+                            data-slide="0"></button>
+                        <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                            data-slide="1"></button>
+                        <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                            data-slide="2"></button>
+                        <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                            data-slide="3"></button>
+                        <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
+                            data-slide="4"></button>
                     </div>
                 </div>
-                <button id="prev-main"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                </button>
-                <button id="next-main"
-                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-70 backdrop-blur-sm p-2 rounded-full transition-all">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white transition-all"
-                        data-slide="0"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
-                        data-slide="1"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
-                        data-slide="2"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
-                        data-slide="3"></button>
-                    <button class="slider-dot-main w-2 h-2 rounded-full bg-white bg-opacity-50 transition-all"
-                        data-slide="4"></button>
-                </div>
-            </div>
 
-            <!-- Secondary Thumbnails Slider -->
-            <div class="reveal-right relative mb-8 overflow-hidden">
-                <div id="slider-thumbs" class="flex gap-3 transition-transform duration-500">
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
-                        data-slide="0">
-                        <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Slide 1"
-                            class="w-full h-full object-cover">
+                <!-- Secondary Thumbnails Slider -->
+                <div class="reveal-right relative mb-8 overflow-hidden">
+                    <div id="slider-thumbs" class="flex gap-3 transition-transform duration-500">
+                        <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                            data-slide="0">
+                            <img src="https://i.ibb.co/VcDZqprb/1-jpg.avif" alt="Slide 1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                            data-slide="1">
+                            <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Slide 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                            data-slide="2">
+                            <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Slide 3"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                            data-slide="3">
+                            <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Slide 4"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
+                            data-slide="4">
+                            <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Slide 5"
+                                class="w-full h-full object-cover">
+                        </div>
                     </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
-                        data-slide="1">
-                        <img src="https://i.ibb.co/FrvztLn/2-jpg.avif" alt="Slide 2" class="w-full h-full object-cover">
-                    </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
-                        data-slide="2">
-                        <img src="https://i.ibb.co/39KzJjXx/3.avif" alt="Slide 3" class="w-full h-full object-cover">
-                    </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
-                        data-slide="3">
-                        <img src="https://i.ibb.co/3mT4pHjQ/4-jpg.avif" alt="Slide 4"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <div class="slider-thumb-item min-w-[180px] h-28 rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-[#EB462F] transition-all"
-                        data-slide="4">
-                        <img src="https://i.ibb.co/W4XmQHxn/5-jpg.avif" alt="Slide 5"
-                            class="w-full h-full object-cover">
-                    </div>
+                    <button id="prev-thumbs"
+                        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-r-lg transition-all">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="next-thumbs"
+                        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-l-lg transition-all">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
-                <button id="prev-thumbs"
-                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-r-lg transition-all">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                </button>
-                <button id="next-thumbs"
-                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 p-2 rounded-l-lg transition-all">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-            </div>
 
-            <!-- Text Content -->
-            <div class="reveal bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-8">
-                <h2 class="text-2xl font-bold text-white mb-4">Dobrodošli v Studiu MARS!</h2>
-                <div class="text-gray-300 space-y-3 text-sm leading-relaxed">
-                    <p>Studio MARS je pričel s svojim delovanjem v začetku leta 2008 in od takrat se je tukaj mudilo že
-                        kar nekaj priznanih glasbenikov: <span class="text-[#EB462F]">Oto Pestner, Nuša Derenda, Blaž
-                            Jurjevčič, Tomaž Kozlevčar, Jože Burnik, Gianni Rijavec</span> in drugi.</p>
-                    <p>Studio ponuja snemanje vseh zvrsti glasbe, na voljo pa je tudi široka paleta dodatnih storitev,
-                        ki vključuje mix & mastering, izdelavo avtorskih pesmi, video snemanje in produkcijo ter najem
-                        glasbenikov.</p>
+                <!-- Text Content -->
+                <div
+                    class="reveal bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-8">
+                    <h2 class="text-2xl font-bold text-white mb-4">Dobrodošli v Studiu MARS!</h2>
+                    <div class="text-gray-300 space-y-3 text-sm leading-relaxed">
+                        <p>Studio MARS je pričel s svojim delovanjem v začetku leta 2008 in od takrat se je tukaj mudilo
+                            že
+                            kar nekaj priznanih glasbenikov: <span class="text-[#EB462F]">Oto Pestner, Nuša Derenda,
+                                Blaž
+                                Jurjevčič, Tomaž Kozlevčar, Jože Burnik, Gianni Rijavec</span> in drugi.</p>
+                        <p>Studio ponuja snemanje vseh zvrsti glasbe, na voljo pa je tudi široka paleta dodatnih
+                            storitev,
+                            ki vključuje mix & mastering, izdelavo avtorskih pesmi, video snemanje in produkcijo ter
+                            najem
+                            glasbenikov.</p>
+                    </div>
                 </div>
-            </div>
+            </div> <!-- End above-fold content -->
 
             <!-- Latest Blog Posts -->
             <div class="reveal mb-8">
@@ -281,7 +293,7 @@
                     </svg>
                     Zadnje novice
                 </h3>
-                <div id="blog-posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div id="blog-posts-container" class="flex flex-col gap-4">
                     <!-- Blog posts will be injected here -->
                 </div>
             </div>
