@@ -302,36 +302,41 @@
         }
 
         window.addEventListener('scroll', revealOnScroll);
-        window.addEventListener('load', revealOnScroll);
+        window.addEventListener('load', () => {
+            revealOnScroll();
 
-        // Lightbox Logic
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const articleContainer = document.getElementById('article-container');
+            // Lightbox Logic
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const articleContainer = document.getElementById('article-container');
 
-        articleContainer.addEventListener('click', (e) => {
-            const img = e.target.closest('.article-content img');
-            if (img) {
-                lightboxImg.src = img.src;
-                lightbox.classList.remove('hidden');
-                lightbox.classList.add('flex');
-                setTimeout(() => {
-                    lightboxImg.classList.remove('scale-95', 'opacity-0');
-                    lightboxImg.classList.add('scale-100', 'opacity-100');
-                }, 10);
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            if (articleContainer && lightbox && lightboxImg) {
+                articleContainer.addEventListener('click', (e) => {
+                    // Find the closest image within the article content
+                    const img = e.target.closest('.article-content img');
+                    if (img) {
+                        lightboxImg.src = img.src;
+                        lightbox.classList.remove('hidden');
+                        lightbox.classList.add('flex');
+                        setTimeout(() => {
+                            lightboxImg.classList.remove('scale-95', 'opacity-0');
+                            lightboxImg.classList.add('scale-100', 'opacity-100');
+                        }, 10);
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+
+                lightbox.onclick = () => {
+                    lightboxImg.classList.remove('scale-100', 'opacity-100');
+                    lightboxImg.classList.add('scale-95', 'opacity-0');
+                    setTimeout(() => {
+                        lightbox.classList.add('hidden');
+                        lightbox.classList.remove('flex');
+                        document.body.style.overflow = '';
+                    }, 300);
+                };
             }
         });
-
-        lightbox.onclick = () => {
-            lightboxImg.classList.remove('scale-100', 'opacity-100');
-            lightboxImg.classList.add('scale-95', 'opacity-0');
-            setTimeout(() => {
-                lightbox.classList.add('hidden');
-                lightbox.classList.remove('flex');
-                document.body.style.overflow = '';
-            }, 300);
-        };
     </script>
 
     <!-- Lightbox Modal -->
