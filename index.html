@@ -50,6 +50,40 @@
         .slider-item {
             transition: opacity 1s;
         }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -225,7 +259,7 @@
             </div>
 
             <!-- Text Content -->
-            <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-8">
+            <div class="reveal bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 mb-8">
                 <h2 class="text-2xl font-bold text-white mb-4">Dobrodošli v Studiu MARS!</h2>
                 <div class="text-gray-300 space-y-3 text-sm leading-relaxed">
                     <p>Studio MARS je pričel s svojim delovanjem v začetku leta 2008 in od takrat se je tukaj mudilo že
@@ -235,6 +269,46 @@
                         ki vključuje mix & mastering, izdelavo avtorskih pesmi, video snemanje in produkcijo ter najem
                         glasbenikov.</p>
                 </div>
+            </div>
+
+            <!-- Latest Blog Post -->
+            <div class="reveal mb-8">
+                <h3 class="text-xl font-medium text-white mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-[#EB462F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
+                        </path>
+                    </svg>
+                    Zadnje iz studia
+                </h3>
+                <a href="blog.html" id="latest-blog-card"
+                    class="block bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800 hover:border-[#EB462F] transition-all duration-300 group">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+                            <img id="blog-image" src="" alt=""
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="md:w-2/3 p-5">
+                            <div class="flex items-center text-gray-400 text-xs mb-2 space-x-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span id="blog-date"></span>
+                                <span>•</span>
+                                <span id="blog-readtime"></span>
+                            </div>
+                            <h4 id="blog-title"
+                                class="text-lg font-bold text-white mb-2 group-hover:text-[#EB462F] transition-colors">
+                            </h4>
+                            <p id="blog-excerpt" class="text-gray-400 text-sm line-clamp-2"></p>
+                            <span
+                                class="inline-block mt-3 text-[#EB462F] text-sm font-medium group-hover:translate-x-1 transition-transform">Preberi
+                                več →</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </main>
 
@@ -357,6 +431,44 @@
         document.getElementById('menu-btn').onclick = () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         };
+
+        // Scroll Reveal Animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const revealPoint = 100;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        // Run on scroll and on load
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Load Latest Blog Post
+        fetch('js/blog-data.js')
+            .then(response => response.text())
+            .then(text => {
+                // Extract blog data from JS file
+                eval(text);
+                if (blogPosts && blogPosts.length > 0) {
+                    const latest = blogPosts[0];
+                    document.getElementById('blog-image').src = latest.image;
+                    document.getElementById('blog-image').alt = latest.title;
+                    document.getElementById('blog-title').textContent = latest.title;
+                    document.getElementById('blog-date').textContent = latest.date;
+                    document.getElementById('blog-readtime').textContent = latest.readTime;
+                    document.getElementById('blog-excerpt').textContent = latest.excerpt;
+                    document.getElementById('latest-blog-card').href = `article.html?id=${latest.id}`;
+                }
+            })
+            .catch(err => console.log('Blog data not loaded:', err));
     </script>
 </body>
 

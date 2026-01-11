@@ -38,7 +38,7 @@ const blogPosts = [
                 </div>
             </div>
         `,
-        image: "https://i.ibb.co/wZBT7Rg5/Podari-pesem-LOGO-simbol1-copy.jpg",
+        image: "https://i.ibb.co/Z6r2Ddgt/Podari-pesem-LOGO-simbol1.jpg",
         tags: ["Storitev", "Podari pesem"]
     }
 ];
