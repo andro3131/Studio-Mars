@@ -94,11 +94,11 @@
             }
 
             25% {
-                transform: translateX(4px);
+                transform: translateX(8px);
             }
 
             75% {
-                transform: translateX(-4px);
+                transform: translateX(-8px);
             }
         }
 
@@ -108,6 +108,16 @@
 
         .floating.reveal-left.active {
             animation: float 6s ease-in-out infinite;
+        }
+
+        /* Tilt on Hover */
+        .tilt-card {
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+
+        .tilt-card:hover {
+            transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale(1.02);
         }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -355,7 +365,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Snemanje -->
                     <a href="ponudba.html"
-                        class="group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
+                        class="tilt-card group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
                         <div class="flex items-center space-x-4">
                             <div
                                 class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -375,7 +385,7 @@
                     </a>
                     <!-- Mix & Mastering -->
                     <a href="ponudba.html"
-                        class="group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
+                        class="tilt-card group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
                         <div class="flex items-center space-x-4">
                             <div
                                 class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -395,7 +405,7 @@
                     </a>
                     <!-- Video produkcija -->
                     <a href="video.html"
-                        class="group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
+                        class="tilt-card group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
                         <div class="flex items-center space-x-4">
                             <div
                                 class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -413,23 +423,23 @@
                             </div>
                         </div>
                     </a>
-                    <!-- Podari pesem -->
-                    <a href="https://podaripesem.si" target="_blank"
-                        class="group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
+                    <!-- Ozvočevanje prireditev -->
+                    <a href="ponudba.html"
+                        class="tilt-card group block bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-5 border border-gray-700 hover:border-[#EB462F] transition-all hover:shadow-lg hover:shadow-[#EB462F]/10">
                         <div class="flex items-center space-x-4">
                             <div
                                 class="w-14 h-14 bg-gradient-to-br from-[#EB462F] to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                                 <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7">
+                                        d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.414a5 5 0 001.414 1.414m2.828-9.9a9 9 0 0112.728 0M12 18v3m0 0h-2m2 0h2M8 6h.01M16 6h.01">
                                     </path>
                                 </svg>
                             </div>
                             <div>
                                 <h4
                                     class="text-lg font-semibold text-white group-hover:text-[#EB462F] transition-colors">
-                                    Podari pesem</h4>
-                                <p class="text-gray-400 text-sm">Unikatna pesem kot darilo po meri</p>
+                                    Ozvočevanje prireditev</h4>
+                                <p class="text-gray-400 text-sm">Profesionalna zvočna oprema za dogodke</p>
                             </div>
                         </div>
                     </a>
