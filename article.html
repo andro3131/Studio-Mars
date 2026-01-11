@@ -326,7 +326,7 @@
                     }
                 });
 
-                lightbox.onclick = () => {
+                const closeLightbox = () => {
                     lightboxImg.classList.remove('scale-100', 'opacity-100');
                     lightboxImg.classList.add('scale-95', 'opacity-0');
                     setTimeout(() => {
@@ -335,6 +335,15 @@
                         document.body.style.overflow = '';
                     }, 300);
                 };
+
+                lightbox.onclick = closeLightbox;
+
+                // ESC key to close
+                window.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                        closeLightbox();
+                    }
+                });
             }
         });
     </script>
