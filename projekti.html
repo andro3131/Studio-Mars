@@ -2620,15 +2620,21 @@
             // Check if already open
             const isOpen = content.classList.contains('open');
 
-            if (isOpen) {
-                // Close this accordion
-                content.classList.remove('open');
-                arrow.classList.remove('open');
-                header.classList.remove('text-[#EB462F]');
-                header.classList.add('text-white');
-                arrow.classList.remove('text-[#EB462F]');
-                arrow.classList.add('text-gray-400');
-            } else {
+            // Close all accordions first
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                const itemContent = item.querySelector('.accordion-content');
+                const itemArrow = item.querySelector('.accordion-arrow');
+                const itemHeader = item.querySelector('.accordion-header span');
+
+                itemContent.classList.remove('open');
+                itemArrow.classList.remove('open');
+                itemHeader.classList.remove('text-[#EB462F]');
+                itemHeader.classList.add('text-white');
+                itemArrow.classList.remove('text-[#EB462F]');
+                itemArrow.classList.add('text-gray-400');
+            });
+
+            if (!isOpen) {
                 // Open this accordion
                 content.classList.add('open');
                 arrow.classList.add('open');
