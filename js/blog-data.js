@@ -1,25 +1,5 @@
 const blogPosts = [
     {
-        id: 4,
-        title: "Ansambel Od D'ns se pripravlja na izdajo zgoščenke",
-        date: "29.10.2024",
-        readTime: "1 min branja",
-        excerpt: "Narodnozabavni ansambel Od D'ns, ki prihaja iz Mirne, se pripravlja na izdajo svoje debitantske zgoščenke. Skupina, ki jo sestavljajo trije nadebudni fantje...",
-        content: `
-            <p class="mb-4">Narodnozabavni ansambel Od D'ns, ki prihaja iz Mirne, se pripravlja na izdajo svoje debitantske zgoščenke. Skupina, ki jo sestavljajo trije nadebudni fantje in je skupaj šele komaj dobro leto, že pridno snema nove avtorske pesmi, ki bodo ugledale luč sveta še pred koncem letošnjega leta.</p>
-            <p class="mb-4">Nanizali so že kar nekaj lepih skladb, kot so To je dolenjska, Najina leta, Dobrodošli v naš vinski raj, pripravlja pa se že nov videospot za pesem o rodnem kraju Pesem o Mirni. Če želite fante slišati tudi v živo, jih lahko kontaktirate preko njihove Facebook strani:</p>
-            <p class="mb-6"><a href="https://www.facebook.com/ansambel.OD.DNS" class="text-[#EB462F] hover:underline" target="_blank">Facebook - Ansambel OD D'NS</a></p>
-            <div class="mt-8">
-                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
-                <div class="aspect-video rounded-lg overflow-hidden">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/80d35b-ohBI" title="Ansambel OD D'NS - Najina leta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-        `,
-        image: "https://i.ibb.co/gLYj1jBz/Screenshot-2026-01-11-at-22-12-14.png",
-        tags: ["Glasba", "Snemanje", "Ansambel"]
-    },
-    {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
         date: "17.03.2025",
@@ -43,7 +23,7 @@ const blogPosts = [
     {
         id: 2,
         title: "V ponudbi je nova storitev \"Podari pesem\"",
-        date: "29.02.2025",
+        date: "28.02.2025",
         readTime: "1 min branja",
         excerpt: "Pred kratkim sva s prijateljem in odličnim glasbenikom Žanom Ograjškom združila moči in zagnala novo storitev po imenu Podari pesem...",
         content: `
@@ -62,11 +42,31 @@ const blogPosts = [
         tags: ["Storitev", "Podari pesem"]
     },
     {
+        id: 4,
+        title: "Ansambel Od D'ns se pripravlja na izdajo zgoščenke",
+        date: "29.10.2024",
+        readTime: "1 min branja",
+        excerpt: "Narodnozabavni ansambel Od D'ns, ki prihaja iz Mirne, se pripravlja na izdajo svoje debitantske zgoščenke. Skupina, ki jo sestavljajo trije nadebudni fantje...",
+        content: `
+            <p class="mb-4">Narodnozabavni ansambel Od D'ns, ki prihaja iz Mirne, se pripravlja na izdajo svoje debitantske zgoščenke. Skupina, ki jo sestavljajo trije nadebudni fantje in je skupaj šele komaj dobro leto, že pridno snema nove avtorske pesmi, ki bodo ugledale luč sveta še pred koncem letošnjega leta.</p>
+            <p class="mb-4">Nanizali so že kar nekaj lepih skladb, kot so To je dolenjska, Najina leta, Dobrodošli v naš vinski raj, pripravlja pa se že nov videospot za pesem o rodnem kraju Pesem o Mirni. Če želite fante slišati tudi v živo, jih lahko kontaktirate preko njihove Facebook strani:</p>
+            <p class="mb-6"><a href="https://www.facebook.com/ansambel.OD.DNS" class="text-[#EB462F] hover:underline" target="_blank">Facebook - Ansambel OD D'NS</a></p>
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/80d35b-ohBI" title="Ansambel OD D'NS - Najina leta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/gLYj1jBz/Screenshot-2026-01-11-at-22-12-14.png",
+        tags: ["Glasba", "Snemanje", "Ansambel"]
+    },
+    {
         id: 3,
         title: "Čudovit koncert skupine Sorelin",
         date: "29.10.2024",
         readTime: "1 min branja",
-        excerpt: "Vokalna skupina Soreline, ki prihaja iz Trebnjega, že več kot 15 let prepeva in s svojimi ubranimi glasovi razvaja svoje občinstvo...",
+        excerpt: "Vokalna skupina Soreline, ki prihaja iz Trebnjega, že more kot 15 let prepeva in s svojimi ubranimi glasovi razvaja svoje občinstvo...",
         content: `
             <p class="mb-4">Vokalna skupina Soreline, ki prihaja iz Trebnjega, že več kot 15 let prepeva in s svojimi ubranimi glasovi razvaja svoje občinstvo. Dekleta se lahko pohvalijo s širokim asortimanom glasbe, ki jo izvajajo na svojih koncertih. Prepevajo namreč tako ljudske pesmi, kot tudi priredbe znanih slovenskih in svetovnih popevk, med naborom pa se najde tudi kakšna črnska duhovna pesem, pa še kaj bi se našlo.</p>
             <p class="mb-4">Pred kratkim so v Trebanjski cerkvi priredile čudovit koncert po imenu En lep romantičen večer, ki je odzvanjal v duhu ljubezni. Punce so imele tudi glasbeno spremljavo na kohon, kitaro in bas kitaro, poslušalci pa so uživali v zvokih lepih romantičnih melodij, kot so Dan ljubezni, Oh Happy Day in Kaj je ljubezen.</p>
