@@ -182,7 +182,7 @@
         <script>
             // Blog Logic
             const itemsPerPage = 4;
-            let currentPage = 1;
+            let currentPage = parseInt(sessionStorage.getItem('novice_current_page')) || 1;
             const grid = document.getElementById('blog-grid');
             const loadMoreBtn = document.getElementById('load-more-btn');
 
@@ -212,9 +212,12 @@
                 return card;
             }
 
-            function loadPosts(page) {
-                const start = (page - 1) * itemsPerPage;
-                const end = start + itemsPerPage;
+            function loadPosts(page, append = true) {
+                if (!append) grid.innerHTML = '';
+
+                // If we're initializing with a page > 1, load all posts up to that page
+                const start = append ? (page - 1) * itemsPerPage : 0;
+                const end = page * itemsPerPage;
                 const postsToLoad = blogPosts.slice(start, end);
 
                 postsToLoad.forEach(post => {
@@ -228,11 +231,12 @@
                 }
             }
 
-            // Init
-            loadPosts(currentPage);
+            // Init - load all posts up to current page
+            loadPosts(currentPage, false);
 
             loadMoreBtn.onclick = () => {
                 currentPage++;
+                sessionStorage.setItem('novice_current_page', currentPage);
                 loadPosts(currentPage);
             };
         </script>
