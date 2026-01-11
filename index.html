@@ -84,6 +84,31 @@
             opacity: 1;
             transform: translateX(0);
         }
+
+        /* Floating Animation */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(4px);
+            }
+
+            75% {
+                transform: translateX(-4px);
+            }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating.reveal-left.active {
+            animation: float 6s ease-in-out infinite;
+        }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -284,7 +309,7 @@
             </div> <!-- End above-fold content -->
 
             <!-- Statistics Section -->
-            <div class="reveal-left mb-12">
+            <div class="reveal-left floating mb-12">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div
                         class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800 text-center group hover:border-[#EB462F] transition-all">
@@ -412,7 +437,7 @@
             </div>
 
             <!-- Latest Blog Posts -->
-            <div class="reveal-left mb-8">
+            <div class="reveal mb-8">
                 <h3 class="text-xl font-medium text-white mb-4 flex items-center">
                     <svg class="w-5 h-5 mr-2 text-[#EB462F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
