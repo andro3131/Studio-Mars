@@ -122,6 +122,40 @@
                 display: none !important;
             }
         }
+
+        /* Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -198,7 +232,7 @@
         <!-- Main Content -->
         <main class="max-w-5xl mx-auto px-4 py-8">
             <!-- Title with underline -->
-            <div class="mb-8">
+            <div class="reveal-left mb-8">
                 <h1 class="text-2xl font-medium text-white mb-2">Projekti</h1>
                 <div class="w-16 h-1 bg-[#EB462F] rounded-full"></div>
             </div>
@@ -206,7 +240,7 @@
             <!-- Main Layout: Sidebar + Content -->
             <div class="flex flex-col lg:flex-row gap-6">
                 <!-- Year Sidebar (Desktop only) -->
-                <div class="hidden lg:block lg:w-24 flex-shrink-0">
+                <div class="reveal-left hidden lg:block lg:w-24 flex-shrink-0">
                     <div
                         class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl border border-gray-800 overflow-hidden lg:sticky lg:top-24">
                         <div class="p-1">
@@ -310,7 +344,7 @@
                 </div>
 
                 <!-- Projects Content -->
-                <div class="flex-1">
+                <div class="reveal-right flex-1">
                     <!-- Mobile Accordion Navigation -->
                     <div class="mobile-accordion-wrapper space-y-2 mb-4">
                         <div class="accordion-item" data-accordion-year="2026">
@@ -2662,6 +2696,24 @@
                 firstAccordion.innerHTML = firstYearContent.innerHTML;
             }
         });
+
+        // Scroll Reveal Animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const revealPoint = 100;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
     </script>
 </body>
 
