@@ -118,6 +118,21 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/YFcP6bBJ/Screenshot-2026-01-11-at-22-44-55.png",
         tags: ["Glasba", "Snemanje", "Koncert"]
+    },
+    {
+        id: 7,
+        title: "Oktet Bori pričel s snemanjem nove zgoščenke",
+        date: "20.12.2023",
+        readTime: "1 min branja",
+        excerpt: "Oktet Bori, ki izvira iz Primorske, je lansko leto praznoval 50 letnico obstoja. Vsi, ki se vsaj malo spoznajo na to zvrst glasbe, najbrž vedo, da je to skoraj legendarni moški sestav...",
+        content: `
+            <p class="mb-4">Oktet Bori, ki izvira iz Primorske, je lansko leto praznoval 50 letnico obstoja. Vsi, ki se vsaj malo spoznajo na to zvrst glasbe, najbrž vedo, da je to skoraj legendarni moški sestav, ki je oral ledino v oktetovskem petju v začetku sedemdesetih let prejšnjega stoletja.</p>
+            <p class="mb-4">Oktet Bori je začel svojo pevsko pot leta 1973 kot moški komorni sestav, imenovan Oktet Pivka, pod vodstvom Mire Rebec, priznane pivške učiteljice glasbe. Leta 1976 je oktet prvič nastopil na reviji Primorska poje in se istega leta preimenoval v Oktet Bori, pod tem imenom pa delujejo še danes. Med leti 1976 in 1980 je bil umetniški vodja Viktor Samuda, nato pa se je oktet pridružil Železničarskemu kulturnemu društvu Tine Rožanc iz Ljubljane do leta 1982. Leta 1980 je umetniški vodja postal priznani primorski dirigent Ivo Jelerčič. V devetdesetih letih je oktet vodil Matej Penko, od leta 2003 pa je njihov vodja Janez Gostiša. Pod njegovim vodstvom se je oktet leta 2010 znova začel pojavljati na revijah Primorska poje in srečanjih primorskih oktetov.</p>
+            <p class="mb-4">Oktet je torej v decembru pričel s snemanjem nove zgoščenke, in že prvi posnetki v studiu so pokazali bogate pevske izkušnje ter ubrano sozvočje prekaljenih glasov, čeravno se nekateri izmed pevcev že bližajo svojemu "osmemu križu". S snemanjem bomo nadaljevali v februarju, zgoščenka pa bo predvidoma ugledala luč sveta do začetka poletja 2024.</p>
+            <p class="mb-6 italic">Fantje, moj poklon za vaš življenjski prispevek k zakladnici slovenskega petja, v veselje in čast mi je, da lahko sodelujem z vami!</p>
+        `,
+        image: "https://i.ibb.co/FbzCSf5N/e8efd0-6ca4e6234df84c949f3dfb76317c66c5-mv2.webp",
+        tags: ["Glasba", "Snemanje", "Zborovsko petje"]
     }
 ];
 
