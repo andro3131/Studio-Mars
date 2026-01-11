@@ -17,7 +17,7 @@ const blogPosts = [
                 </div>
             </div>
         `,
-        image: "https://i.ibb.co/HpFzD8R5/e8efd0-332a4c313cf94d0ebe8b10322623e5c1-mv2-2.jpg",
+        image: "https://i.ibb.co/Xk2sZR6c/e8efd0-332a4c313cf94d0ebe8b10322623e5c1-mv2-2.webp",
         tags: ["Glasba", "Snemanje"]
     },
     {
@@ -30,7 +30,7 @@ const blogPosts = [
             <p class="mb-4">Pred kratkim sva s prijateljem in odličnim glasbenikom Žanom Ograjškom združila moči in zagnala novo storitev po imenu Podari pesem. Po naročilu ustvarjava pesmi za različne priložnosti, kot so darila za rojstni dan, obletnico, poroko, upokojitev, ali pa izdelava pesem za posebne namene in priložnosti, kot so na primer himna kluba ali društva.</p>
             <p class="mb-4">Morda pa ste mlad glasbenik, ki si želi svojo prvo avtorsko pesem - z veseljem se lotiva vsakega izziva! Seveda v projektu nisva čisto sama, kajti sodelujeva z različnimi vrhunskimi glasbeniki, ki jih vključiva v specifičen projekt po potrebi glede na zahtevnost skladbe ali želje naročnika.</p>
             <p class="mb-4">Naj jih naštejemo le nekaj: Barbara Leben (vokal), Boštjan Bone (bobni), Aljoša Deferri (klarinet in saksofon), Mojca Dolenc (vokal), Igor Osredkar (kitare, bas), Primož Kravcar (bas), Bogdan Turnšek - Poli (bobni), Maja Marinčič - Divana (vokal), Marti koncilija (kontrabas), Andrej Kaferle (harmonika), Aljaž Hrastar (kitare) itd.</p>
-            <p class="mb-6">Pred kratkim je tako nastala udarna himna za nogometni klub Trebnje, ki je bila sprejeta z velikim navdušenjem, navijači pa so jo z veseljem sprejeli za svojo, poslušajte si jo tudi spodaj. Obiščite najuno novo spletno stran <a href="https://podaripesem.si" class="text-[#EB462F] hover:underline">podaripesem.si</a> ali pa najin <a href="https://facebook.com" class="text-[#EB462F] hover:underline">Facebook</a>, <a href="https://instagram.com" class="text-[#EB462F] hover:underline">Instagram</a> in <a href="https://tiktok.com" class="text-[#EB462F] hover:underline">TikTok</a> profil in si preberite več, in seveda, naroči svojo pesem že danes :).</p>
+            <p class="mb-6">Pred kratkim je tako nastala udarna himna za nogometni klub Trebnje, ki je bila sprejeta z velikim navdušenjem, navijači pa so jo z veseljem sprejeli za svojo, poslušajte si jo tudi spodaj. Obiščite najuno novo spletno stran <a href="https://podaripesem.si" class="text-[#EB462F] hover:underline">podaripesem.si</a> ali pa najin <a href="https://www.facebook.com/profile.php?id=61572442046986" class="text-[#EB462F] hover:underline">Facebook</a>, <a href="https://www.instagram.com/podaripesem/" class="text-[#EB462F] hover:underline">Instagram</a> in <a href="https://tiktok.com" class="text-[#EB462F] hover:underline">TikTok</a> profil in si preberite več, in seveda, naroči svojo pesem že danes :).</p>
             <div class="mt-8">
                 <h3 class="text-lg font-medium text-white mb-4">Himna NK Trebnje</h3>
                 <div class="aspect-video rounded-lg overflow-hidden">
@@ -38,7 +38,7 @@ const blogPosts = [
                 </div>
             </div>
         `,
-        image: "https://i.ibb.co/WNGQ065m/podari-pesem.jpg",
+        image: "https://i.ibb.co/wZBT7Rg5/Podari-pesem-LOGO-simbol1-copy.jpg",
         tags: ["Storitev", "Podari pesem"]
     }
 ];
