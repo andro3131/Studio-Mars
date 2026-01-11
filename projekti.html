@@ -156,6 +156,43 @@
             opacity: 1;
             transform: translateX(0);
         }
+
+        /* Video Facade Styles */
+        .video-facade {
+            position: relative;
+            background: #000;
+            cursor: pointer;
+        }
+
+        .video-facade:hover .play-button {
+            background: #EB462F;
+            transform: scale(1.1);
+        }
+
+        .video-facade img {
+            transition: opacity 0.3s ease;
+        }
+
+        .video-facade:hover img {
+            opacity: 0.8 !important;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            background: rgba(235, 70, 47, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -2786,6 +2823,19 @@
 
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll);
+
+        // YouTube Facade Handler
+        document.addEventListener('click', function (e) {
+            const facade = e.target.closest('.video-facade');
+            if (facade && !facade.querySelector('iframe')) {
+                const videoId = facade.getAttribute('data-video-id');
+                facade.innerHTML = `
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                `;
+            }
+        });
     </script>
 </body>
 
