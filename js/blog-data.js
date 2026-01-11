@@ -1,14 +1,14 @@
 const blogPosts = [
     {
         id: 4,
-        title: "Ansambel OD D'NS - Najina leta",
-        date: "11.01.2026",
-        readTime: "2 min branja",
-        excerpt: "Ansambel OD D'NS predstavlja svojo novo skladbo z naslovom 'Najina leta'. Skladba je bila posneta v našem studiu Mars pod taktirko Gregorja Hrena...",
+        title: "Ansambel Od D'ns se pripravlja na izdajo zgoščenke",
+        date: "29.10.2024",
+        readTime: "1 min branja",
+        excerpt: "Narodnozabavni ansambel Od D'ns, ki prihaja iz Mirne, se pripravlja na izdajo svoje debitantske zgoščenke. Skupina, ki jo sestavljajo trije nadebudni fantje...",
         content: `
-            <p class="mb-4">Z veseljem predstavljamo najnovejši projekt, ki je nastal v našem studiu. Ansambel OD D'NS je posnel svojo novo avtorsko skladbo z naslovom "Najina leta".</p>
-            <p class="mb-4">Glasbo in besedilo za skladbo je prispeval Gregor Hren, za produkcijo pa smo poskrbeli v Studiu Mars. Videospot, ki si ga lahko ogledate spodaj, je delo Maje Ječnik.</p>
-            <p class="mb-6">Povezava do njihove Facebook strani: <a href="https://www.facebook.com/ansambel.OD.DNS" class="text-[#EB462F] hover:underline" target="_blank">Facebook - Ansambel OD D'NS</a></p>
+            <p class="mb-4">Narodnozabavni ansambel Od D'ns, ki prihaja iz Mirne, se pripravlja na izdajo svoje debitantske zgoščenke. Skupina, ki jo sestavljajo trije nadebudni fantje in je skupaj šele komaj dobro leto, že pridno snema nove avtorske pesmi, ki bodo ugledale luč sveta še pred koncem letošnjega leta.</p>
+            <p class="mb-4">Nanizali so že kar nekaj lepih skladb, kot so To je dolenjska, Najina leta, Dobrodošli v naš vinski raj, pripravlja pa se že nov videospot za pesem o rodnem kraju Pesem o Mirni. Če želite fante slišati tudi v živo, jih lahko kontaktirate preko njihove Facebook strani:</p>
+            <p class="mb-6"><a href="https://www.facebook.com/ansambel.OD.DNS" class="text-[#EB462F] hover:underline" target="_blank">Facebook - Ansambel OD D'NS</a></p>
             <div class="mt-8">
                 <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
                 <div class="aspect-video rounded-lg overflow-hidden">
