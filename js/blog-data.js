@@ -154,6 +154,26 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/qLB946xt/e8efd0-6776c019362c413ea4dceb17c4d2d118-mv2.png",
         tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 9,
+        title: "Kristjan Hočevar izdal svojo prvo avtorsko pesem",
+        date: "11.10.2023",
+        readTime: "1 min branja",
+        excerpt: "Kristjan Hočevar, mlad in nadebuden kantavtor, je pred kratkim izdal svojo prvo avtorsko pesem 'Drugje'. Kristjan je sicer v svojih koncih že kar dobro poznan...",
+        content: `
+            <p class="mb-4"><a href="https://www.facebook.com/kristjan.hocevar.1/" class="text-[#EB462F] hover:underline" target="_blank">Kristjan Hočevar</a>, mlad in nadebuden kantavtor, je pred kratkim izdal svojo prvo avtorsko pesem "Drugje". Kristjan je sicer v svojih koncih že kar dobro poznan, saj je za njim že nekaj glasbenih nastopov. S svojim prodornim in zelo preciznim glasom ter ubiranjem po strunah kitare hitro prepriča svoje poslušalce, saj na svojih nastopih izvaja širok repertoar svetovne glasbe.</p>
+            <p class="mb-4">Tokrat je stopil korak dlje in posnel svojo avtorsko pesem Drugje, ki z naleživijo melodijo hitro zleze v uho. Kristjan je odpel vse vokale ter odigral akustično kitaro, moja malenkost pa je prispevala bas kitaro, percussion, električno kitaro, seveda pa je bilo poskbljeno tudi za mix in mastering.</p>
+            <p class="mb-6">Vendar to še ni vse, saj sva posnela tudi zanimiv videospot na gradu Hmeljnik, ki si ga lahko ogledate spodaj. Mislim, da Kristjan še ni rekel zadnje besede, ampak se njegova glasbena pot šele dobro pričenja. Prepričan sem, da se bova v studiu še videla.</p>
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZoDM7zJEvE0" title="Kristjan Hočevar - Drugje" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/bYTS8v1/565304430-25379658718308632-6215203515395913864-n.jpg",
+        tags: ["Glasba", "Snemanje"]
     }
 ];
 
