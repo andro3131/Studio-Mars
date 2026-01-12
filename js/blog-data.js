@@ -230,6 +230,28 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/v68NBpyf/Screenshot-2026-01-12-at-09-35-51.png",
         tags: ["Glasba", "Snemanje", "Zgoščenka"]
+    },
+    {
+        id: 12,
+        title: "Nova oprema v studiu!",
+        date: "07.10.2021",
+        readTime: "1 min branja",
+        excerpt: "Za vrhunski izdelek v studiu je seveda potrebna kvalitetna studijska oprema, zato smo zopet odšli malo po nakupih in priskrbeli nekaj pravih glasbenih 'bonbončkov'...",
+        content: `
+            <p class="mb-4">Za vrhunski izdelek v studiu je seveda potrebna kvalitetna studijska oprema, zato smo zopet odšli malo po nakupih in priskrbeli nekaj pravih glasbenih "bonbončkov". V prvi vrsti je seveda pomemben zajem zvoka ter pretvorba analognega signala v digitalno domeno, za kar po novem skrbi Apogee Symphony I/O Mk2 TB 8x8, vrhunski AD pretvornik - in razlika prej/potem je več kot očitna! Zvok je mehkejši, a vseeno bolj čist, prezenten, nima tudi več motečih frekvenc, ki so se prej kdaj pa kdaj pokazala. Skratka, zadetek v polno!</p>
+            <p class="mb-4">Naslednji je prišel na vrsto Telefunken TF39, odličen širokomembranski lampaški mikrofon, z mehkim in čistim zvokom, obogatenim s karakterejem elektronke, primernim tako za vokal, kot tudi za različne instrumente. Čisto zadovoljstvo!</p>
+            <p class="mb-4">Potem pa že pridemo do mikrofonska predojačevalnika MANLEY FORCE ameriškega proizvajalca, ki je sinonim za vrhunsko reprodukcijo zvoka. In Manley Force to vsekakor je, elektronke na vseh štirih vhodih mu dajejo značilno barvo in bogat karakter, z rahlo poudarjenimi srednjimi toni in lepo definiranimi nizkimi, ter zaokroženim in mehkim visokim spektrom. Pesmica za ušesa!</p>
+            <p class="mb-6">Nabave pa še ni bilo konec, sledil je še dvokanalni mikrofonski predojačevlnik FOCUSRITE ISA TWO, klasični mikrofoni AKG C414 XLII, Shure SM7B ter komplet mikrofono v za bobne Audix DP5-A. Z nakupom smo zelo zadovoljni, prvi obiskovalci pa so to zadovoljstvo tudi že potrdili!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <img src="https://i.ibb.co/mF61sZZK/e8efd0-6b5eb6ac49d346be91c62bc838ac7f4e-mv2.webp" alt="Nova oprema 1" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/5hMwN1kg/e8efd0-3e5991c1370f4972b87d232efb8f1dac-mv2.jpg" alt="Nova oprema 2" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/FbJFQYqW/e8efd0-23727ca4267c4f209843c4a3378acacc-mv2.webp" alt="Nova oprema 3" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/gFFb0Y0Z/e8efd0-d796d6cf77a749b586b8ef6fe00c3a98-mv2.webp" alt="Nova oprema 4" class="rounded-lg shadow-md w-full object-cover h-48">
+            </div>
+        `,
+        image: "https://i.ibb.co/PZHbFzJ0/e8efd0-4f937980b05f4488b482f255307c57a9-mv2.webp",
+        tags: ["Oprema", "Studio", "Snemanje"]
     }
 ];
 
