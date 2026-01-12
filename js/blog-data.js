@@ -415,6 +415,65 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/pjF0wcw0/Screenshot-2026-01-12-at-14-59-24.png",
         tags: ["Glasba", "Snemanje", "Frajtonarica"]
+    },
+    {
+        id: 20,
+        title: "Alen Vogrinec Vesel v studiu !",
+        date: "28.10.2016",
+        readTime: "1 min branja",
+        excerpt: "Verjetno se še večina poslušalcev dobre slovenske glasbe spominja mladeniča Alena iz ene prvih oddaj Slovenija ima talent iz leta 2010...",
+        content: `
+            <p class="mb-4">Verjetno se še večina poslušalcev dobre slovenske glasbe spominja mladeniča Alena iz ene prvih oddaj Slovenija ima talent iz leta 2010, kjer je osvojil fantastično drugo mesto. Kaj lahko rečemo, s svojim neverjetnim vokalom te praktično pusti odprtih ust. Takrat je z imitacijami Tošeta Proeskega fasciniral občinstvo, tokrat pa se je preizkusil v malo drugačni luči, saj je posnel narodno zabavno skladbo avtorja Toneta Krkoviča, aranžiral pa jo je Aljoša Deferri.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <img src="https://i.ibb.co/xt2pGbg7/e8efd0-d9254be721e44accb561f0698915766a-mv2-d-4032-3024-s-4-2.webp" alt="Alen Vogrinec Vesel 1" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+                <img src="https://i.ibb.co/mVxxKFpt/e8efd0-73aa36fe72584094a6f1ee7b8022be98-mv2-d-4032-3024-s-4-2.webp" alt="Alen Vogrinec Vesel 2" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Qi3EHenww_c" title="Alen Vogrinec Vesel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/fVymHPtc/Screenshot-2026-01-12-at-17-42-24.png",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 21,
+        title: "Tilen Zakrajšek v akciji !",
+        date: "25.10.2016",
+        readTime: "1 min branja",
+        excerpt: "V studiu se je mudil odlični tolkalist Tilen Zakrajšek, ki sicer igra v različnih zasedbah, tokrat pa je navduševal pri testiranju novega kompleta bobnov Yamaha Custom...",
+        content: `
+            <p class="mb-4">V studiu se je mudil odlični tolkalist Tilen Zakrajšek, ki sicer igra v različnih zasedbah, tokrat pa je navduševal pri testiranju novega kompleta bobnov Yamaha Custom. Mu je kar težko slediti, kajne ;).</p>
+            
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7jgfCr5-jtY" title="Tilen Zakrajšek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/C51svrP1/e8efd0-f4811c4c9a364bbd9989c6cec15fb772-mv2-d-4032-2268-s-2.webp",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 22,
+        title: "Ansambel Škorpijoni z novo zgoščenko",
+        date: "28.09.2016",
+        readTime: "1 min branja",
+        excerpt: "No, kot verjetno že veste, se pri nas ne ukvarjamo samo s snemanjem glasbe, temveč tudi z grafičnim oblikovanjem in tiskom zgoščenk...",
+        content: `
+            <p class="mb-4">No, kot verjetno že veste, se pri nas ne ukvarjamo samo s snemanjem glasbe, temveč tudi z grafičnim oblikovanjem in tiskom zgoščenk. Tako smo za ansambel Škorpijoni oblikovali tiskovine za novo cd ploščo ter le-to tudi natisnili. Fantje seveda odlično "špilajo" in ploščo že lahko naročite na njihovi spletni strani <a href="http://ansambel-skorpijoni.si/" class="text-[#EB462F] hover:underline" target="_blank">http://ansambel-skorpijoni.si/</a>. Za več informacij o storitvi oblikovanja zgoščenk in samega tiska pa lahko obiščete našo spletno stran <a href="http://www.cd-tiskarna.com/" class="text-[#EB462F] hover:underline" target="_blank">http://www.cd-tiskarna.com/</a>.</p>
+            
+            <div class="mt-8">
+                <img src="https://i.ibb.co/LzHz5Xq5/e8efd0-8024c7ce1a4f49ea8a603c79b0a2ba7c-mv2-d-3059-3024-s-4-2.webp" alt="Ansambel Škorpijoni" class="rounded-lg shadow-lg w-full object-cover h-64" loading="lazy">
+            </div>
+        `,
+        image: "https://i.ibb.co/PZ7PQ7fV/Screenshot-2026-01-12-at-17-46-36.png",
+        tags: ["Oblikovanje", "Tisk", "Ansambel"]
     }
 ];
 
