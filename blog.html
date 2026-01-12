@@ -193,7 +193,7 @@
 
                 card.innerHTML = `
                     <div class="h-48 overflow-hidden relative">
-                        <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" loading="lazy">
                         <div class="absolute top-4 left-4">
                             <span class="bg-[#EB462F] text-white text-xs font-bold px-2 py-1 rounded shadow">${post.tags[0]}</span>
                         </div>
@@ -300,7 +300,9 @@
         }
 
         window.addEventListener('scroll', revealOnScroll);
-        window.addEventListener('load', revealOnScroll);
+        window.addEventListener('DOMContentLoaded', revealOnScroll);
+        window.addEventListener('load', revealOnScroll); // Backup for late-loading content
+        revealOnScroll(); // Immediate check
     </script>
 </body>
 

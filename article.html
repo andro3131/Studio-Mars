@@ -300,7 +300,9 @@
             });
         }
 
-        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('DOMContentLoaded', () => {
+            revealOnScroll();
+        });
         window.addEventListener('load', () => {
             revealOnScroll();
 
