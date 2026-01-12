@@ -280,6 +280,25 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/bR2rSZd5/e8efd0-568cd6e366fe422d9a42a4d175e7e793-mv2-d-1843-1229-s-2.jpg",
         tags: ["Glasba", "Snemanje", "Zgoščenka"]
+    },
+    {
+        id: 14,
+        title: "Ansambel Suha solza izdal svoj prvenec!",
+        date: "10.07.2020",
+        readTime: "1 min branja",
+        excerpt: "Ansambel Suha solza je simpatična skupina iz Trebnjega, katere že samo ime daje vedeti, da so fantje in dekle radi \"za hece\"...",
+        content: `
+            <p class="mb-4">Ansambel Suha solza je simpatična skupina iz Trebnjega, katere že samo ime daje vedeti, da so fantje in dekle radi "za hece". Ko jih spoznaš še v živo, se te domneve izkažejo za popolnoma pravilne. Ansambel je tudi drugače rahlo drugačen od običajnega narodno-zabavne skupine, saj imajo poleg klasičnih instrumentov tudi ribežn, ki glasbi daje ubran ritem poleg baritona in kitare.</p>
+            <p class="mb-4">Na snemanjih je bilo vedno zabavno, pa tudi solze niso manjkale (od smeha seveda). Na zgoščenki boste lahko našli 11 avtorskih skladb, ena med njimi pa je tudi priredba pesmi iz znanega slovenskega filma (Kekčeva pesem). Če želite fante in dekle slišati tudi v živo, jih lahko kontaktirate na njihovi spletni strani.</p>
+            <p class="mb-6 italic text-[#EB462F]"><a href="http://www.suhasolza.si" target="_blank" class="hover:underline">http://www.suhasolza.si</a></p>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <img src="https://i.ibb.co/twzztT90/e8efd0-438600f803c34dd2b1c9f6e0355abf44-mv2.png" alt="Ansambel Suha solza 1" class="rounded-lg shadow-lg w-full object-cover h-48">
+                <img src="https://i.ibb.co/zWpS5jgW/e8efd0-06b640e1b31d4df88efd95cb83fac601-mv2.png" alt="Ansambel Suha solza 2" class="rounded-lg shadow-lg w-full object-cover h-48">
+            </div>
+        `,
+        image: "https://i.ibb.co/S45vP0p0/Screenshot-2026-01-12-at-09-53-14.png",
+        tags: ["Glasba", "Snemanje", "Ansambel"]
     }
 ];
 
