@@ -345,6 +345,33 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/8LpBqSQk/e8efd0-0c917769c3004c2e9484ea2cd4d55499-mv2.webp",
         tags: ["Oprema", "Studio", "Snemanje"]
+    },
+    {
+        id: 17,
+        title: "Filip Jagodič, fant z zlatim glasom !",
+        date: "28.09.2018",
+        readTime: "2 min branja",
+        excerpt: "Pred kratkim je studio ponovno obiskal prav poseben fant z imenom Filip Jagodič. Kdor še ni slišal zanj, verjetno prav kmalu bo, saj s svojim glasom kaj hitro očara vsakega...",
+        content: `
+            <p class="mb-4">Pred kratkim je studio ponovno obiskal prav poseben fant z imenom Filip Jagodič. Kdor še ni slišal zanj, verjetno prav kmalu bo, saj s svojim glasom kaj hitro očara vsakega, ki ga prvič posluša. Ta dvajsetletni fant je nekaj izrednega tudi drugače - je slep, ima cerebralno paralizo in poleg tega tudi avtist, kar pa ga sploh ne ovira pri njegovi glasbeni poti. Mama Andreja, ki je njegov angel varuh, mu je že v zibelki vcepila ljubezen do glasbe in za Filipa je le-ta postala center njegovega sveta. Že kot nekaj letni otrok je prepeval pesmice, brezhibno in brez tonskih napak. Vsa besedila si zapomne brez težav, ker ima fotografski spomin. In ne boste verjeli, kaj lahko z glasovnim razponom treh oktav vse zapoje! Danes njegov repertoar obsega od Elvisa Presleya, Roy Orbisona, Toma Jonesa, seveda pa se loteva tudi slovenskih pesmi, predvsem tistih starih popevk iz šestdesetih let. Prav take vedno znova in znova išče po intenetu (mimogrede, obvlada interakcijo z računalnikom za slepe in se z lahkoto pogovarja po Facebooku) in vedno znova preseneča še najbolj starejšo generacijo, ko se izkaže, da določene pesmi, ki jo je odpel nek znani pevec, skoraj nihče ne pozna. Povedati je tudi treba, da je Filip velik ljubitelj in zbiralec različnih klaviatur in diktafonov, prvih ima že preko 20, diktafonov pa mama pravi, da več ne šteje. Z lahko upravlja in igra klaviature z obema rokama (ne pozabimo, da je slep) in prav neverjetno ga je opazovati, kako "čuti" tipke in je enostavno nezmotljiv. Pri upravljanju klaviatur mu rad pomaga njegov krušni oče Rok, ki se mu poleg mame Andreje posveča vsak dan in tudi ponavadi pozno v noč. In kdo mislite, da lahko prinese Filipa z eno roko po stopnicah v studio, ki je v drugem nadstropju? ;).</p>
+            <p class="mb-4">Filip je prvič snemal že spomladi, ko je 13 čudovitih pesmi odpel v dobri uri in izdal tudi svojo prvo zgoščenko po imenu Over the Rainbow, trenutno pa je v pripravi material za drugo. Zanimivo je povedati tudi to, da odpoje vsako pesem na snemanju praktično "iz prve" in ponavadi ne potrebuje več dodatnih popravkov. Na novi zgoščenki bo prikazal tudi znanje večglasnega petja, dodatnih "backvokalov", zapel pa je tudi duet z Barbaro Leben, odlično pevko iz Trebnjega, ki trenutno poje pri ansamblu Saša Avsenika, kaj več pa naj ostane skrivnost ;). Povejmo še to, da je Filip v svoji karieri na odru že pel za različnimi glasbeniki, med najbolj atraktivnimi je seveda Andrea Bocelli, ki ga je povabil v zakulisje in sta pred njegovim koncertom v Sloveniji skupaj zapela. Pel pa je še z mnogimi, kot so Jan Plestenjak, Toni Cetinski, Tereza Kesovija, Klapa Šufit, Darja Švajger in še mnogi drugi.</p>
+            <p class="mb-4">Ne smemo pa pozabiti omeniti še ene pomembne reči. Filipova Mama Andreja je ustanovila fundacijo, ki je namenjena za zbiranje sredstev za Drugi dom, prav posebno ustanovo za ljudi s posebnimi potrebami, kot je Filip, da bodo lahko nekoč, ko staršev enkrat ne bo več z njimi, lahko živeli samostojno in iskali svoje življenske sanje. Vsaka pomoč od vas je tukaj dobrodošla, več o projektu pa si lahko preberete na povezavi <a href="http://www.drugi-dom.si" target="_blank" class="text-[#EB462F] hover:underline">www.drugi-dom.si</a>. Skratka, uživajte ob poslušanju pesmi iz prvega cdja in sledite našim novicam, da izveste, kdaj bo luč sveta ugledala tudi druga Filipova zgoščenka !</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <img src="https://i.ibb.co/8GjQG8r/e8efd0-2e0bb899710a4c72a6194f5ad64ce552-mv2-d-2040-1530-s-2.jpg" alt="Filip Jagodič 1" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/LXFxHtGk/e8efd0-567d925973544a1da6fb5df7c0f17293-mv2-d-1559-1559-s-2.jpg" alt="Filip Jagodič 2" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/VYc89b9k/e8efd0-cdf968b725254e44827da56189ac24c2-mv2-d-1878-1488-s-2.jpg" alt="Filip Jagodič 3" class="rounded-lg shadow-md w-full object-cover h-48">
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Filip Jagodič - Over The Rainbow</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KPP-UOhs8iE" title="Filip Jagodič - Over The Rainbow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/DPfsyrx6/Screenshot-2026-01-12-at-10-18-57.png",
+        tags: ["Glasba", "Filip Jagodič", "Pevci"]
     }
 ];
 
