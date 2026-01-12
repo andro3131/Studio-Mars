@@ -201,6 +201,35 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/twBMMC7k/e8efd0-3747a9d10c9b4f3487b263d1231b5abe-mv2.webp",
         tags: ["Oprema", "Studio"]
+    },
+    {
+        id: 11,
+        title: "AGB band je izdal svojo prvo zgoščenko!",
+        date: "06.07.2022",
+        readTime: "1 min branja",
+        excerpt: "Pa je na plan pokukal še en lep projekt, tokrat prepoznavne trebanjske skupine AGB band. Fantje so začeli s snemanjem že daljnega leta 2016...",
+        content: `
+            <p class="mb-4">Pa je na plan pokukal še en lep projekt, tokrat prepoznavne trebanjske skupine AGB band. Fantje so začeli s snemanjem že daljnega leta 2016, ko so izdali prvenec Gremo spet v vinsko klet. V šestih letih so skupaj posneli 10 lepih pesmi, katerih melos je povečini dalmatinski, z značilnim zvenom mandoline in harmonike.</p>
+            <p class="mb-4">Vse skladbe pa so avtorske, tako glasba kot tudi besedilo in aranžmaji, pri nekaterih pa so sodelovali tudi različni gosti (Drugi vagon, Sinovi cvička). V studiu Mars smo poskrbeli za celotno produkcijo, snemanje, mix, mastering, oblikovanje tiskovin in tudi tisk CDjev.</p>
+            <p class="mb-4">Uradna predstavitev zgoščenk je bila 30.6.2022 na koncertu na odru Forma viva v Trebnjem, kjer so zbrana sredstva podarili v dobrodelne namene - zelo pohvalno!!</p>
+            <p class="mb-4">Uživajte pri poslušanju zgoščenke, če bi jo radi kupili, pa pokličite Andreja na 041 726 679.</p>
+            <p class="mb-6 text-white font-medium">Celotnemu AGB bandu pa vse čestitke za lep projekt!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <img src="https://i.ibb.co/fYRpWCpJ/e8efd0-771db48f9a6049b59be3d4768d54290e-mv2.webp" alt="AGB band 1" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/LD1grBpw/e8efd0-3afd6b1acd92426eb535209d651fdaef-mv2.jpg" alt="AGB band 2" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/fzbBw7Qg/e8efd0-4ca62d8da6a142d09c28f53f7e123e26-mv2.webp" alt="AGB band 3" class="rounded-lg shadow-md w-full object-cover h-48">
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PyrUGWC5H3I" title="AGB BAND - Gremo spet v vinsko klet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/v68NBpyf/Screenshot-2026-01-12-at-09-35-51.png",
+        tags: ["Glasba", "Snemanje", "Zgoščenka"]
     }
 ];
 
