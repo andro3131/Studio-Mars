@@ -190,11 +190,16 @@ const blogPosts = [
             <p class="mb-4">Nenazadnje pa imamo sedaj v arzenalu tudi novi dron DJI Mavic Pro 3 za še boljše pokrajinske posnetke pri snemanju videospotov, kakor tudi novi gimbal Zhyun Weebill S, ki nam bo posnetke že obstoječe video kamere Lumix GH5 še dodatno obogatil.</p>
             <p class="mb-4">No, to pa seveda še ni vse. Studio je dobil tudi slikovni zajem v montažo kamer v vseh snemalnih prostih, zato bo od sedaj preglednost pri snemanju se bolj! Silke štirih kamer pa ne gre gledati na manjšem ekranu, zato smo v režijo dodali še en večji ekran za video nadzor, koristen pa bo tudi za čakajoče stranke, če si bodo hotele ogledati kakšen film, otroci pa pogledat kakšno risanko. Monitor pa bo še kako koristen tudi v postprodukciji, saj ga je možno premišljeno vertikalno tako, da je med snemanjem čisto navzgor nad studijsko okno, pri obdelavi zvoka pa se ga lahko pomakne navzdol, kjer se pridruži dvema že obstoječim ekranom, tako da se lahko potem pri obdelavi zvoka uporablja za prikaz dodatnih pluginov, ki jih je v današnjem studiu na pretek.</p>
             <p class="mb-6">Tako, za nekaj časa bo novih dobrot dovoli, čeprav se bo po predhodnih izkušnjih verjetno kaj kmalu pojavila tista dobro znana žilica po novem nakupovanju :).</p>
-            <div class="mt-8">
-                <img src="images/nadgradnja_studijske_opreme_links.png" alt="Nadgradnja studijske opreme - povezave" class="rounded-lg shadow-lg w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+                <img src="https://i.ibb.co/yBmMq4Rs/e8efd0-ee3bfcb50de64535804a7c2fe5427a20-mv2.webp" alt="Nadgradnja studijske opreme 1" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/GQ6xc5gr/e8efd0-0ffaddbce5824b76a11f0f57de164b08-mv2.webp" alt="Nadgradnja studijske opreme 2" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/chJMG6R0/e8efd0-4d085595299f484cbfa3ed168bcb378c-mv2.webp" alt="Nadgradnja studijske opreme 3" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/9HShKscw/e8efd0-9cea72dbf68445ed8ce2dc5773d0e073-mv2.webp" alt="Nadgradnja studijske opreme 4" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/gnYp0Dy/e8efd0-81482784427b430c8290d5f6cbb36016-mv2.webp" alt="Nadgradnja studijske opreme 5" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/2YCQm0Qm/e8efd0-ee731d681c65458daa2af48fc90bfb41-mv2.webp" alt="Nadgradnja studijske opreme 6" class="rounded-lg shadow-md w-full object-cover h-48">
             </div>
         `,
-        image: "images/nadgradnja_studijske_opreme_header.png",
+        image: "https://i.ibb.co/twBMMC7k/e8efd0-3747a9d10c9b4f3487b263d1231b5abe-mv2.webp",
         tags: ["Oprema", "Studio"]
     }
 ];
