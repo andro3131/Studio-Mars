@@ -299,6 +299,32 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/S45vP0p0/Screenshot-2026-01-12-at-09-53-14.png",
         tags: ["Glasba", "Snemanje", "Ansambel"]
+    },
+    {
+        id: 15,
+        title: "Skupina Drugi vagon izdala svojo prvo zgoščenko - Najboljši hiti !",
+        date: "25.06.2019",
+        readTime: "1 min branja",
+        excerpt: "Skupina Drugi vagon iz Trebnjega je izdala svojo prvo zgoščenko, ki so jo člani skupine poimenovali \"Najboljši hiti\". Kako bi človek najbolje opisal njihovo glasbo...",
+        content: `
+            <p class="mb-4">Skupina Drugi vagon iz Trebnjega je izdala svojo prvo zgoščenko, ki so jo člani skupine poimenovali "Najboljši hiti". Kako bi človek najbolje opisal njihovo glasbo, ki je nalezljivo vesela in ti z razgibanimi, življenskimi besedili in melodijam zelo hitro zleze pod kožo? Lahko bi rekli, da fantje prisegajo na nekakšno akustično kantavtorsko country dolenjsko mešanico glasbe ... če ima povedano sploh kakšen smisel😅. Kakorkoli, ko slišiš njihovo razigrano prepevanje in pozitivno energijo, samo poimenovanje njihove glasbe niti ni več tako pomembno 😄.</p>
+            <p class="mb-4">Lahko rečem, da je bilo snemanje z njimi vedno pravo doživetje, zabavno in polno smeha (včasih tudi solz, pa ne žalosti😆). V dobrem letu so fantje posneli 9 res simpatičnih melodij, katerim lahko s ponosom rečejo "Najboljši hiti" (čeravno bodo to verjetno šele postali🙂). Če želite torej razvedriti svojo prireditev s skupino, ki igra dobro muziko in skrbi za fenomenalno zabavo, potem je Drugi vagon pravi za vas !</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <img src="https://i.ibb.co/jvTS5fpg/e8efd0-393ead5cf4904532a37eb1fbfa42035e-mv2.png" alt="Drugi vagon 1" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/ksYRRRLM/e8efd0-c922e7be95dc478eb0a0f594bf1e983c-mv2.png" alt="Drugi vagon 2" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/5hBM3fQG/e8efd0-63848873fcff45afbb1b982fec92796f-mv2.jpg" alt="Drugi vagon 3" class="rounded-lg shadow-md w-full object-cover h-48">
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cvq5ymHMmek" title="SKUPINA DRUGI VAGON - KO SI MLAD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/qMndzpzn/Screenshot-2026-01-12-at-10-12-03.png",
+        tags: ["Glasba", "Snemanje", "Zgoščenka"]
     }
 ];
 
