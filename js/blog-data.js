@@ -252,6 +252,35 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/PZHbFzJ0/e8efd0-4f937980b05f4488b482f255307c57a9-mv2.webp",
         tags: ["Oprema", "Studio", "Snemanje"]
+    },
+    {
+        id: 13,
+        title: "Zidaniški kvintet z jubilejno zgoščenko ob 10 letnici !",
+        date: "20.08.2020",
+        readTime: "1 min branja",
+        excerpt: "Zidaniški kvintet je izdal svojo drugo zgoščenko ob jubilejni 10 letnici delovanja. Prvi posnetki ansambla segajo še v leto 2010...",
+        content: `
+            <p class="mb-4">Zidaniški kvintet je izdal svojo drugo zgoščenko ob jubilejni 10 letnici delovanja. Prvi posnetki ansambla segajo še v leto 2010, zatorej je pričujoč izdelek tako rekoč celotna retrospektiva dela skupine od njene ustanovitve. Kot kitarist in snemalec hkrati je bil to zame zanimiv projekt, seveda najbolj v smislu, kako obe stvari hkrati opraviti solidno dobro. To je za vsako snemanje pomenilo postavitev mikrofonov tudi v režiji pred mešalno mizo, nato pa usklajevanje procesa snemanja z ostalimi fanti, ki so se potili v snemalnem delu studia. Trio smo posneli skupaj, nato še pihala in na koncu vokale.</p>
+            <p class="mb-4">Ampak nekako se je vedno izšlo, načrtovan izid zgoščenke za leto 2018 pa se je vse bolj zamikal in šele v času epidemije covid19 je posneti material le prišel na vrsto za končni mix in mastering ter oblikovanje tiskovin. Na zgoščenki se je tako znašlo 13 pesmi, večina narodno-zabavnih, ena pa tudi v bolj moderni izvedbi kot priredba znane melodije Toma Jones-a It's Not Unusual (Tako lepo). Pesmi so ustvarjali različni avtorji, iz ansambla sta bila to Aljoša Deferri in Franci Kravcar, pa tudi drugi - Primož Kosec, Tone Krkovič, Jože Burnik in Igor Pirkovič.</p>
+            <p class="mb-4">Ansambel je sicer v desetih letih delovanja nastopal na različnih odrih, tako tujih kot domačih, sodeloval z različnimi glasbeniki (Oto Pestner, Gianni Rijavec, Primož Bulc), posnel kar nekaj videospotov ter nastopil na različnih radijskih in televizijskih oddajah.</p>
+            <p class="mb-6 italic text-[#EB462F]"><a href="http://www.zidaniski.com" target="_blank" class="hover:underline">www.zidaniski.com</a></p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <img src="https://i.ibb.co/mF61sZZK/e8efd0-6b5eb6ac49d346be91c62bc838ac7f4e-mv2.webp" alt="Zidaniški kvintet 1" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/PZHbFzJ0/e8efd0-4f937980b05f4488b482f255307c57a9-mv2.webp" alt="Zidaniški kvintet 2" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/5hMwN1kg/e8efd0-3e5991c1370f4972b87d232efb8f1dac-mv2.jpg" alt="Zidaniški kvintet 3" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/FbJFQYqW/e8efd0-23727ca4267c4f209843c4a3378acacc-mv2.webp" alt="Zidaniški kvintet 4" class="rounded-lg shadow-md w-full object-cover h-48">
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZhNvKYygRp8" title="Zidaniški kvintet - It's Not Unusual (Tako lepo)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/gFFb0Y0Z/e8efd0-d796d6cf77a749b586b8ef6fe00c3a98-mv2.webp",
+        tags: ["Glasba", "Snemanje", "Zgoščenka"]
     }
 ];
 
