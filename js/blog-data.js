@@ -325,6 +325,26 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/qMndzpzn/Screenshot-2026-01-12-at-10-12-03.png",
         tags: ["Glasba", "Snemanje", "Zgoščenka"]
+    },
+    {
+        id: 16,
+        title: "Novo leto 2019 začenjamo z novo opremo",
+        date: "05.02.2019",
+        readTime: "2 min branja",
+        excerpt: "Po kar dolgem času je bilo potrebno spet malo osvežiti \"asortiman\" studijske opreme. Prvi je prišel na vrsto studijski računalnik, ki je po skoraj 10 letih uporabe že kar težko sopihal.",
+        content: `
+            <p class="mb-4">Po kar dolgem času je bilo potrebno spet malo osvežiti "asortiman" studijske opreme. Prvi je prišel na vrsto studijski računalnik, ki je po skoraj 10 letih uporabe že kar težko sopihal. Že dosedanji PC je bil nadgrajen na operacijski sistem OSX in podobno se je bilo kakopak treba lotiti tudi novega 😃. Izgradnjo "hackintosha" zahteva kar nekaj spretnosti in raziskovanja, pravilno pa je seveda treba izbrati tudi komponente, s katerimi OSX lahko deluje. Nova "mrcina", na kateri teče torej operacijski sistem 10.14 - Mojave, tako vsebuje i7 8700 procesor, 16GB DDR pomnilnika, 1 TB SSD ter 12 TB ostalega diskovnega polja in grafično kartico Radeon 580x, poganja pa 4 LCD monitorje za boljši pregled nad studijskimi programi. Pravi užitek je delati z njim 😋!</p>
+            <p class="mb-4">Druga večja pridobitev tega leta je kartica UAD Apollo x8p z 8 vrhunskimi mikrofonskimi predojačevalniki. Posebnost te kartice je, da jo je mogoče nadzorovati izključno s programsko opremo, kar olajša rokovanje, omogoča pa tudi simulacijo UAD pluginov v realnem času, kar pomeni, da lahko ob snemanju simulira različne mikrofonske predojačevalnike, kot so LA-2A, 610A, Manley itd. Kartica se v zadnjih dneh uporabe obnese fenomenalno, signal je čist in ima analogen karakter, velika prednost pa je tudi ta, da lahko procesira UAD plugine, uporabljene za mix in mastering, ki sem jih uporabljal že do sedaj z obstoječo kartico UAD Octo Pcie, in tako slednjo razbremeni, oz. lahko sistem prenese skoraj 2x več vtičnikov kot dosedaj. Več kot odlično 😁!</p>
+            <p class="mb-4">Nenazadnje lahko še omenim odlično novo električno kitaro Ernie Ball MM1, ki je zamenjala dosedanji Ibanez Custom model. Lepši ton in design sta prevagala tehtnico 😊. Nekaj opreme je tudi zamenjalo lastnika, predvsem zaradi neuporabe. Tako sta se poslovila Avalon 737sp ter UAD 4-710, sicer odlična mikrofonska predojačevalnika, vendar se je večinoma na obeh nabiral prah.</p>
+            <p class="mb-6 italic text-white font-medium">Tako, za letos naj bo nove opreme dovolj, ampak ... leto bo hitro minilo 😅</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <img src="https://i.ibb.co/0j23WW74/e8efd0-9d637a5463ea411ab4ef2c136c29120c-mv2.webp" alt="Nova oprema 2019 - 1" class="rounded-lg shadow-md w-full object-cover h-64">
+                <img src="https://i.ibb.co/vxLZRWDG/e8efd0-9247e798fd834a8eac5aaedc590f45e8-mv2.jpg" alt="Nova oprema 2019 - 2" class="rounded-lg shadow-md w-full object-cover h-64">
+            </div>
+        `,
+        image: "https://i.ibb.co/8LpBqSQk/e8efd0-0c917769c3004c2e9484ea2cd4d55499-mv2.webp",
+        tags: ["Oprema", "Studio", "Snemanje"]
     }
 ];
 
