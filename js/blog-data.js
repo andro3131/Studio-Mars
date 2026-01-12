@@ -133,6 +133,27 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/FbzCSf5N/e8efd0-6ca4e6234df84c949f3dfb76317c66c5-mv2.webp",
         tags: ["Glasba", "Snemanje", "Zborovsko petje"]
+    },
+    {
+        id: 8,
+        title: "Založba Emanuel posnela novo zgoščenko",
+        date: "07.12.2023",
+        readTime: "1 min branja",
+        excerpt: "Založba Emanuel, ki v Sloveniji razširja katoliško glasbo in literaturo, je pred kratkim izdala novo zgoščenko po imenu 'Zapojmo svetemu'. Le-ta vsebuje 14 prelepih skladb, ki jih prepeva otroški zborček s solisti...",
+        content: `
+            <p class="mb-4"><a href="https://zalozba-emanuel.si/trgovina/zapojmo-svetemu/" class="text-[#EB462F] hover:underline" target="_blank">Založba Emanuel</a>, ki v Sloveniji razširja katoliško glasbo in literaturo, je pred kratkim izdala novo zgoščenko po imenu "Zapojmo svetemu". Le-ta vsebuje 14 prelepih skladb, ki jih prepeva otroški zborček s solisti, seveda pa jih spremlja tudi prekaljena glasbena ekipa.</p>
+            <p class="mb-4">V mesecu oktobru se je torej v našem studiu zvrstilo kar nekaj odličnih glasbenikov, ki so ustvarili instrumentalno podlago za pesmi (od bobnov, basa, kitar, saksofona, godalnega kvarteta in še bi lahko naštevali), otroške glasove (in tudi nekaj odraslih) pa je posnel <a href="https://www.youtube.com/@jakobcuk7186" class="text-[#EB462F] hover:underline" target="_blank">Jakob Čuk</a>.</p>
+            <p class="mb-4">V novembru smo vse posnetke še dodatno obdelali do končne oblike (mix in mastering), za čas "Miklavža" pa je zgoščenka (in tudi USB ključek) že ugledala luč sveta.</p>
+            <p class="mb-6">Vsi, ki bi radi zgoščenko tudi kupili, to lahko storite <a href="https://zalozba-emanuel.si/trgovina/zapojmo-svetemu/" class="text-[#EB462F] hover:underline" target="_blank">tukaj</a>, spodaj pa je ena od pesmic za "pokušino".</p>
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SqLsCDDNZJg" title="Zapojmo svetemu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/qLB946xt/e8efd0-6776c019362c413ea4dceb17c4d2d118-mv2.png",
+        tags: ["Glasba", "Snemanje"]
     }
 ];
 
