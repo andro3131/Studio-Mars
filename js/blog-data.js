@@ -1,5 +1,30 @@
 const blogPosts = [
     {
+        id: 18,
+        title: "Hišni Ansambel Avsenik posnel novo zgoščenko !",
+        date: "01.09.2018",
+        readTime: "1 min branja",
+        excerpt: "Pisali smo že, da v studiu pridno snema eden najbolj znanih slovenskih narodnozabavnih kvintetov, Hišni Ansambel Avsenik...",
+        content: `
+            <p class="mb-4">Pisali smo že, da v studiu pridno snema eden najbolj znanih slovenskih narodnozabavnih kvintetov, Hišni Ansambel Avsenik. Skupino sestavljajo sami prekaljeni glasbeniki, ki so že prej igrali v različnih glasbenih zasedbah: Toni Iskra (harmonika), Marjan Legat (bas), Renato Verlič (kitara), Stanko Praprotnik (trobenta), Aljoša Deferri (klarinet), Andrej Ropas (vokal), Marjana Urankar (vokal) in Tina Debevec (vokal). Skupina je poznana predvsem po promociji avsenikove glasbe, v svoj repertoar pa vključujejo še mnoge druge avtorje, kot tudi lastne skladbe, predvsem od njihovega harmonikarja Tonija. Ustanovljena je bila na pobudo Marjana ter tudi Slavka in Gregorja Avsenika leta 1999 in od takrat nastopa širom po Sloveniji, veliko pa tudi v tujini.</p>
+            <p class="mb-4">Snemanje je bilo uspešno zaključeno in ansambel je pred kratkim izdal svojo novo zgoščenko po imenu "Se že dani", na kateri je 12 prelepih skladb, od tega nekaj nepozabnih melodij Slavka in Vilka Avsenika, nekaj pa je tudi njihovih avtorskih. V veselje mi je, da sem lahko užival v dobri glasbi ob snemanju albuma in tudi to, da so za svoj novi projekt izbrali prav Studio Mars ;). Ob dobri glasbi pa boste lahko uživali tudi vi, zato obiščite njihovo spletno stran <a href="https://www.facebook.com/hisniansambelavsenik/" class="text-[#EB462F] hover:underline" target="_blank">https://www.facebook.com/hisniansambelavsenik/</a> in hitro kupite novo zgoščenko ;).</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <img src="https://i.ibb.co/ZzCknG93/e8efd0-cfaadd3de104433592c7587e4b3b1c2b-mv2.png" alt="Hišni Ansambel Avsenik 1" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+                <img src="https://i.ibb.co/FbQgpf71/e8efd0-7274a42d9a9f487c8f543ae0fecfde12-mv2.png" alt="Hišni Ansambel Avsenik 2" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CO5o6sJ7cZU" title="Hišni Ansambel Avsenik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/5WQK09Hd/Screenshot-2026-01-12-at-14-53-33.png",
+        tags: ["Glasba", "Snemanje", "Ansambel"]
+    },
+    {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
         date: "17.03.2025",
@@ -73,7 +98,7 @@ const blogPosts = [
             <p class="mb-4">Prireditev je bila tudi posneta in zapis bo kmalu izdan na zgoščenki. Če ste koncert zamudili, ali pa bi si radi dogodek še enkrat poslušali, vam bodo dekleta z veseljem pomagale:</p>
             <p class="mb-6"><a href="https://www.facebook.com/p/Soreline-100032044192481/" class="text-[#EB462F] hover:underline" target="_blank">Facebook - Soreline</a></p>
             <div class="mt-8">
-                <img src="https://i.ibb.co/QFWwbmf3/e8efd0-79df432de86347d68e59a51e9d83dc0d-mv2-2.jpg" alt="Čudovit koncert skupine Sorelin" class="rounded-lg shadow-lg w-full">
+                <img src="https://i.ibb.co/QFWwbmf3/e8efd0-79df432de86347d68e59a51e9d83dc0d-mv2-2.jpg" alt="Čudovit koncert skupine Sorelin" class="rounded-lg shadow-lg w-full" loading="lazy">
             </div>
         `,
         image: "https://i.ibb.co/6RVbfsrw/e8efd0-aaa7d3d9cb01473c9203ec214eba8a73-mv2-2.jpg",
@@ -191,12 +216,12 @@ const blogPosts = [
             <p class="mb-4">No, to pa seveda še ni vse. Studio je dobil tudi slikovni zajem v montažo kamer v vseh snemalnih prostih, zato bo od sedaj preglednost pri snemanju se bolj! Silke štirih kamer pa ne gre gledati na manjšem ekranu, zato smo v režijo dodali še en večji ekran za video nadzor, koristen pa bo tudi za čakajoče stranke, če si bodo hotele ogledati kakšen film, otroci pa pogledat kakšno risanko. Monitor pa bo še kako koristen tudi v postprodukciji, saj ga je možno premišljeno vertikalno tako, da je med snemanjem čisto navzgor nad studijsko okno, pri obdelavi zvoka pa se ga lahko pomakne navzdol, kjer se pridruži dvema že obstoječim ekranom, tako da se lahko potem pri obdelavi zvoka uporablja za prikaz dodatnih pluginov, ki jih je v današnjem studiu na pretek.</p>
             <p class="mb-6">Tako, za nekaj časa bo novih dobrot dovoli, čeprav se bo po predhodnih izkušnjih verjetno kaj kmalu pojavila tista dobro znana žilica po novem nakupovanju :).</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-                <img src="https://i.ibb.co/yBmMq4Rs/e8efd0-ee3bfcb50de64535804a7c2fe5427a20-mv2.webp" alt="Nadgradnja studijske opreme 1" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/GQ6xc5gr/e8efd0-0ffaddbce5824b76a11f0f57de164b08-mv2.webp" alt="Nadgradnja studijske opreme 2" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/chJMG6R0/e8efd0-4d085595299f484cbfa3ed168bcb378c-mv2.webp" alt="Nadgradnja studijske opreme 3" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/9HShKscw/e8efd0-9cea72dbf68445ed8ce2dc5773d0e073-mv2.webp" alt="Nadgradnja studijske opreme 4" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/gnYp0Dy/e8efd0-81482784427b430c8290d5f6cbb36016-mv2.webp" alt="Nadgradnja studijske opreme 5" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/2YCQm0Qm/e8efd0-ee731d681c65458daa2af48fc90bfb41-mv2.webp" alt="Nadgradnja studijske opreme 6" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/yBmMq4Rs/e8efd0-ee3bfcb50de64535804a7c2fe5427a20-mv2.webp" alt="Nadgradnja studijske opreme 1" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/GQ6xc5gr/e8efd0-0ffaddbce5824b76a11f0f57de164b08-mv2.webp" alt="Nadgradnja studijske opreme 2" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/chJMG6R0/e8efd0-4d085595299f484cbfa3ed168bcb378c-mv2.webp" alt="Nadgradnja studijske opreme 3" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/9HShKscw/e8efd0-9cea72dbf68445ed8ce2dc5773d0e073-mv2.webp" alt="Nadgradnja studijske opreme 4" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/gnYp0Dy/e8efd0-81482784427b430c8290d5f6cbb36016-mv2.webp" alt="Nadgradnja studijske opreme 5" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/2YCQm0Qm/e8efd0-ee731d681c65458daa2af48fc90bfb41-mv2.webp" alt="Nadgradnja studijske opreme 6" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
             </div>
         `,
         image: "https://i.ibb.co/twBMMC7k/e8efd0-3747a9d10c9b4f3487b263d1231b5abe-mv2.webp",
@@ -216,9 +241,9 @@ const blogPosts = [
             <p class="mb-6 text-white font-medium">Celotnemu AGB bandu pa vse čestitke za lep projekt!</p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                <img src="https://i.ibb.co/fYRpWCpJ/e8efd0-771db48f9a6049b59be3d4768d54290e-mv2.webp" alt="AGB band 1" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/LD1grBpw/e8efd0-3afd6b1acd92426eb535209d651fdaef-mv2.jpg" alt="AGB band 2" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/fzbBw7Qg/e8efd0-4ca62d8da6a142d09c28f53f7e123e26-mv2.webp" alt="AGB band 3" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/fYRpWCpJ/e8efd0-771db48f9a6049b59be3d4768d54290e-mv2.webp" alt="AGB band 1" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/LD1grBpw/e8efd0-3afd6b1acd92426eb535209d651fdaef-mv2.jpg" alt="AGB band 2" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/fzbBw7Qg/e8efd0-4ca62d8da6a142d09c28f53f7e123e26-mv2.webp" alt="AGB band 3" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
             </div>
 
             <div class="mt-8">
@@ -244,10 +269,10 @@ const blogPosts = [
             <p class="mb-6">Nabave pa še ni bilo konec, sledil je še dvokanalni mikrofonski predojačevlnik FOCUSRITE ISA TWO, klasični mikrofoni AKG C414 XLII, Shure SM7B ter komplet mikrofono v za bobne Audix DP5-A. Z nakupom smo zelo zadovoljni, prvi obiskovalci pa so to zadovoljstvo tudi že potrdili!</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                <img src="https://i.ibb.co/mF61sZZK/e8efd0-6b5eb6ac49d346be91c62bc838ac7f4e-mv2.webp" alt="Nova oprema 1" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/5hMwN1kg/e8efd0-3e5991c1370f4972b87d232efb8f1dac-mv2.jpg" alt="Nova oprema 2" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/FbJFQYqW/e8efd0-23727ca4267c4f209843c4a3378acacc-mv2.webp" alt="Nova oprema 3" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/gFFb0Y0Z/e8efd0-d796d6cf77a749b586b8ef6fe00c3a98-mv2.webp" alt="Nova oprema 4" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/mF61sZZK/e8efd0-6b5eb6ac49d346be91c62bc838ac7f4e-mv2.webp" alt="Nova oprema 1" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/5hMwN1kg/e8efd0-3e5991c1370f4972b87d232efb8f1dac-mv2.jpg" alt="Nova oprema 2" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/FbJFQYqW/e8efd0-23727ca4267c4f209843c4a3378acacc-mv2.webp" alt="Nova oprema 3" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/gFFb0Y0Z/e8efd0-d796d6cf77a749b586b8ef6fe00c3a98-mv2.webp" alt="Nova oprema 4" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
             </div>
         `,
         image: "https://i.ibb.co/PZHbFzJ0/e8efd0-4f937980b05f4488b482f255307c57a9-mv2.webp",
@@ -266,9 +291,9 @@ const blogPosts = [
             <p class="mb-6 italic text-[#EB462F]"><a href="http://www.zidaniski.com" target="_blank" class="hover:underline">www.zidaniski.com</a></p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                <img src="https://i.ibb.co/7xJb75yB/e8efd0-f8fac59198b545b7b48b524bc9b56a10-mv2.png" alt="Zidaniški kvintet 1" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/FkymkhL7/e8efd0-3fd377e03b1643aaac2ba60ca94c4af3-mv2.png" alt="Zidaniški kvintet 2" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/cX8tByZW/e8efd0-d3874baa1a8a450d8deb1d231ed094e4-mv2.png" alt="Zidaniški kvintet 3" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/7xJb75yB/e8efd0-f8fac59198b545b7b48b524bc9b56a10-mv2.png" alt="Zidaniški kvintet 1" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/FkymkhL7/e8efd0-3fd377e03b1643aaac2ba60ca94c4af3-mv2.png" alt="Zidaniški kvintet 2" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/cX8tByZW/e8efd0-d3874baa1a8a450d8deb1d231ed094e4-mv2.png" alt="Zidaniški kvintet 3" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
             </div>
 
             <div class="mt-8">
@@ -293,8 +318,8 @@ const blogPosts = [
             <p class="mb-6 italic text-[#EB462F]"><a href="http://www.suhasolza.si" target="_blank" class="hover:underline">http://www.suhasolza.si</a></p>
             
             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <img src="https://i.ibb.co/twzztT90/e8efd0-438600f803c34dd2b1c9f6e0355abf44-mv2.png" alt="Ansambel Suha solza 1" class="rounded-lg shadow-lg w-full object-cover h-48">
-                <img src="https://i.ibb.co/zWpS5jgW/e8efd0-06b640e1b31d4df88efd95cb83fac601-mv2.png" alt="Ansambel Suha solza 2" class="rounded-lg shadow-lg w-full object-cover h-48">
+                <img src="https://i.ibb.co/twzztT90/e8efd0-438600f803c34dd2b1c9f6e0355abf44-mv2.png" alt="Ansambel Suha solza 1" class="rounded-lg shadow-lg w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/zWpS5jgW/e8efd0-06b640e1b31d4df88efd95cb83fac601-mv2.png" alt="Ansambel Suha solza 2" class="rounded-lg shadow-lg w-full object-cover h-48" loading="lazy">
             </div>
         `,
         image: "https://i.ibb.co/S45vP0p0/Screenshot-2026-01-12-at-09-53-14.png",
@@ -311,9 +336,9 @@ const blogPosts = [
             <p class="mb-4">Lahko rečem, da je bilo snemanje z njimi vedno pravo doživetje, zabavno in polno smeha (včasih tudi solz, pa ne žalosti😆). V dobrem letu so fantje posneli 9 res simpatičnih melodij, katerim lahko s ponosom rečejo "Najboljši hiti" (čeravno bodo to verjetno šele postali🙂). Če želite torej razvedriti svojo prireditev s skupino, ki igra dobro muziko in skrbi za fenomenalno zabavo, potem je Drugi vagon pravi za vas !</p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                <img src="https://i.ibb.co/jvTS5fpg/e8efd0-393ead5cf4904532a37eb1fbfa42035e-mv2.png" alt="Drugi vagon 1" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/ksYRRRLM/e8efd0-c922e7be95dc478eb0a0f594bf1e983c-mv2.png" alt="Drugi vagon 2" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/5hBM3fQG/e8efd0-63848873fcff45afbb1b982fec92796f-mv2.jpg" alt="Drugi vagon 3" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/jvTS5fpg/e8efd0-393ead5cf4904532a37eb1fbfa42035e-mv2.png" alt="Drugi vagon 1" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/ksYRRRLM/e8efd0-c922e7be95dc478eb0a0f594bf1e983c-mv2.png" alt="Drugi vagon 2" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/5hBM3fQG/e8efd0-63848873fcff45afbb1b982fec92796f-mv2.jpg" alt="Drugi vagon 3" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
             </div>
 
             <div class="mt-8">
@@ -339,8 +364,8 @@ const blogPosts = [
             <p class="mb-6 italic text-white font-medium">Tako, za letos naj bo nove opreme dovolj, ampak ... leto bo hitro minilo 😅</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                <img src="https://i.ibb.co/0j23WW74/e8efd0-9d637a5463ea411ab4ef2c136c29120c-mv2.webp" alt="Nova oprema 2019 - 1" class="rounded-lg shadow-md w-full object-cover h-64">
-                <img src="https://i.ibb.co/vxLZRWDG/e8efd0-9247e798fd834a8eac5aaedc590f45e8-mv2.jpg" alt="Nova oprema 2019 - 2" class="rounded-lg shadow-md w-full object-cover h-64">
+                <img src="https://i.ibb.co/0j23WW74/e8efd0-9d637a5463ea411ab4ef2c136c29120c-mv2.webp" alt="Nova oprema 2019 - 1" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+                <img src="https://i.ibb.co/vxLZRWDG/e8efd0-9247e798fd834a8eac5aaedc590f45e8-mv2.jpg" alt="Nova oprema 2019 - 2" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
             </div>
         `,
         image: "https://i.ibb.co/8LpBqSQk/e8efd0-0c917769c3004c2e9484ea2cd4d55499-mv2.webp",
@@ -358,9 +383,9 @@ const blogPosts = [
             <p class="mb-4">Ne smemo pa pozabiti omeniti še ene pomembne reči. Filipova Mama Andreja je ustanovila fundacijo, ki je namenjena za zbiranje sredstev za Drugi dom, prav posebno ustanovo za ljudi s posebnimi potrebami, kot je Filip, da bodo lahko nekoč, ko staršev enkrat ne bo več z njimi, lahko živeli samostojno in iskali svoje življenske sanje. Vsaka pomoč od vas je tukaj dobrodošla, več o projektu pa si lahko preberete na povezavi <a href="http://www.drugi-dom.si" target="_blank" class="text-[#EB462F] hover:underline">www.drugi-dom.si</a>. Skratka, uživajte ob poslušanju pesmi iz prvega cdja in sledite našim novicam, da izveste, kdaj bo luč sveta ugledala tudi druga Filipova zgoščenka !</p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                <img src="https://i.ibb.co/8GjQG8r/e8efd0-2e0bb899710a4c72a6194f5ad64ce552-mv2-d-2040-1530-s-2.jpg" alt="Filip Jagodič 1" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/LXFxHtGk/e8efd0-567d925973544a1da6fb5df7c0f17293-mv2-d-1559-1559-s-2.jpg" alt="Filip Jagodič 2" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/VYc89b9k/e8efd0-cdf968b725254e44827da56189ac24c2-mv2-d-1878-1488-s-2.jpg" alt="Filip Jagodič 3" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/8GjQG8r/e8efd0-2e0bb899710a4c72a6194f5ad64ce552-mv2-d-2040-1530-s-2.jpg" alt="Filip Jagodič 1" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/LXFxHtGk/e8efd0-567d925973544a1da6fb5df7c0f17293-mv2-d-1559-1559-s-2.jpg" alt="Filip Jagodič 2" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+                <img src="https://i.ibb.co/VYc89b9k/e8efd0-cdf968b725254e44827da56189ac24c2-mv2-d-1878-1488-s-2.jpg" alt="Filip Jagodič 3" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
             </div>
 
             <div class="mt-8">
