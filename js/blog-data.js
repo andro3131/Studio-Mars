@@ -174,6 +174,28 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/bYTS8v1/565304430-25379658718308632-6215203515395913864-n.jpg",
         tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 10,
+        title: "Nadgradnja studijske opreme",
+        date: "14.06.2023",
+        readTime: "2 min branja",
+        excerpt: "Leto 2023 je zopet prineslo nove studijske 'dobrote', ki bodo vsekakor prispevale k boljši snemalni izkušnji naših strank ter seveda izboljšale kvaliteto končnih audio in video izdelkov.",
+        content: `
+            <p class="mb-4">Leto 2023 je zopet prineslo nove studijske "dobrote", ki bodo vsekakor prispevale k boljši snemalni izkušnji naših strank ter seveda izboljšale kvaliteto končnih audio in video izdelkov.</p>
+            <p class="mb-4">V prvi vrsi lahko omenimo dva odlična mikrofonska predojačevalnika - legendarni CHANDLER TG2 500 ter ravno tako odličen SHADOW HILLS mono gama 500. Chandler je dobro poznan angleški proizvajalec kvalitetne studijske audio opreme. TG2 preamp pa to potrjuje s svojo fokusirano in natančno reprezentacijo vokala ali instrumenta, dodaja pa svoj značilen zvokovni karakter in ga bogati s svojo globino, gostoto in prezenco. Shadow Hills pa je ameriški proizvajalec, ki je ravno tako poznan po vrhunskih audio izdelkih. Mono gama preamp je izjemen predojačevalnik serije 500, posnetki z njim so bogati, pojni v srednjih frekvencah ter odrti v zornjih frekvencah.</p>
+            <p class="mb-4">Poleg omenjenih predojačevalnikov je tudi AD pretvornik Apogee Symphony MK2 letos doživel nadgradnjo na 16 kanalov, kar predvsem pomeni, da bo zajem audio posnetkov pri večjih zasedah z uporabo več kot 8 sočasnih snemalnih kanalov od sedaj boljši zaradi boljše kvalitetne pretvorbe analognega v digitalni signal.</p>
+            <p class="mb-4">Nenazadnje pa je studio bogatejši še za dva vrhunska mikrofona, prvi je klon legendarnega Neumanna U47, drugi pa klon poznanega Telefunken C12. Avtor in kreator obeh mikrofonov je Milan Saje, slovenski audio inženir in je več desetletij deloval v Nemčiji kot svetovno priznan studijski inženir naprave, ki so še danes mesto v mariskaterem evropskem studiu. Oba mikrofona sta ročne izdelave, sestavljeni iz natančno izbranih elementov (kapsula, transformator, vezje) in sta zvočno prilagojena glede na osebne preference. U47 ima tipični karakter s poudarjenimi srednji tonii in rahlo zaprtimi visokimi todni, C12 pa je dejansko mešanica med dvemi visokimi toni - C12 ter ELAM251- in ima značilno "pop" barvo s poudarjenimi nižjimi in visokimi toni.</p>
+            <p class="mb-4">Kaj naj še rečem, oba mikrofona sta naravnost vrhunska!</p>
+            <p class="mb-4">Nenazadnje pa imamo sedaj v arzenalu tudi novi dron DJI Mavic Pro 3 za še boljše pokrajinske posnetke pri snemanju videospotov, kakor tudi novi gimbal Zhyun Weebill S, ki nam bo posnetke že obstoječe video kamere Lumix GH5 še dodatno obogatil.</p>
+            <p class="mb-4">No, to pa seveda še ni vse. Studio je dobil tudi slikovni zajem v montažo kamer v vseh snemalnih prostih, zato bo od sedaj preglednost pri snemanju se bolj! Silke štirih kamer pa ne gre gledati na manjšem ekranu, zato smo v režijo dodali še en večji ekran za video nadzor, koristen pa bo tudi za čakajoče stranke, če si bodo hotele ogledati kakšen film, otroci pa pogledat kakšno risanko. Monitor pa bo še kako koristen tudi v postprodukciji, saj ga je možno premišljeno vertikalno tako, da je med snemanjem čisto navzgor nad studijsko okno, pri obdelavi zvoka pa se ga lahko pomakne navzdol, kjer se pridruži dvema že obstoječim ekranom, tako da se lahko potem pri obdelavi zvoka uporablja za prikaz dodatnih pluginov, ki jih je v današnjem studiu na pretek.</p>
+            <p class="mb-6">Tako, za nekaj časa bo novih dobrot dovoli, čeprav se bo po predhodnih izkušnjih verjetno kaj kmalu pojavila tista dobro znana žilica po novem nakupovanju :).</p>
+            <div class="mt-8">
+                <img src="images/nadgradnja_studijske_opreme_links.png" alt="Nadgradnja studijske opreme - povezave" class="rounded-lg shadow-lg w-full">
+            </div>
+        `,
+        image: "images/nadgradnja_studijske_opreme_header.png",
+        tags: ["Oprema", "Studio"]
     }
 ];
 
