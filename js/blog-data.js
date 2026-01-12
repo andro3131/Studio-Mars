@@ -265,11 +265,10 @@ const blogPosts = [
             <p class="mb-4">Ansambel je sicer v desetih letih delovanja nastopal na različnih odrih, tako tujih kot domačih, sodeloval z različnimi glasbeniki (Oto Pestner, Gianni Rijavec, Primož Bulc), posnel kar nekaj videospotov ter nastopil na različnih radijskih in televizijskih oddajah.</p>
             <p class="mb-6 italic text-[#EB462F]"><a href="http://www.zidaniski.com" target="_blank" class="hover:underline">www.zidaniski.com</a></p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                <img src="https://i.ibb.co/mF61sZZK/e8efd0-6b5eb6ac49d346be91c62bc838ac7f4e-mv2.webp" alt="Zidaniški kvintet 1" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/PZHbFzJ0/e8efd0-4f937980b05f4488b482f255307c57a9-mv2.webp" alt="Zidaniški kvintet 2" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/5hMwN1kg/e8efd0-3e5991c1370f4972b87d232efb8f1dac-mv2.jpg" alt="Zidaniški kvintet 3" class="rounded-lg shadow-md w-full object-cover h-48">
-                <img src="https://i.ibb.co/FbJFQYqW/e8efd0-23727ca4267c4f209843c4a3378acacc-mv2.webp" alt="Zidaniški kvintet 4" class="rounded-lg shadow-md w-full object-cover h-48">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <img src="https://i.ibb.co/7xJb75yB/e8efd0-f8fac59198b545b7b48b524bc9b56a10-mv2.png" alt="Zidaniški kvintet 1" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/FkymkhL7/e8efd0-3fd377e03b1643aaac2ba60ca94c4af3-mv2.png" alt="Zidaniški kvintet 2" class="rounded-lg shadow-md w-full object-cover h-48">
+                <img src="https://i.ibb.co/cX8tByZW/e8efd0-d3874baa1a8a450d8deb1d231ed094e4-mv2.png" alt="Zidaniški kvintet 3" class="rounded-lg shadow-md w-full object-cover h-48">
             </div>
 
             <div class="mt-8">
@@ -279,7 +278,7 @@ const blogPosts = [
                 </div>
             </div>
         `,
-        image: "https://i.ibb.co/gFFb0Y0Z/e8efd0-d796d6cf77a749b586b8ef6fe00c3a98-mv2.webp",
+        image: "https://i.ibb.co/bR2rSZd5/e8efd0-568cd6e366fe422d9a42a4d175e7e793-mv2-d-1843-1229-s-2.jpg",
         tags: ["Glasba", "Snemanje", "Zgoščenka"]
     }
 ];
