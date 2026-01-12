@@ -1,30 +1,5 @@
 const blogPosts = [
     {
-        id: 18,
-        title: "Hišni Ansambel Avsenik posnel novo zgoščenko !",
-        date: "01.09.2018",
-        readTime: "1 min branja",
-        excerpt: "Pisali smo že, da v studiu pridno snema eden najbolj znanih slovenskih narodnozabavnih kvintetov, Hišni Ansambel Avsenik...",
-        content: `
-            <p class="mb-4">Pisali smo že, da v studiu pridno snema eden najbolj znanih slovenskih narodnozabavnih kvintetov, Hišni Ansambel Avsenik. Skupino sestavljajo sami prekaljeni glasbeniki, ki so že prej igrali v različnih glasbenih zasedbah: Toni Iskra (harmonika), Marjan Legat (bas), Renato Verlič (kitara), Stanko Praprotnik (trobenta), Aljoša Deferri (klarinet), Andrej Ropas (vokal), Marjana Urankar (vokal) in Tina Debevec (vokal). Skupina je poznana predvsem po promociji avsenikove glasbe, v svoj repertoar pa vključujejo še mnoge druge avtorje, kot tudi lastne skladbe, predvsem od njihovega harmonikarja Tonija. Ustanovljena je bila na pobudo Marjana ter tudi Slavka in Gregorja Avsenika leta 1999 in od takrat nastopa širom po Sloveniji, veliko pa tudi v tujini.</p>
-            <p class="mb-4">Snemanje je bilo uspešno zaključeno in ansambel je pred kratkim izdal svojo novo zgoščenko po imenu "Se že dani", na kateri je 12 prelepih skladb, od tega nekaj nepozabnih melodij Slavka in Vilka Avsenika, nekaj pa je tudi njihovih avtorskih. V veselje mi je, da sem lahko užival v dobri glasbi ob snemanju albuma in tudi to, da so za svoj novi projekt izbrali prav Studio Mars ;). Ob dobri glasbi pa boste lahko uživali tudi vi, zato obiščite njihovo spletno stran <a href="https://www.facebook.com/hisniansambelavsenik/" class="text-[#EB462F] hover:underline" target="_blank">https://www.facebook.com/hisniansambelavsenik/</a> in hitro kupite novo zgoščenko ;).</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                <img src="https://i.ibb.co/ZzCknG93/e8efd0-cfaadd3de104433592c7587e4b3b1c2b-mv2.png" alt="Hišni Ansambel Avsenik 1" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
-                <img src="https://i.ibb.co/FbQgpf71/e8efd0-7274a42d9a9f487c8f543ae0fecfde12-mv2.png" alt="Hišni Ansambel Avsenik 2" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
-            </div>
-
-            <div class="mt-8">
-                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
-                <div class="aspect-video rounded-lg overflow-hidden">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CO5o6sJ7cZU" title="Hišni Ansambel Avsenik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-        `,
-        image: "https://i.ibb.co/5WQK09Hd/Screenshot-2026-01-12-at-14-53-33.png",
-        tags: ["Glasba", "Snemanje", "Ansambel"]
-    },
-    {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
         date: "17.03.2025",
@@ -397,6 +372,49 @@ const blogPosts = [
         `,
         image: "https://i.ibb.co/DPfsyrx6/Screenshot-2026-01-12-at-10-18-57.png",
         tags: ["Glasba", "Filip Jagodič", "Pevci"]
+    },
+    {
+        id: 18,
+        title: "Hišni Ansambel Avsenik posnel novo zgoščenko !",
+        date: "01.09.2018",
+        readTime: "1 min branja",
+        excerpt: "Pisali smo že, da v studiu pridno snema eden najbolj znanih slovenskih narodnozabavnih kvintetov, Hišni Ansambel Avsenik...",
+        content: `
+            <p class="mb-4">Pisali smo že, da v studiu pridno snema eden najbolj znanih slovenskih narodnozabavnih kvintetov, Hišni Ansambel Avsenik. Skupino sestavljajo sami prekaljeni glasbeniki, ki so že prej igrali v različnih glasbenih zasedbah: Toni Iskra (harmonika), Marjan Legat (bas), Renato Verlič (kitara), Stanko Praprotnik (trobenta), Aljoša Deferri (klarinet), Andrej Ropas (vokal), Marjana Urankar (vokal) in Tina Debevec (vokal). Skupina je poznana predvsem po promociji avsenikove glasbe, v svoj repertoar pa vključujejo še mnoge druge avtorje, kot tudi lastne skladbe, predvsem od njihovega harmonikarja Tonija. Ustanovljena je bila na pobudo Marjana ter tudi Slavka in Gregorja Avsenika leta 1999 in od takrat nastopa širom po Sloveniji, veliko pa tudi v tujini.</p>
+            <p class="mb-4">Snemanje je bilo uspešno zaključeno in ansambel je pred kratkim izdal svojo novo zgoščenko po imenu "Se že dani", na kateri je 12 prelepih skladb, od tega nekaj nepozabnih melodij Slavka in Vilka Avsenika, nekaj pa je tudi njihovih avtorskih. V veselje mi je, da sem lahko užival v dobri glasbi ob snemanju albuma in tudi to, da so za svoj novi projekt izbrali prav Studio Mars ;). Ob dobri glasbi pa boste lahko uživali tudi vi, zato obiščite njihovo spletno stran <a href="https://www.facebook.com/hisniansambelavsenik/" class="text-[#EB462F] hover:underline" target="_blank">https://www.facebook.com/hisniansambelavsenik/</a> in hitro kupite novo zgoščenko ;).</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <img src="https://i.ibb.co/ZzCknG93/e8efd0-cfaadd3de104433592c7587e4b3b1c2b-mv2.png" alt="Hišni Ansambel Avsenik 1" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+                <img src="https://i.ibb.co/FbQgpf71/e8efd0-7274a42d9a9f487c8f543ae0fecfde12-mv2.png" alt="Hišni Ansambel Avsenik 2" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-white mb-4">Videospot</h3>
+                <div class="aspect-video rounded-lg overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CO5o6sJ7cZU" title="Hišni Ansambel Avsenik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,
+        image: "https://i.ibb.co/5WQK09Hd/Screenshot-2026-01-12-at-14-53-33.png",
+        tags: ["Glasba", "Snemanje", "Ansambel"]
+    },
+    {
+        id: 19,
+        title: "Ernest Klenovšek pri 83 letih snema novo zgoščenko !",
+        date: "14.11.2017",
+        readTime: "1 min branja",
+        excerpt: "No, s takšnimi muzikanti pa je užitek delati ! Postaven možak po imenu Ernest Klenovšek šteje že krepko čez 80 let...",
+        content: `
+            <p class="mb-4">No, s takšnimi muzikanti pa je užitek delati ! Postaven možak po imenu Ernest Klenovšek šteje že krepko čez 80 let, pa vendar mu prsti še veselo drsijo po njegovi frajtonarici ! Snema namreč že svojo tretjo zgoščenko in spotoma načrtuje že četrto ;). Tokrat v spremljavi svojega sina Mirana na kitari. G. Ernest, lahko rečem samo - kapo dol !!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <img src="https://i.ibb.co/p6K7tYtZ/e8efd0-7830bbcfaeaf468085d0970835c216b1-mv2-d-3024-4032-s-4-2.webp" alt="Ernest Klenovšek 1" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+                <img src="https://i.ibb.co/N2xMJXk4/e8efd0-b3e470f094af4b2cbf071c27696bf9cd-mv2-d-3024-4032-s-4-2.webp" alt="Ernest Klenovšek 2" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+                <img src="https://i.ibb.co/SzHh93w/e8efd0-43d72a541af44c228aaef29eeb05c545-mv2-d-1408-1415-s-2.jpg" alt="Ernest Klenovšek 3" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy">
+            </div>
+        `,
+        image: "https://i.ibb.co/pjF0wcw0/Screenshot-2026-01-12-at-14-59-24.png",
+        tags: ["Glasba", "Snemanje", "Frajtonarica"]
     }
 ];
 
