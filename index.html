@@ -617,10 +617,17 @@
         let thumbPosition = 0;
         const thumbContainer = document.getElementById('slider-thumbs');
         const thumbWidth = 195; // 180px + 15px gap
+        const totalThumbs = 5; // Total number of thumbnails
+        const visibleThumbs = Math.floor(window.innerWidth / thumbWidth) || 3; // Thumbnails visible on screen
+        const maxScroll = -(thumbWidth * Math.max(0, totalThumbs - visibleThumbs)); // Maximum scroll position
 
         document.getElementById('next-thumbs').onclick = () => {
-            if (thumbPosition > -(thumbWidth * 2)) {
+            if (thumbPosition > maxScroll) {
                 thumbPosition -= thumbWidth;
+                // Don't scroll past the last thumbnail
+                if (thumbPosition < maxScroll) {
+                    thumbPosition = maxScroll;
+                }
                 thumbContainer.style.transform = `translateX(${thumbPosition}px)`;
             }
         };
