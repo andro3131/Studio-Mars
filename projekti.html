@@ -197,7 +197,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
     <script src="js/project-data.js"></script>
-<link rel="preconnect" href="https://i.ibb.co">
+    <link rel="preconnect" href="https://i.ibb.co">
 </head>
 
 <body>
@@ -430,18 +430,26 @@
             }
 
             if (data.videos && data.videos.length > 0) {
+                // Define titles only for 2026 (example)
+                const videoTitles = {
+                    "0Vsvf0fWgEQ": "MePZ Društva upokojencev Mirna - Sv. Nikolaj (En lep romantičen večer)"
+                };
+
                 html += `
                     <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
                         <h3 class="text-lg font-medium text-white mb-4">Video posnetki</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             ${data.videos.map(id => `
-                                <div class="aspect-video rounded-lg overflow-hidden video-facade" data-video-id="${id}">
-                                    <img src="https://img.youtube.com/vi/${id}/mqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-60" loading="lazy">
-                                    <div class="play-button">
-                                        <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z"></path>
-                                        </svg>
+                                <div class="group">
+                                    <div class="aspect-video rounded-lg overflow-hidden video-facade mb-2" data-video-id="${id}">
+                                        <img src="https://img.youtube.com/vi/${id}/mqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-60" loading="lazy">
+                                        <div class="play-button">
+                                            <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z"></path>
+                                            </svg>
+                                        </div>
                                     </div>
+                                    ${year === '2026' && videoTitles[id] ? `<p class="text-sm text-gray-400 group-hover:text-white transition-colors">${videoTitles[id]}</p>` : ''}
                                 </div>
                             `).join('')}
                         </div>
