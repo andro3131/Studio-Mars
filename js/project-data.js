@@ -40,7 +40,7 @@ const projectData = {
             { artist: "Maja Marinčič", desc: "video snemanje koncerta" },
             { artist: "MePZ Leo Fortis", desc: "snemanje in ozvočevanje koncerta" }
         ],
-        audio: ["himna-nk-trebnje"],
+        audio: ["studiomars31/himna-nk-trebnje"],
         videos: ["Zr3oZHCCt_o", "P03MxT6H_Xo", "EJYPq4STQ6w", "L439NaJv2as", "YicA3YLwAd0", "NPFZ50YQBRc", "2Y-ZYdAuKdQ"]
     },
     "2024": {
@@ -70,7 +70,7 @@ const projectData = {
             { artist: "Ingenium Ensemble", desc: "snemanje avtorske pesmi", status: "work" },
             { artist: "Meh Express", desc: "snemanje avtorske pesmi", status: "work" }
         ],
-        audio: ["stari-mlin", "hit-the-road-jack-live", "ob-kolpi", "ocean"],
+        audio: ["studiomars31/stari-mlin", "studiomars31/hit-the-road-jack-live", "studiomars31/ob-kolpi", "studiomars31/ocean"],
         videos: ["4V_AuR5o84s", "Q8PzJWbPHFI", "cp3JzwAER5s", "-Foejkv-Ae0"]
     },
     "2023": {
@@ -102,7 +102,7 @@ const projectData = {
             { artist: "Vokalna skupina Soreline", desc: "snemanje koncerta" },
             { artist: "Ženski pevski zbor Zimzelen", desc: "snemanje koncerta audio in video" }
         ],
-        audio: ["zdaj-vem", "pain-train"],
+        audio: ["studiomars31/zdaj-vem", "studiomars31/pain-train"],
         videos: ["sJwyKHxBbGc", "ZoDM7zJEvE0", "vORLuHL3a3s", "VCouAYPAtD0", "Wtb6DTTqesI", "-820IVgxZQw", "RSpqJC5SvJk", "KyI8ZtnqV8I", "UjXeG-sKxq4", "-YQM7neWqco", "J9pJTPhc8BQ"]
     },
     "2022": {
@@ -131,7 +131,7 @@ const projectData = {
             { artist: "Družina Gostiša", desc: "snemanje za zgoščenko" },
             { artist: "Dare Acoustic", desc: "snemanje demo posnetkov" }
         ],
-        audio: ["jezicek", "v-hribih-se-dela-dan"],
+        audio: ["studiomars31/jezicek", "studiomars31/v-hribih-se-dela-dan"],
         videos: ["Cc6rkpOcj6g", "JyoJ5eY7qjI", "ngobW3S_-bE"]
     },
     "2021": {
@@ -152,7 +152,7 @@ const projectData = {
             { artist: "Vivi Vah", desc: "snemanje avtorskih pesmi" },
             { artist: "Ema Suhadolnik", desc: "snemanje avtorskih pesmi" }
         ],
-        audio: ["peski-oktet"],
+        audio: ["studiomars31/peski-oktet"],
         videos: ["-A1YMNx8qSc", "kVzvCfzGoX4"]
     },
     "2020": {
@@ -171,7 +171,7 @@ const projectData = {
             { artist: "Urška Mitrovič", desc: "snemanje avtorske pesmi" },
             { artist: "Uroš Ržišnik", desc: "snemanje vokalov za avtorsko pesem" }
         ],
-        audio: ["mati-domovina", "sijaj-mi-soncece"],
+        audio: ["studiomars31/mati-domovina", "studiomars31/sijaj-mi-soncece"],
         videos: ["wrgC8VeRFPM", "KPP-UOhs8iE", "DQUbrlZj1sQ", "n1WgZTvZTcM"]
     },
     "2019": {
@@ -197,7 +197,7 @@ const projectData = {
             { artist: "Sara Jagrič", desc: "snemanje demo pesmi" },
             { artist: "Vladimir", desc: "opera, snemanje demo pesmi" }
         ],
-        audio: ["resta-immobile", "fly-me-the-moon", "frozen"],
+        audio: ["andrej-mezan-studio-mars/resta-immobile", "andrej-mezan-studio-mars/fly-me-the-moon"],
         videos: ["eQHiP9a6WD0", "b6XDgs8TN0A"]
     },
     "2018": {
@@ -222,7 +222,7 @@ const projectData = {
             { artist: "Oktet Lipa", desc: "snemanje koncerta" },
             { artist: "Manca Pirc", desc: "snemanje demo posnetkov" }
         ],
-        audio: ["killing-me-softly"],
+        audio: ["andrej-mezan-studio-mars/killing-me-softly"],
         videos: ["e6mq6FEuepI"]
     },
     "2017": {
