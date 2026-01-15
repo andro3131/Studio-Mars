@@ -156,43 +156,6 @@
             opacity: 1;
             transform: translateX(0);
         }
-
-        /* Video Facade Styles */
-        .video-facade {
-            position: relative;
-            background: #000;
-            cursor: pointer;
-        }
-
-        .video-facade:hover .play-button {
-            background: #EB462F;
-            transform: scale(1.1);
-        }
-
-        .video-facade img {
-            transition: opacity 0.3s ease;
-        }
-
-        .video-facade:hover img {
-            opacity: 0.8 !important;
-        }
-
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 64px;
-            height: 64px;
-            background: rgba(235, 70, 47, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
     </style>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
@@ -407,21 +370,9 @@
                         <h3 class="text-lg font-medium text-white mb-4">Izbrani posnetki</h3>
                         <div class="space-y-4">
                             ${data.audio.map(id => `
-                                <div class="audio-facade rounded-lg overflow-hidden bg-[#1a1a1a] p-4 border border-gray-800 cursor-pointer hover:bg-gray-800 transition-colors flex items-center justify-between group" data-audio-id="${id}">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="w-10 h-10 rounded-full bg-[#EB462F] flex items-center justify-center transform group-hover:scale-110 transition-transform">
-                                            <svg class="w-5 h-5 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M8 5v14l11-7z"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <span class="text-white text-sm font-medium block">Predvajaj posnetek</span>
-                                            <span class="text-gray-500 text-xs uppercase tracking-wider">SoundCloud</span>
-                                        </div>
-                                    </div>
-                                    <svg class="w-6 h-6 text-gray-600 group-hover:text-[#EB462F] transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M23.23 12.51c-.69-.42-1.42-.76-2.18-1.02.13-.37.2-.77.2-1.18 0-1.88-1.53-3.41-3.41-3.41-.65 0-1.25.18-1.78.49-.66-1.55-2.21-2.64-4.02-2.64-2.1 0-3.85 1.48-4.28 3.46-.2-.04-.4-.06-.61-.06-1.88 0-3.41 1.53-3.41 3.41 0 .28.04.56.11.83C1.65 13.06 0 14.89 0 17.09c0 2.32 1.88 4.2 4.2 4.2h15.6c2.32 0 4.2-1.88 4.2-4.2 0-1.95-1.33-3.59-3.13-4.08.23-.16.48-.33.76-.5z"/>
-                                    </svg>
+                                <div class="rounded-lg overflow-hidden">
+                                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/studiomars31/${id}&color=%23eb462f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false" loading="lazy"></iframe>
                                 </div>
                             `).join('')}
                         </div>
@@ -430,26 +381,15 @@
             }
 
             if (data.videos && data.videos.length > 0) {
-                // Define titles only for 2026 (example)
-                const videoTitles = {
-                    "0Vsvf0fWgEQ": "MePZ Društva upokojencev Mirna - Sv. Nikolaj (En lep romantičen večer)"
-                };
-
                 html += `
                     <div class="bg-gray-900 bg-opacity-80 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
                         <h3 class="text-lg font-medium text-white mb-4">Video posnetki</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             ${data.videos.map(id => `
-                                <div class="group">
-                                    <div class="aspect-video rounded-lg overflow-hidden video-facade mb-2" data-video-id="${id}">
-                                        <img src="https://img.youtube.com/vi/${id}/mqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-60" loading="lazy">
-                                        <div class="play-button">
-                                            <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M8 5v14l11-7z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    ${year === '2026' && videoTitles[id] ? `<p class="text-sm text-gray-400 group-hover:text-white transition-colors">${videoTitles[id]}</p>` : ''}
+                                <div class="aspect-video rounded-lg overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/${id}"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen loading="lazy"></iframe>
                                 </div>
                             `).join('')}
                         </div>
@@ -548,31 +488,6 @@
 
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll);
-
-        // SoundCloud & YouTube Facade Handler
-        document.addEventListener('click', function (e) {
-            // YouTube Facade
-            const videoFacade = e.target.closest('.video-facade');
-            if (videoFacade && !videoFacade.querySelector('iframe')) {
-                const videoId = videoFacade.getAttribute('data-video-id');
-                videoFacade.innerHTML = `
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}?autoplay=1"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                `;
-            }
-
-            // SoundCloud Facade
-            const audioFacade = e.target.closest('.audio-facade');
-            if (audioFacade && !audioFacade.querySelector('iframe')) {
-                const audioId = audioFacade.getAttribute('data-audio-id');
-                audioFacade.classList.remove('p-4', 'flex', 'items-center', 'justify-between', 'cursor-pointer', 'hover:bg-gray-800', 'group');
-                audioFacade.innerHTML = `
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/studiomars31/${audioId}&color=%23eb462f&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-                `;
-            }
-        });
     </script>
 </body>
 
