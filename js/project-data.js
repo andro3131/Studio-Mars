@@ -152,7 +152,7 @@ const projectData = {
             { artist: "Vivi Vah", desc: "snemanje avtorskih pesmi" },
             { artist: "Ema Suhadolnik", desc: "snemanje avtorskih pesmi" }
         ],
-        audio: [],
+        audio: ["peski-oktet"],
         videos: ["-A1YMNx8qSc", "kVzvCfzGoX4"]
     },
     "2020": {
@@ -171,7 +171,7 @@ const projectData = {
             { artist: "Urška Mitrovič", desc: "snemanje avtorske pesmi" },
             { artist: "Uroš Ržišnik", desc: "snemanje vokalov za avtorsko pesem" }
         ],
-        audio: ["mati-domovina"],
+        audio: ["mati-domovina", "sijaj-mi-soncece"],
         videos: ["wrgC8VeRFPM", "KPP-UOhs8iE", "DQUbrlZj1sQ", "n1WgZTvZTcM"]
     },
     "2019": {
@@ -197,8 +197,8 @@ const projectData = {
             { artist: "Sara Jagrič", desc: "snemanje demo pesmi" },
             { artist: "Vladimir", desc: "opera, snemanje demo pesmi" }
         ],
-        audio: [],
-        videos: []
+        audio: ["resta-immobile", "fly-me-the-moon", "frozen"],
+        videos: ["eQHiP9a6WD0", "b6XDgs8TN0A"]
     },
     "2018": {
         list: [
@@ -222,8 +222,8 @@ const projectData = {
             { artist: "Oktet Lipa", desc: "snemanje koncerta" },
             { artist: "Manca Pirc", desc: "snemanje demo posnetkov" }
         ],
-        audio: [],
-        videos: []
+        audio: ["killing-me-softly"],
+        videos: ["e6mq6FEuepI"]
     },
     "2017": {
         list: [
