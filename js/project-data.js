@@ -197,7 +197,7 @@ const projectData = {
             { artist: "Sara Jagrič", desc: "snemanje demo pesmi" },
             { artist: "Vladimir", desc: "opera, snemanje demo pesmi" }
         ],
-        audio: ["andrej-mezan-studio-mars/resta-immobile", "andrej-mezan-studio-mars/fly-me-the-moon"],
+        audio: ["studiomars31/resta-immobile", "studiomars31/fly-me-the-moon"],
         videos: ["eQHiP9a6WD0", "b6XDgs8TN0A"]
     },
     "2018": {
@@ -250,7 +250,7 @@ const projectData = {
             { artist: "Trebanjski oktet", desc: "snemanje koncerta", status: "work" }
         ],
         audio: [],
-        videos: []
+        videos: ["ay1QWqvW4ok"]
     },
     "2016": {
         list: [
