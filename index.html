@@ -219,8 +219,8 @@
 
         <!-- Main Content -->
         <main class="max-w-5xl mx-auto px-4 py-8">
-            <!-- Above-fold content - takes at least full viewport height -->
-            <div class="min-h-[calc(100vh-120px)]">
+            <!-- Above-fold content -->
+            <div>
                 <!-- Main Slider -->
                 <div class="reveal-left relative h-80 md:h-96 overflow-hidden rounded-xl shadow-2xl mb-8">
                     <div id="slider-main">
@@ -325,16 +325,15 @@
                             najem
                             glasbenikov.</p>
                     </div>
+                </div>
 
-                    <!-- Scroll Down Indicator -->
-                    <div class="flex justify-center mt-6 pt-4 border-t border-gray-700">
-                        <div onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})"
-                            class="scroll-indicator flex items-center justify-center text-white hover:text-[#EB462F] transition-colors">
-                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                stroke-width="3">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </div>
+                <!-- Scroll Down Indicator -->
+                <div class="flex justify-center mt-4">
+                    <div onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})"
+                        class="scroll-indicator flex items-center justify-center text-white hover:text-[#EB462F] transition-colors">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
                     </div>
                 </div>
             </div> <!-- End above-fold content -->
