@@ -11,7 +11,9 @@ const projectData = {
             { artist: "Kristjan Hočevar", desc: "produkcija, snemanje avtorske pesmi in izdelava videospota", status: "work" },
             { artist: "Filip Jagodič", desc: "audio&video snemanje in obdelava pesmi", status: "work" },
             { artist: "Revije pevskih zborov JSKD", desc: "audio in video snemanje štirih prireditev", status: "work" },
-            { artist: "Društvo upokojencev Mirna", desc: "audio in video snemanje ter ozvočevanje prireditve \"Za Mirno z ljubeznijo\"", status: "work" }
+            { artist: "Društvo upokojencev Mirna", desc: "audio in video snemanje ter ozvočevanje prireditve \"Za Mirno z ljubeznijo\"", status: "work" },
+            { artist: "Drugi vagon", desc: "ozvočevanje in snemanje koncerta *" },
+            { artist: "Erazem Žganjar", desc: "ozvočevanje in snemanje koncerta *" }
         ],
         audio: [],
         videos: ["0Vsvf0fWgEQ"]
