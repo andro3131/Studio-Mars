@@ -224,7 +224,7 @@ const projectData = {
             { artist: "Oktet Lipa", desc: "snemanje koncerta" },
             { artist: "Manca Pirc", desc: "snemanje demo posnetkov" }
         ],
-        audio: ["andrej-mezan-studio-mars/killing-me-softly"],
+        audio: ["andrej-mezan-studio-mars/killing-me-softly", "andrej-mezan-studio-mars/drugi-vagon-najdisi"],
         videos: ["e6mq6FEuepI"]
     },
     "2017": {
@@ -251,7 +251,7 @@ const projectData = {
             { artist: "Željko Rokvič band", desc: "snemanje demo pesmi", status: "work" },
             { artist: "Trebanjski oktet", desc: "snemanje koncerta", status: "work" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/laura-in-ema-kje-je-moje-srce", "andrej-mezan-studio-mars/trebanjski-oktet-angelcek", "andrej-mezan-studio-mars/zidaniski-kvintet-samski-stan", "andrej-mezan-studio-mars/zidaniski-kvintet-tako-lepo"],
         videos: ["ay1QWqvW4ok"]
     },
     "2016": {
@@ -278,7 +278,7 @@ const projectData = {
             { artist: "Matevž Mikeln", desc: "snemanje za zgoščenko", status: "work" },
             { artist: "Tilen Zakrajšek", desc: "bobni, snemanje demo posnetkov", status: "work" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/matevz-mikelj-zadnja-noc", "andrej-mezan-studio-mars/luka-groboljsek-valcek-za-ukulele", "andrej-mezan-studio-mars/darja-stamcar-say-something"],
         videos: []
     },
     "2015": {
@@ -305,7 +305,7 @@ const projectData = {
             { artist: "Studio Virc", desc: "snemanje telefonske tajnice za T2" },
             { artist: "Metro Audio VIdeo", desc: "snemanje slovenske različice za iROBOT" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/pihalni-orkester-trebnje-pokonci-trebanjci", "andrej-mezan-studio-mars/lucija-tacer-up-in-the-sun", "andrej-mezan-studio-mars/pihalni-orkester-trebnje-think", "andrej-mezan-studio-mars/trio-adijo-pozdravljam-te-domovina", "andrej-mezan-studio-mars/ansambel-vrisk-vriskamo-od-srece", "andrej-mezan-studio-mars/regratova-lucka"],
         videos: []
     },
     "2014": {
@@ -331,7 +331,7 @@ const projectData = {
             { artist: "Grajski oktet", desc: "snemanje za zgoščenko", status: "work" },
             { artist: "Matjaž Zupančič", desc: "snemanje klavirja, demo posnetki" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/mepz-tabor-cerknica-kaj-tam-se-v-vinogradu-bliska", "andrej-mezan-studio-mars/primoz-bulc-ni-se-cas-za-umret", "andrej-mezan-studio-mars/grajski-oktet-zelena-dezela", "andrej-mezan-studio-mars/no-name-band-love-hurts", "andrej-mezan-studio-mars/dezur-morje-caka", "andrej-mezan-studio-mars/ansambel-kolibri-nasa-mati", "andrej-mezan-studio-mars/kvartet-slavcek-po-gorah-grmi", "andrej-mezan-studio-mars/jamm-at-last"],
         videos: []
     },
     "2013": {
@@ -364,7 +364,7 @@ const projectData = {
             { artist: "Julija Omahen", desc: "snemanje demo posnetka" },
             { artist: "KUD Matija Tomc Mirna", desc: "snemanje za zgoščenko" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/zlobko-big-band-himna-mesta-trebnje", "andrej-mezan-studio-mars/ivo-caric-zuborenje", "andrej-mezan-studio-mars/damjan-plevnik-da-te-mogu pismom-zvati", "andrej-mezan-studio-mars/irena-tratnik-blaz-jurjevcic-perfidia", "andrej-mezan-studio-mars/karmen-virc-navigacija"],
         videos: []
     },
     "2012": {
@@ -389,7 +389,7 @@ const projectData = {
             { artist: "Ansambel Glivar", desc: "demo posnetki" },
             { artist: "MEPZ Mirna in orkester Slovenske filharmonije", desc: "koncert" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/luka-groboljsek-moj-zeleni raj", "andrej-mezan-studio-mars/sandbarry-premlada-sva-bila", "andrej-mezan-studio-mars/eva-virc-en-like"],
         videos: []
     },
     "2011": {
@@ -411,7 +411,7 @@ const projectData = {
             { artist: "Ansambel Suha solza", desc: "narodno-zabavna, demo posnetki" },
             { artist: "Pihalni orkester Botriček", desc: "snemanje priložnostne zasedbe" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/zidaniski-kvintet-polka-za-majolko", "andrej-mezan-studio-mars/kvartet-sever-ko-bi-se-se-enkrat-rodil"],
         videos: []
     },
     "2010": {
@@ -426,7 +426,7 @@ const projectData = {
             { artist: "Godalni trio Viva", desc: "material za zgoščenko" },
             { artist: "Glasbena šola Studio Kreator", desc: "material za gl. šolo na daljavo" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/the-call-boys-dolenjska-je-moja-mati", "andrej-mezan-studio-mars/godalni-trio-viva-nessun-dorma", "andrej-mezan-studio-mars/andrej-mezan-in-the-sweet"],
         videos: []
     },
     "2009": {
@@ -445,7 +445,7 @@ const projectData = {
             { artist: "Gianni Rijavec in Zidaniški kvintet", desc: "skupen projekt" },
             { artist: "Vokalna skupina Ragle", desc: "material za zgoščenko" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/kvartet-trenotek-snezinke-bele-zvezdice", "andrej-mezan-studio-mars/schlager-kvintet-na-fax", "andrej-mezan-studio-mars/lsq-back-in-the-days", "andrej-mezan-studio-mars/ansambel-vrisk-recesija", "andrej-mezan-studio-mars/gianni-rijavec-zidaniski-kvintet-v-meni-bije-slovensko-srce"],
         videos: []
     },
     "2008": {
@@ -459,7 +459,7 @@ const projectData = {
             { artist: "Zidaniški kvintet", desc: "demo posnetki" },
             { artist: "D'Neeb", desc: "rock, material za zgoščenko" }
         ],
-        audio: [],
+        audio: ["andrej-mezan-studio-mars/oto-pestner-blind-barnabus", "andrej-mezan-studio-mars/nusa-derenda-raj-ko-vavpetic-ne-cakaj-na-maj", "andrej-mezan-studio-mars/matej-krajnc-stvari", "andrej-mezan-studio-mars/nusa-derenda-raj-ko-vavpetic-le-verjemi", "andrej-mezan-studio-mars/dneeb-slovo"],
         videos: []
     }
 };
