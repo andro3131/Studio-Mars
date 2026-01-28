@@ -1,5 +1,5 @@
 const blogPosts = [
-    {
+{
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
         date: "17.03.2025",
@@ -474,6 +474,204 @@ const blogPosts = [
         `,
         image: "https://res.cloudinary.com/dewf3zos0/image/upload/f_auto,q_auto/v1768415043/Screenshot-2026-01-12-at-17-46-36_yumiql.png",
         tags: ["Oblikovanje", "Tisk", "Ansambel"]
+    },
+    {
+        id: 100,
+        title: "Mladi Dolenjci na obisku",
+        date: "Sep 6, 2016",
+        readTime: "1 min branja",
+        excerpt: "Tokrat smo uživali v glasbi Mladih Dolenjcev, ki so posneli nekaj skladb v reklamne namene, Ni kaj, fantje, ki so na sceni že kar vrsto let, dobro ved...",
+        content: `<p class="mb-4">Tokrat smo uživali v glasbi Mladih Dolenjcev, ki so posneli nekaj skladb v reklamne namene, Ni kaj, fantje, ki so na sceni že kar vrsto let, dobro vedo, kako se igra dobra domača glasba :).</p><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601011/mladi-dolenjci-na-obisku-2_ogewke.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601011/mladi-dolenjci-na-obisku-1_rjf48f.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601011/mladi-dolenjci-na-obisku-2_ogewke.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 101,
+        title: "Novi UAD piškotki !",
+        date: "Aug 17, 2016",
+        readTime: "1 min branja",
+        excerpt: "Zopet se nam cedijo sline, kajti naš UAD portfelij je bogatejši za kar nekaj noro dobrih pluginov v vrednosti več kot 3000$ ! Naša UAD Octo kartica je...",
+        content: `<p class="mb-4">Zopet se nam cedijo sline, kajti naš UAD portfelij je bogatejši za kar nekaj noro dobrih pluginov v vrednosti več kot 3000\$ ! Naša UAD Octo kartica je sedaj nadgrajena na zadnjo različico v8.7, spodaj pa je spisek najnovejših piškotkov, ki jih bomo seveda pridno uporabljali:</p><p class="mb-4">Galaxy Tape Echo</p><p class="mb-4">Fender '55 Tweed Deluxe Plug-In</p><p class="mb-4">Studio D Chorus</p><p class="mb-4">Brigade Chorus Pedal</p><p class="mb-4">Ampeg Heritage Bass Amp Bundle</p><p class="mb-4">Chandler Limited Curve Bender Mastering EQ Plug-In</p><p class="mb-4">Sonnox Oxford Limiter v2 Plug-In</p><p class="mb-4">Marshall® Legends Bundle</p><p class="mb-4">Marshall JMP 2203 Plug-In</p><p class="mb-4">Brainworx bx_saturator</p><p class="mb-4">Vertigo Sound VSC-2 Compressor Plug-In</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601011/novi-uad-piskotki_ompt8n.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601011/novi-uad-piskotki_ompt8n.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 102,
+        title: "Občinski pihalni orkester Trebnje z zgoščenko ob 90 letnici !",
+        date: "Jul 1, 2016",
+        readTime: "2 min branja",
+        excerpt: "V zadnjih mesecih se je v studiu vrstilo kar nekaj zanimivih projektov, izpostavimo pa lahko največjega, to je snemanje in izdaja zgoščenke ob 90 letn...",
+        content: `<p class="mb-4">V zadnjih mesecih se je v studiu vrstilo kar nekaj zanimivih projektov, izpostavimo pa lahko največjega, to je snemanje in izdaja zgoščenke ob 90 letnici Občinskega pihalnega orkestra Trebnje. Pomlajena ekipa z dirigentom Primožem Kravcarjem ter predsednikom Simonom Černetom je pripravila izredno razgiban in zanimiv repertoar, na katerega so lahko resnično ponosni!. Na zgoščenki, ki je izšla v začetku julija, se nahaja 15 pesmi, ki še kako kažejo vso glasbeno širino, ki jo orkester ima. Projekt je bil zanimiv tudi iz stališča snemanja, ki se je začelo že spomladi preteklo leto in je bilo zanj porabljenih skoraj 200 studijskih ur dela, snemanje pa se je izvajalo delno v prostorih pihalnega orkestra kot tudi v samem studiu. Za zgoščenko je bila seveda narejana tudi končna zvočna podoba, kot tudi grafična podoba. Ja, s fanti in dekleti iz orkestra smo skupaj preživeli kar nekaj lepih trenutkov, bilo je seveda tudi dosti truda in odrekanja, a še več smeha in zabave.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601011/orkester-trebnje-90-letnica_kfmlyo.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601011/orkester-trebnje-90-letnica_kfmlyo.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 103,
+        title: "Darja Štamcar se predstavlja z balado Say Something",
+        date: "Jan 22, 2016",
+        readTime: "1 min branja",
+        excerpt: "Darja Štamcar je mlada pevka iz Šentrupeta, ki trenutno živi in dela v Düsseldorfu. Pred kratkim se je zopet mudila v Sloveniji in posnela svoj prvi \"...",
+        content: `<p class="mb-4">Darja Štamcar je mlada pevka iz Šentrupeta, ki trenutno živi in dela v Düsseldorfu. Pred kratkim se je zopet mudila v Sloveniji in posnela svoj prvi "cover" prelepe balade skupine "A Great Big World ft. Christina Aguilera" - Say Something. Glede na slišano verjamemo, da Darja še ni rekla zadnje besede :)</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601012/darja-stamcar_weybj7.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>
+            <div class="mt-8 rounded-lg overflow-hidden">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fstudiomars31%2Fdarja-stamcar-say-something-a-great-big-world-christina-aguilera-cover&color=%23eb462f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false" loading="lazy"></iframe>
+            </div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601012/darja-stamcar_weybj7.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 104,
+        title: "Obisk Fantov iz Praprotna !",
+        date: "Jan 20, 2016",
+        readTime: "1 min branja",
+        excerpt: "Prejšnji teden sta se v studiu mudila dve legendi narodno-zabavne glasbe - Andrej Bergant ter Janez Dolenc, člana skupine Fantov iz Praprotna! Snemal...",
+        content: `<p class="mb-4">Prejšnji teden sta se v studiu mudila dve legendi narodno-zabavne glasbe - Andrej Bergant ter Janez Dolenc, člana skupine Fantov iz Praprotna! Snemal se je namreč zanimiv projekt za Mojco Dolenc in njeno praznovanje 50 letnice. Mojca je trenutno članica ansambla Zidaniški kvintet, v prejšnjih letih pa je sodelovala tudi pri asnamblih Obzorje, Sredenšek in Karavanke. Je seveda hčerka Janeza Dolenca, basista pri Fantih iz Praprotna. Avtor pesmi "Mojca, Abrahamka!" je Primož Kosec, avtor besedila pa Bernard Miklavc. Sodelujoči v projektu so bili še: Barbara Leben, Primož kosec, Darja Kosec, Aljoša Deferri, Dušan Sajovic, Andrej Bergant in Janez Dolenc. Mojco smo seveda presenetili s pesmijo na njeni zabavi.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601012/fantje-iz-praprotna-1_qu62xk.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601012/fantje-iz-praprotna-2_lzjtgh.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"></div>
+            <div class="mt-8 rounded-lg overflow-hidden">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fstudiomars31%2Fmojca-abrahamka&color=%23eb462f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false" loading="lazy"></iframe>
+            </div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601012/fantje-iz-praprotna-1_qu62xk.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 105,
+        title: "Nova pošiljka UAD vtičnikov je tukaj !",
+        date: "Jan 14, 2016",
+        readTime: "1 min branja",
+        excerpt: "No, pa smo dočakali novo pošiljko UAD vtičnikov za našo UAD Octo kartico ! Sedaj se jih je nabralo že preko 90, v zbirki pa so praktično skoraj vsi do...",
+        content: `<p class="mb-4">No, pa smo dočakali novo pošiljko UAD vtičnikov za našo UAD Octo kartico ! Sedaj se jih je nabralo že preko 90, v zbirki pa so praktično skoraj vsi do zadnje programske različice 8.4. Med najbolj priljubljeni so Ampex® ATR-102, Lexicon® 224, EMT® 140/250, Studer® A800, FATSO™ Jr./Sr. Tape Sim, Manley® Massive Passive EQ in še mnogi drugi. No, najnovejši piškotki pa so: Tonelux Tilt, Thermionic Culture Vulture, Neve AMS RMX 16, Manley Vari-Mu Limiter, Chandler Amp, Neve 88 Collection, Tube-Tech CL 1B Compressor, Valley People Dyna-mite™, Summit Audio TLA-100A Compressor, Tube-Tech EQ, Masssenburg EQ, Friedman AMPS, Eventide harmonizer, AKG BX 20 Spring Reverb, Oxide Tape Recorder Plug-In.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601012/nova-posiljka-uad_hnal4h.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601012/nova-posiljka-uad_hnal4h.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 106,
+        title: "Snemanje koncerta Pihalnega orkestra Trebnje",
+        date: "Dec 29, 2015",
+        readTime: "1 min branja",
+        excerpt: "Pihalni orkester trebnje zadnja leta pod taktirko dirigenta Primoža Kravcarja vidno napreduje in širi svoj repertoar. Poleg \"klasičnih godbeniških\" pe...",
+        content: `<p class="mb-4">Pihalni orkester trebnje zadnja leta pod taktirko dirigenta Primoža Kravcarja vidno napreduje in širi svoj repertoar. Poleg "klasičnih godbeniških" pesmi se radi lotevjo tudi drugih zvrsti, kot so dalmatinska glasba, narodno-zabavna, pa tudi filmska glasba ter bolj umeten repertoar. Vsako leto ob koncu decembra prirejajo tradicionalni novoletni koncert, kamor povabijo tudi različne goste. Letos so bili to ansambel Pogum ter dalmatinska klapa Planta. Ker pa se orkester pripravlja tudi na 90-to obletnico delovanja, ki jo bo praznoval letos poleti, pa pridno snemajo tudi novo CD ploščo. Tako smo se lotili tudi snemanja samega novoletnega koncerta z namenom, da kakšno pesem objavijo na novi zgoščenki tudi s koncerta "v živo". Snemanje je potekalo na kar 32 kanalov, kajti ozvočene so bile vse sekcije posebaj, pa tudi sami solisti.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601013/snemanje-orkester-trebnje_m2rxxe.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601013/snemanje-orkester-trebnje_m2rxxe.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 107,
+        title: "Snema se slovenska govorna različica za iRobot !",
+        date: "Dec 3, 2015",
+        readTime: "1 min branja",
+        excerpt: "Lastniki smodejnih sesalcev iRobot bodo kmalu še bolj zadovoljni s svojim marljivim prijateljem, kajti kmalu bo na voljo slovenska različica zvokovnih...",
+        content: `<p class="mb-4">Lastniki smodejnih sesalcev iRobot bodo kmalu še bolj zadovoljni s svojim marljivim prijateljem, kajti kmalu bo na voljo slovenska različica zvokovnih menujev za te sesalce. Pred kratkim smo namreč snemali zvokovne menije v slovenskem jeziku, ki bodo kmalu na voljo kot programska nadrgadnja določenih modelov iRobot. Kdaj bo posodobitev na voljo, pa lahko preverite pri pooblaščenih prodajalcih podjetja :)</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601013/irobot-slovenscina_tustaz.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601013/irobot-slovenscina_tustaz.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 108,
+        title: "Dobrodošli na prenovljeni spletni strani Studia Mars !",
+        date: "Sep 30, 2015",
+        readTime: "1 min branja",
+        excerpt: "Dobrodošli na prenovljeni spletni strani Studia Mars ! Čas je že bil, da po skoraj osmih letih posodobimo grafično podobo in dodamo nekaj svežih fotog...",
+        content: `<p class="mb-4">Dobrodošli na prenovljeni spletni strani Studia Mars ! Čas je že bil, da po skoraj osmih letih posodobimo grafično podobo in dodamo nekaj svežih fotografij studia, njegovih obiskovalcev in tudi nove opreme, ki se je v času pridno dopolnjevala. Kako v nekaj besedah opisati vse, kar se je v času, odkar je studio odprl svoja vrata, zanimivega zgodilo ? Bilo je potovanje nepozabnega druženja s prijetnimi, kreativnimi in nadebudnimi ljudmi, željni deliti košček svoje glasbene ustvarjalnosti z nami in ostalimi poslušalci. In na koncu največ šteje neizmerljivo zadovoljstvo, tista iskrica v očeh vsakega glasbenika, ki je navdušen nad svojim izdelkom ... In tako je tudi naše poslanstvo izpolnjeno. Na novi spletni strani boste lahko kot dosedaj spremljali aktualne novice, pregledovali sveže fotografije, poslušali zvočne in slikovne prispevke ter si spotoma prebrali vse o naši "turneji skozi glasbeno vesolje"! Vabljeni torej v snemalni studio Mars ! :)</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601013/dobrodosli-prenovljena-stran_si9b2q.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601013/dobrodosli-prenovljena-stran_si9b2q.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 109,
+        title: "Fotografiranje studia",
+        date: "Sep 20, 2015",
+        readTime: "1 min branja",
+        excerpt: "Ravnokar se delajo fotografije za novo grafično podobo studia. Pripravlja se tudi nova spletna stran, ki bo zaživela v kratkem. Po skoraj osmih letih...",
+        content: `<p class="mb-4">Ravnokar se delajo fotografije za novo grafično podobo studia. Pripravlja se tudi nova spletna stran, ki bo zaživela v kratkem. Po skoraj osmih letih je čas za malo osvežitve, mar ne 😆?</p><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601014/fotografiranje-studia-1_pmdihd.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601014/fotografiranje-studia-2_a1cekp.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601014/fotografiranje-studia-1_pmdihd.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 110,
+        title: "Akcija za vokalne skupine in pevske zbore !",
+        date: "Sep 9, 2015",
+        readTime: "1 min branja",
+        excerpt: "Trenutno je v ponudbi akcijski paket za zbore in tudi druge vokalne skupine, ki zajema snemanje, obdelavo posnetega materiala (mix in mastering), graf...",
+        content: `<p class="mb-4">Trenutno je v ponudbi akcijski paket za zbore in tudi druge vokalne skupine, ki zajema snemanje, obdelavo posnetega materiala (mix in mastering), grafično oblikovanje tiskovin za zgoščenko, ter nenazadnje tisk in razmnoževanje CD medijev. Akcijska cena znaša 1199 EUR in vključuje 20 ur snemanja, 20 ur obdelave zvoka, 5 ur grafičnega oblikovanja ter tisk in replikacijo 300 kos zgoščenk. Snemanje se izvaja v studiu ali na terenu z vrhunsko mobilno opremo.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601015/akcija-vokalne-skupine_vv8nmq.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601015/akcija-vokalne-skupine_vv8nmq.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 111,
+        title: "Nov mikrofon Neumann TLM67",
+        date: "Sep 7, 2015",
+        readTime: "1 min branja",
+        excerpt: "No, pa je končno prispel vrhunski mikrofon Neumann TLM67 ! Po skoraj dveh letih čakanja se je želja končno uresničila. Mikrofon temlji na legendarnem...",
+        content: `<p class="mb-4">No, pa je končno prispel vrhunski mikrofon Neumann TLM67 ! Po skoraj dveh letih čakanja se je želja končno uresničila. Mikrofon temlji na legendarnem modelu U67, vendar je narejen po modernejših smernicah, bolj prilagojen za snemanje v digitalnem svetu. Tudi zvokovni karakter se razlikuje od svojega predhodnika, v smislu prefinjene natančnosti in neizstopajočih sičnikov, zaradi česar je skrito orožje še posebaj za ženske vokale. Seveda pa je primeren za snemanje skoraj vsega. Se že veselimo novih, še boljših posnetkov !</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601015/neumann-tlm67_vc0otc.png" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601015/neumann-tlm67_vc0otc.png",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 112,
+        title: "Luka Groboljšek z novo skladbo",
+        date: "Aug 25, 2015",
+        readTime: "1 min branja",
+        excerpt: "Čisto sveže !! Pravkar izdana skladba \"Na avtocesti\" je znana avsenikova melodija v preobleki zanimive kombinacije instrumentov, v katerih prevladuje...",
+        content: `<p class="mb-4">Čisto sveže !! Pravkar izdana skladba "Na avtocesti" je znana avsenikova melodija v preobleki zanimive kombinacije instrumentov, v katerih prevladuje nekaj povsem svežega za narodnozabavno zvrst - ukulele ! Vse instrumente je odigral Luka Groboljšek, posneto v Studio Mars, slide ukulele pa v Studio Zlati zvoki.</p>
+                <div class="mt-8">
+                    <div class="aspect-video rounded-lg overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DnTieftXy3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>`,
+        image: "",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 113,
+        title: "Kantavtor Dean Černec se pripravlja na izdajo nove zgoščenke",
+        date: "Jul 26, 2015",
+        readTime: "1 min branja",
+        excerpt: "Počasi se zaključuje projekt kantavtorja, kitarista in vokalista Deana Černeca. Glasba na prihajajočem albumu bo predvsem rockersko obarvana, z izjemo...",
+        content: `<p class="mb-4">Počasi se zaključuje projekt kantavtorja, kitarista in vokalista Deana Černeca. Glasba na prihajajočem albumu bo predvsem rockersko obarvana, z izjemo nekaj akustičnih balad, vsa besedila in tudi melodije pa so avtorsko delo Deana. V odlični spremljevalni ekipi so sodelovali Blaž Jurjevčič (klaviature), Vlado Pirc (bas) in Bogdan Turnšek - Poli (bobni), nekatere kitarske parte pa je odigral tudi Miran Černec.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601016/dean-cernec-2_o3wklx.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601016/dean-cernec-1_jwjggs.jpg" class="rounded-lg shadow-md w-full object-cover h-64" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601016/dean-cernec-2_o3wklx.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 114,
+        title: "Grajski oktet z novo zgoščenko",
+        date: "Jun 23, 2015",
+        readTime: "1 min branja",
+        excerpt: "Grajski oktet je izdal svojo drugo zgoščenko ob 10 letnici delovanja. Skupina je bila ustanovljena leta 2005, vodi pa jo Peter Pirnat, lastnik gradu T...",
+        content: `<p class="mb-4">Grajski oktet je izdal svojo drugo zgoščenko ob 10 letnici delovanja. Skupina je bila ustanovljena leta 2005, vodi pa jo Peter Pirnat, lastnik gradu Tuštanj, v katerem ima oktet tudi redne vaje. V zadnjih nekaj meseceh je Grajski oktet pridno senaml material za novo zgoščenko, na kateri pa se nahaja malo drugačen asortiman od klasičnega oktetovskega. Poslušalci bodo lahko uživali ob zvokih dalmatinskih pesmi, modernih priredb slovenskih popularnih pesmi, prelepih Slakovih melodij ter nenazadnje tudi kakšne črnske duhovne pesmi. Snemanje, zvokovna obdelava materiala, grafično oblikovanje ter tudi tisk zgoščenk je bil v celoti izveden v Studiu Mars.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601017/grajski-oktet_zpx7ob.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601017/grajski-oktet_zpx7ob.jpg",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 115,
+        title: "Podjetje M-Tom posnelo svojo skladbo",
+        date: "Jul 10, 2014",
+        readTime: "1 min branja",
+        excerpt: "Skladba \"V deželi kozolcev\" je bila posneta za \"hišni ansambel\" podjetja M-Tom iz Mirne. Zgodba podjetja je prava inspiracija za slovensko podjetništv...",
+        content: `<p class="mb-4">Skladba "V deželi kozolcev" je bila posneta za "hišni ansambel" podjetja M-Tom iz Mirne. Zgodba podjetja je prava inspiracija za slovensko podjetništvo. Nekaj nekdanjih delavcev Toma, ki je šlo leta 2011 v stečaj, je z lastnimi sredstvi ustanovilo novo podjetje M Tom. Podjetje, ki izdeluje sedežne garniture, je trenutno zelo uspešno na slovenskem tržišču, med zaposlenimi pa imajo tudi svoj ansambel, ki še dodatno promovira njihove odlične izdelke. Pod skladbo se je podpisal Tomaž Zlobko, posneto in obdelano v Studiu Mars.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601418/Screenshot_2026-01-28_at_12.56.16_fjuovj.png" class="rounded-lg shadow-lg w-full" loading="lazy"></div>
+                <div class="mt-8">
+                    <div class="aspect-video rounded-lg overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qyegtMrtJKI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601418/Screenshot_2026-01-28_at_12.56.16_fjuovj.png",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 116,
+        title: "Studio Mars snema za Google Maps !",
+        date: "Apr 10, 2014",
+        readTime: "1 min branja",
+        excerpt: "Studio Mars je preko ameriškega podjetja Metro Audio Video posnel material za spletno navigacijo Google Maps ! Glas je posodila Karmen Virc iz podjetj...",
+        content: `<p class="mb-4">Studio Mars je preko ameriškega podjetja Metro Audio Video posnel material za spletno navigacijo Google Maps ! Glas je posodila Karmen Virc iz podjetja Studio Virc iz Novega Mesta. Seveda gre za slovensko različico govorne navigacije, ki jo lahko slišite na aplikaciji na mobilnih napravah. Ponosni smo, da je podjetje izbralo prav nas za ta projekt !</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601200/e8efd0_1070f42a388440bd910eef559a38dd15_mbtugr.avif" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601200/e8efd0_1070f42a388440bd910eef559a38dd15_mbtugr.avif",
+        tags: ["Arhiv","Novice"]
+    },
+    {
+        id: 117,
+        title: "Irena Tratnik in Blaž Jurjevčič združujeta moči",
+        date: "Jul 29, 2013",
+        readTime: "1 min branja",
+        excerpt: "Odlična pevka Irena Tratnik, ki je na naši glasbeni sceni prisotna že kar nekaj časa, še posebno pa je poznana s svojo uspešnico \"Malo miru\" iz 80-tih...",
+        content: `<p class="mb-4">Odlična pevka Irena Tratnik, ki je na naši glasbeni sceni prisotna že kar nekaj časa, še posebno pa je poznana s svojo uspešnico "Malo miru" iz 80-tih let, predstavlja novo skladbo v duetu z vrhunskim pianistom Blažem Jurjevčičem. Skladba po imenu "Perfidia" je prva od 10-tih skladb, ki bodo ugledela luč sveta na prihajajoči zgoščenki. Prijetno poslušanje !</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601200/e8efd0_2bcbf25b6ca04867bd6c61f6c4b8b043_sjbje4.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>`,
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601200/e8efd0_2bcbf25b6ca04867bd6c61f6c4b8b043_sjbje4.jpg",
+        tags: ["Arhiv","Novice"]
     }
 ];
 
