@@ -22,7 +22,7 @@ const projectData = {
         list: [
             { artist: "Drugi vagon", desc: "snemanje za drugo zgoščenko", status: "work" },
             { artist: "Sara in Iris", desc: "snemanje promo pesmi" },
-            { artist: "Roman Opara", desc: "snemanje avtorske pesmi in produkcija videospota" },
+            { artist: "Roman Opara", desc: "snemanje avtorske pesmi and produkcija videospota" },
             { artist: "Projekt PODARI PESEM", desc: "snemanje namenskih skladb po naročilu", status: "work" },
             { artist: "Damjana in Doris", desc: "snemanje promo pesmi" },
             { artist: "Roman Končar", desc: "snemanje za televizijsko oddajo" },
@@ -315,7 +315,7 @@ const projectData = {
             { artist: "Metro Audio VIdeo", desc: "snemanje slovenske različice za iROBOT" }
         ],
         audio: ["andrej-mezan-studio-mars/lucija-tacer-up-in-the-sun-22", "andrej-mezan-studio-mars/luka-groboljsek-valcek-za-ukulele-24", "andrej-mezan-studio-mars/regratova-lucka-1", "andrej-mezan-studio-mars/matevz-mikelj-zadnja-noc-26"],
-        videos: []
+        videos: ["BzPaqmgVTLE", "DnTieftXy3M"]
     },
     "2014": {
         list: [
@@ -342,7 +342,7 @@ const projectData = {
             { artist: "Matjaž Zupančič", desc: "snemanje klavirja, demo posnetki" }
         ],
         audio: ["andrej-mezan-studio-mars/jamm-at-last-16", "andrej-mezan-studio-mars/primoz-bulc-ni-se-cas-za-umret-34", "andrej-mezan-studio-mars/ansambel-kolibri-nasa-mati-3", "andrej-mezan-studio-mars/mepz-tabor-cerknica-kaj-tam-se-v-vinogradu-bliska-27", "andrej-mezan-studio-mars/kvartet-slavcek-po-gorah-grmi-18", "andrej-mezan-studio-mars/no-name-band-love-hurts-28", "andrej-mezan-studio-mars/grajski-oktet-zelena-dezela-13"],
-        videos: []
+        videos: ["w5HNDtBublI", "qyegtMrtJKI"]
     },
     "2013": {
         list: [
@@ -384,7 +384,7 @@ const projectData = {
             "podari-pesem/for-a-thousand-years-tinkara-lazar-7",
             "podari-pesem/dolinarji-naj-ta-valcek-najlepse-zazveni-5"
         ],
-        videos: []
+        videos: ["RmIp0HEUw5k"]
     },
     "2012": {
         list: [
@@ -418,7 +418,7 @@ const projectData = {
             "podari-pesem/ne-zapravite-mi-zuljev-ansambel-vecerni-zvon-15",
             "podari-pesem/make-you-fell-my-love-tinkara-lazar-13"
         ],
-        videos: []
+        videos: ["Tyhso6gqHfo", "76fTJoDOtJQ"]
     },
     "2011": {
         list: [
@@ -446,7 +446,7 @@ const projectData = {
             "podari-pesem/anton-foerster-in-marcos-fink-domovina-je-mati-3",
             "podari-pesem/klavdija-zakrajsek-the-climb-11"
         ],
-        videos: []
+        videos: ["d2sRatjFLig"]
     },
     "2010": {
         list: [
