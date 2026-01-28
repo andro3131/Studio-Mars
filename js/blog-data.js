@@ -644,13 +644,13 @@ const blogPosts = [
         date: "Jul 10, 2014",
         readTime: "1 min branja",
         excerpt: "Skladba \"V deželi kozolcev\" je bila posneta za \"hišni ansambel\" podjetja M-Tom iz Mirne. Zgodba podjetja je prava inspiracija za slovensko podjetništv...",
-        content: `<p class="mb-4">Skladba "V deželi kozolcev" je bila posneta za "hišni ansambel" podjetja M-Tom iz Mirne. Zgodba podjetja je prava inspiracija za slovensko podjetništvo. Nekaj nekdanjih delavcev Toma, ki je šlo leta 2011 v stečaj, je z lastnimi sredstvi ustanovilo novo podjetje M Tom. Podjetje, ki izdeluje sedežne garniture, je trenutno zelo uspešno na slovenskem tržišču, med zaposlenimi pa imajo tudi svoj ansambel, ki še dodatno promovira njihove odlične izdelke. Pod skladbo se je podpisal Tomaž Zlobko, posneto in obdelano v Studiu Mars.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769601418/Screenshot_2026-01-28_at_12.56.16_fjuovj.png" class="rounded-lg shadow-lg w-full" loading="lazy"></div>
+        content: `<p class="mb-4">Skladba "V deželi kozolcev" je bila posneta za "hišni ansambel" podjetja M-Tom iz Mirne. Zgodba podjetja je prava inspiracija za slovensko podjetništvo. Nekaj nekdanjih delavcev Toma, ki je šlo leta 2011 v stečaj, je z lastnimi sredstvi ustanovilo novo podjetje M Tom. Podjetje, ki izdeluje sedežne garniture, je trenutno zelo uspešno na slovenskem tržišču, med zaposlenimi pa imajo tudi svoj ansambel, ki še dodatno promovira njihove odlične izdelke. Pod skladbo se je podpisal Tomaž Zlobko, posneto in obdelano v Studiu Mars.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769605245/Screenshot_2026-01-28_at_12.56_copy_tukmza.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>
                 <div class="mt-8">
                     <div class="aspect-video rounded-lg overflow-hidden">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qyegtMrtJKI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>`,
-        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769601418/Screenshot_2026-01-28_at_12.56.16_fjuovj.png",
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769605245/Screenshot_2026-01-28_at_12.56_copy_tukmza.jpg",
         tags: ["Arhiv","Novice"]
     },
     {
