@@ -609,13 +609,13 @@ const blogPosts = [
         date: "Aug 25, 2015",
         readTime: "1 min branja",
         excerpt: "Čisto sveže !! Pravkar izdana skladba \"Na avtocesti\" je znana avsenikova melodija v preobleki zanimive kombinacije instrumentov, v katerih prevladuje...",
-        content: `<p class="mb-4">Čisto sveže !! Pravkar izdana skladba "Na avtocesti" je znana avsenikova melodija v preobleki zanimive kombinacije instrumentov, v katerih prevladuje nekaj povsem svežega za narodnozabavno zvrst - ukulele ! Vse instrumente je odigral Luka Groboljšek, posneto v Studio Mars, slide ukulele pa v Studio Zlati zvoki.</p>
+        content: `<p class="mb-4">Čisto sveže !! Pravkar izdana skladba "Na avtocesti" je znana avsenikova melodija v preobleki zanimive kombinacije instrumentov, v katerih prevladuje nekaj povsem svežega za narodnozabavno zvrst - ukulele ! Vse instrumente je odigral Luka Groboljšek, posneto v Studio Mars, slide ukulele pa v Studio Zlati zvoki.</p><div class="mt-8"><img src="https://res.cloudinary.com/dewf3zos0/image/upload/v1769607404/4c904eeb71cad5b5f3e251bf2782ff81_cysrif.jpg" class="rounded-lg shadow-lg w-full" loading="lazy"></div>
                 <div class="mt-8">
                     <div class="aspect-video rounded-lg overflow-hidden">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DnTieftXy3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>`,
-        image: "",
+        image: "https://res.cloudinary.com/dewf3zos0/image/upload/v1769607404/4c904eeb71cad5b5f3e251bf2782ff81_cysrif.jpg",
         tags: ["Arhiv","Novice"]
     },
     {
