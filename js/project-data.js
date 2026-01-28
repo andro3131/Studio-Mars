@@ -184,7 +184,7 @@ const projectData = {
             { artist: "Vrtec Šentrupert", desc: "snemanje za zgoščenko" },
             { artist: "Maja Mlakar", desc: "kantavtorica, snemanje za zgoščenko", status: "work" },
             { artist: "Ratko Zekić", desc: "violončelo, snemanje za zgoščenko", status: "work" },
-            { artist: "Revije otorških in odraslih pevski skupin v občini Trebnje", desc: "snemanje na terenu" },
+            { artist: "Revije otorških and odraslih pevski skupin v občini Trebnje", desc: "snemanje na terenu" },
             { artist: "Dean Černec", desc: "snemanje demo pesmi", status: "work" },
             { artist: "Bojan Rus", desc: "snemanje za zgoščenko", status: "work" },
             { artist: "Moški pevski zbor Tabor Cerknica", desc: "snemanje za zgoščenko" },
@@ -263,7 +263,7 @@ const projectData = {
             { artist: "Vizija Računovodstvo", desc: "Reklama" },
             { artist: "Luka Groboljšek & Zagorski oktet", desc: "Moj zeleni raj" },
             { artist: "Fantje iz Praprotna & družba", desc: "Mojca Dolenc - 50 let" },
-            { artist: "Ansambel Suha Solza", desc: "snemanje za zgoščenko", status: "work" },
+            { artist: "Ansambel Suha solza", desc: "snemanje za zgoščenko", status: "work" },
             { artist: "Studio Virc", desc: "snemanje za telefonsko tajnico" },
             { artist: "Miran Černec", desc: "kantavtor, demo posnetki", status: "work" },
             { artist: "Trebanjski oktet", desc: "snemanje koncerta ob 35 letnici" },
@@ -278,7 +278,15 @@ const projectData = {
             { artist: "Matevž Mikeln", desc: "snemanje za zgoščenko", status: "work" },
             { artist: "Tilen Zakrajšek", desc: "bobni, snemanje demo posnetkov", status: "work" }
         ],
-        audio: ["andrej-mezan-studio-mars/darja-stamcar-say-something-6", "andrej-mezan-studio-mars/pihalni-orkester-trebnje-pokonci-trebanjci-32", "andrej-mezan-studio-mars/pihalni-orkester-trebnje-think-33", "andrej-mezan-studio-mars/luka-groboljsek-moj-zeleni-raj-23"],
+        audio: [
+            "andrej-mezan-studio-mars/darja-stamcar-say-something-6",
+            "andrej-mezan-studio-mars/pihalni-orkester-trebnje-pokonci-trebanjci-32",
+            "andrej-mezan-studio-mars/pihalni-orkester-trebnje-think-33",
+            "andrej-mezan-studio-mars/luka-groboljsek-moj-zeleni-raj-23",
+            "podari-pesem/gremo-spet-v-vinsko-klet-timo-grandovec-sinovi-cvicka-4",
+            "podari-pesem/vizija-racunovodstvo-reklama-za-podjetje-16",
+            "podari-pesem/mojca-dolenc-50-let-fantje-iz-praprotna-druzba-14"
+        ],
         videos: []
     },
     "2015": {
@@ -366,7 +374,17 @@ const projectData = {
             { artist: "Srečanje oktetov Dolenjske in Bele krajine 2013", desc: "snemanje koncerta" },
             { artist: "KUD Matija Tomc Mirna", desc: "snemanje za zgoščenko" }
         ],
-        audio: ["andrej-mezan-studio-mars/zlobko-big-band-himna-mesta-trebnje-42", "andrej-mezan-studio-mars/ivo-caric-zuborenje-15", "andrej-mezan-studio-mars/karmen-virc-navigacija-17", "andrej-mezan-studio-mars/dezur-morje-caka-7", "andrej-mezan-studio-mars/irena-tratnik-blaz-jurjevcic-perfidia-14", "andrej-mezan-studio-mars/damjan-plevnik-da-te-mogu-pismom-zvati-5"],
+        audio: [
+            "andrej-mezan-studio-mars/zlobko-big-band-himna-mesta-trebnje-42",
+            "andrej-mezan-studio-mars/ivo-caric-zuborenje-15",
+            "andrej-mezan-studio-mars/karmen-virc-navigacija-17",
+            "andrej-mezan-studio-mars/dezur-morje-caka-7",
+            "andrej-mezan-studio-mars/irena-tratnik-blaz-jurjevcic-perfidia-14",
+            "andrej-mezan-studio-mars/damjan-plevnik-da-te-mogu-pismom-zvati-5",
+            "podari-pesem/for-a-thousand-years-tinkara-lazar-7",
+            "podari-pesem/dolinarji-naj-ta-valcek-najlepse-zazveni-5",
+            "podari-pesem/julija-omahen-you-raise-me-up-9"
+        ],
         videos: []
     },
     "2012": {
@@ -393,7 +411,13 @@ const projectData = {
             { artist: "Ansambel Glivar", desc: "demo posnetki" },
             { artist: "MEPZ Mirna in orkester Slovenske filharmonije", desc: "koncert" }
         ],
-        audio: ["andrej-mezan-studio-mars/sandbarry-premlada-sva-bila-35", "andrej-mezan-studio-mars/eva-virc-en-like-10"],
+        audio: [
+            "andrej-mezan-studio-mars/sandbarry-premlada-sva-bila-35",
+            "andrej-mezan-studio-mars/eva-virc-en-like-10",
+            "podari-pesem/eva-virc-od-casa-do-casa-6",
+            "podari-pesem/na-vecne-dni-ansambel-ponos-2",
+            "podari-pesem/ne-zapravite-mi-zuljev-ansambel-vecerni-zvon-15"
+        ],
         videos: []
     },
     "2011": {
@@ -415,7 +439,14 @@ const projectData = {
             { artist: "Marko Kuzhnik", desc: "rap, demo posnetki" },
             { artist: "Ansambel Suha solza", desc: "narodno-zabavna, demo posnetki" }
         ],
-        audio: ["andrej-mezan-studio-mars/kvartet-sever-ko-bi-se-se-enkrat-rodil"],
+        audio: [
+            "andrej-mezan-studio-mars/kvartet-sever-ko-bi-se-se-enkrat-rodil",
+            "podari-pesem/hdlab-tell-the-truth-8",
+            "podari-pesem/aljosa-dvigni-glaz-pihalni-orkester-botricek-1",
+            "podari-pesem/anton-foerster-in-marcos-fink-domovina-je-mati-3",
+            "podari-pesem/klavdija-zakrajsek-the-climb-11",
+            "podari-pesem/katja-stropnik-turning-tables-10"
+        ],
         videos: []
     },
     "2010": {
