@@ -251,7 +251,7 @@ const projectData = {
             { artist: "Željko Rokvič band", desc: "snemanje demo pesmi", status: "work" },
             { artist: "Trebanjski oktet", desc: "snemanje koncerta", status: "work" }
         ],
-        audio: ["andrej-mezan-studio-mars/drugi-vagon-najdisi-9", "andrej-mezan-studio-mars/laura-in-ema-kje-je-moje-srce-21"],
+        audio: ["andrej-mezan-studio-mars/drugi-vagon-najdisi-9"],
         videos: ["ay1QWqvW4ok"]
     },
     "2016": {
