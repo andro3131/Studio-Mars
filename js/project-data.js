@@ -382,8 +382,7 @@ const projectData = {
             "andrej-mezan-studio-mars/irena-tratnik-blaz-jurjevcic-perfidia-14",
             "andrej-mezan-studio-mars/damjan-plevnik-da-te-mogu-pismom-zvati-5",
             "podari-pesem/for-a-thousand-years-tinkara-lazar-7",
-            "podari-pesem/dolinarji-naj-ta-valcek-najlepse-zazveni-5",
-            "podari-pesem/julija-omahen-you-raise-me-up-9"
+            "podari-pesem/dolinarji-naj-ta-valcek-najlepse-zazveni-5"
         ],
         videos: []
     },
@@ -416,7 +415,8 @@ const projectData = {
             "andrej-mezan-studio-mars/eva-virc-en-like-10",
             "podari-pesem/eva-virc-od-casa-do-casa-6",
             "podari-pesem/na-vecne-dni-ansambel-ponos-2",
-            "podari-pesem/ne-zapravite-mi-zuljev-ansambel-vecerni-zvon-15"
+            "podari-pesem/ne-zapravite-mi-zuljev-ansambel-vecerni-zvon-15",
+            "podari-pesem/make-you-fell-my-love-tinkara-lazar-13"
         ],
         videos: []
     },
@@ -440,12 +440,11 @@ const projectData = {
             { artist: "Ansambel Suha solza", desc: "narodno-zabavna, demo posnetki" }
         ],
         audio: [
-            "andrej-mezan-studio-mars/kvartet-sever-ko-bi-se-se-enkrat-rodil",
+            "podari-pesem/sentjurska-kvartet-sever-12",
             "podari-pesem/hdlab-tell-the-truth-8",
             "podari-pesem/aljosa-dvigni-glaz-pihalni-orkester-botricek-1",
             "podari-pesem/anton-foerster-in-marcos-fink-domovina-je-mati-3",
-            "podari-pesem/klavdija-zakrajsek-the-climb-11",
-            "podari-pesem/katja-stropnik-turning-tables-10"
+            "podari-pesem/klavdija-zakrajsek-the-climb-11"
         ],
         videos: []
     },
@@ -496,7 +495,14 @@ const projectData = {
             { artist: "Marjetka Hribernik", desc: "violončelo, demo posnetki, producent Oto Pestner" },
             { artist: "Trebanjski oktet", desc: "demo posnetki" }
         ],
-        audio: ["andrej-mezan-studio-mars/nusa-derenda-rajko-vavpetic-le-verjemi-29", "andrej-mezan-studio-mars/nusa-derenda-rajko-vavpetic-ne-cakaj-na-maj-30", "andrej-mezan-studio-mars/oto-pestner-blind-barnabus-31", "andrej-mezan-studio-mars/matej-krajnc-stvari-25", "andrej-mezan-studio-mars/zidaniski-kvintet-polka-za-majolko-39", "andrej-mezan-studio-mars/dneeb-slovo-8", "andrej-mezan-studio-mars/killing-me-softly"],
+        audio: [
+            "andrej-mezan-studio-mars/nusa-derenda-rajko-vavpetic-le-verjemi-29",
+            "andrej-mezan-studio-mars/nusa-derenda-rajko-vavpetic-ne-cakaj-na-maj-30",
+            "andrej-mezan-studio-mars/oto-pestner-blind-barnabus-31",
+            "andrej-mezan-studio-mars/matej-krajnc-stvari-25",
+            "andrej-mezan-studio-mars/zidaniski-kvintet-polka-za-majolko-39",
+            "andrej-mezan-studio-mars/dneeb-slovo-8"
+        ],
         videos: []
     }
 };
