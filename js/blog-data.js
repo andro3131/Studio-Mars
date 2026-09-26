@@ -68,6 +68,36 @@ const blogPosts = [
         image: "https://img.youtube.com/vi/ISjsFrGNRQs/hqdefault.jpg",
         tags: ["Glasba", "Snemanje"]
     },
+    {
+        id: 122,
+        title: "Fernando Mejías v studiu",
+        date: "04.07.2025",
+        readTime: "1 min branja",
+        excerpt: "Spet nekaj kuhamo, tokrat z maestro Fernando Mejías 🔥 .",
+        content: `
+    <p class="mb-6">Spet nekaj kuhamo, tokrat z maestro Fernando Mejías 🔥 .</p>
+    <div class="mt-8">
+      <img src="images/novice/fernando-mejias.jpg" alt="Fernando Mejías v studiu" class="rounded-lg shadow-lg w-full" loading="lazy">
+    </div>
+  `,
+        image: "images/novice/fernando-mejias.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 123,
+        title: "Sergej Škofljanec in Uroš Ržišnik v studiu",
+        date: "03.07.2025",
+        readTime: "1 min branja",
+        excerpt: "Danes pa z enim in edinim Sergej Škofljanec in seveda kumaratom Uroš Ržišnik pripravljamo zopet nekaj novega 🤟 .",
+        content: `
+    <p class="mb-6">Danes pa z enim in edinim Sergej Škofljanec in seveda kumaratom Uroš Ržišnik pripravljamo zopet nekaj novega 🤟 .</p>
+    <div class="mt-8">
+      <img src="images/novice/sergej-uros.jpg" alt="Sergej Škofljanec in Uroš Ržišnik v studiu" class="rounded-lg shadow-lg w-full" loading="lazy">
+    </div>
+  `,
+        image: "images/novice/sergej-uros.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
 {
         id: 124,
         title: "Roman Opara — Pubertetnik",
@@ -109,6 +139,24 @@ const blogPosts = [
     </div>
   `,
         image: "https://img.youtube.com/vi/P03MxT6H_Xo/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 126,
+        title: "Filip Jagodič in Barbara Leben Barb — Melodije morja in sonca",
+        date: "07.04.2025",
+        readTime: "1 min branja",
+        excerpt: "Sedaj že lahko povemo, da smo se z novo pesmijo prijavili na festival Melodije morja in sonca 2025! 🌊",
+        content: `
+    <p class="mb-4">Sedaj že lahko povemo, da smo se z novo pesmijo prijavili na festival Melodije morja in sonca 2025! 🌊 Na žalost pesmi še ne smemo objaviti do objave izbranih kandidatov, ki bo predvidoma sredi maja, lahko pa povemo, da sta pesem odpela vrhunska Filip Jagodič in Barbara Leben Barb 🥰 .</p>
+    <p class="mb-4">Za tiste, ki ju še ne poznate - Filip je izjemen talent z absolutnim posluhom, od rojstva pa je slep in ima cerebralno paralizo, pa vendar je videti, da ga to pri ustvarjanju glasbe ne moti prav veliko ❤️ .</p>
+    <p class="mb-6">Barbara je v glasbi že od malih nog, nastopala je že v mnogih priznanih skupinah, kot je Ansambel Saša Avsenika in Ansambel Gregorji, trenutno pa ima svojo skupino Barb.si. Držite pesti za ugoden razplet 💪 😃 .</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+      <img src="images/novice/filip-barbara-1.jpg" alt="Filip Jagodič in Barbara Leben Barb v studiu — 1" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+      <img src="images/novice/filip-barbara-2.jpg" alt="Filip Jagodič in Barbara Leben Barb v studiu — 2" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+    </div>
+  `,
+        image: "images/novice/filip-barbara-1.jpg",
         tags: ["Glasba", "Snemanje"]
     },
 {
