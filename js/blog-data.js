@@ -47,6 +47,7 @@ const blogPosts = [
     </div>
   `,
         image: "images/novice/kailash-vokal.jpg",
+        imagePosition: "center top",
         tags: ["Glasba", "Snemanje"]
     },
     {
