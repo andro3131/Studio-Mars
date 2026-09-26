@@ -49,6 +49,24 @@ const blogPosts = [
         image: "images/novice/kailash-vokal.jpg",
         tags: ["Glasba", "Snemanje"]
     },
+    {
+        id: 121,
+        title: "Maj Marn — LUNA, MORJE, JAZ IN TI",
+        date: "24.05.2026",
+        readTime: "1 min branja",
+        excerpt: "Pa še en lušten poletni poletni komadič, ki je nastal v našem studiu 🤘.",
+        content: `
+    <p class="mb-4">Pa še en lušten poletni poletni komadič, ki je nastal v našem studiu 🤘. Če sem si prav zapomnil, bo Maj Marn letos dopolnil komaj 16 let, v studiu pa je deloval suvereno in presenetil z odličnim že "izdelanim" vokalom 😀. Glasba in besedilo je prispeval Alen Zabasu, ki je tudi Majev mentor, aranžma in vsi instrumenti moja malenkost, akustično ritem kitaro pa je zaigral Maj kar sam. Glede na slišano mislim, da Maja čaka še svetla glasbena prihodnost! 🎤</p>
+    <p class="mb-6">LUNA, MORJE, JAZ IN TI v izvedbi Maj Marn 🎤🎤🎸🎶. Za več kot odličen projekt hvala Alen Zabasu in Glasbeni center Alen Zabasu za podporo, idejo, vztrajnost in energijo, Nejc Zabasu za čudovite posnetke in prijetno vzdušje na snemanju, Maši za masko in klepet 😉 ter Snemalni studio Mars za aranžma. Vabljeni k poslušanju, komentiranju spota in delitvi.</p>
+    <div class="mt-8">
+      <div class="aspect-video rounded-lg overflow-hidden">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ISjsFrGNRQs" title="Maj Marn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  `,
+        image: "https://img.youtube.com/vi/ISjsFrGNRQs/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
 {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
