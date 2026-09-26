@@ -69,6 +69,49 @@ const blogPosts = [
         tags: ["Glasba", "Snemanje"]
     },
 {
+        id: 124,
+        title: "Roman Opara — Pubertetnik",
+        date: "11.06.2025",
+        readTime: "1 min branja",
+        excerpt: "Z veseljem predstavljam novo pesem glasbenika Roman Opara !",
+        content: `
+    <p class="mb-4">Z veseljem predstavljam novo pesem glasbenika Roman Opara !</p>
+    <p class="mb-6">Roman je prekaljen glasbeni maček, predvsem pa fant od fare in tudi dober prijatelj! Avtor glasbe in besedila je seveda on, še nekaj nas pa je staknilo glave in nastalo je tole 😀 . Prijetno poslušanje!</p>
+    <div class="mt-4 space-y-1">
+      <p>Roman Opara - vokal, kitara</p>
+      <p>Barbara Leben Bone Barb - backvokal</p>
+      <p>Viljem Pregelj - saxofon</p>
+      <p>Andrej Mežan - bas kitara, bobni, klaviature, mix, mastering</p>
+      <p>Jan Poreber - video</p>
+    </div>
+    <div class="mt-8">
+      <div class="aspect-video rounded-lg overflow-hidden">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L439NaJv2as" title="Roman Opara — Pubertetnik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  `,
+        image: "https://img.youtube.com/vi/L439NaJv2as/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 125,
+        title: "Uroš Ržišnik — Mati knapuska",
+        date: "14.05.2025",
+        readTime: "1 min branja",
+        excerpt: "Še en nov projekt odličnega zasavskega glasbenika Uroša Ržišnika - Mati knapuska 👌 .",
+        content: `
+    <p class="mb-4">Še en nov projekt odličnega zasavskega glasbenika Uroša Ržišnika - Mati knapuska 👌 .</p>
+    <p class="mb-6">Pesem je namenil svoji mami v spomin 🥰 . Besedilo je napisal sam, spremljevalne vokale je odpela Oksana Ržišnik, vse ostalo pa smo naredili mi 😀 . Uživajte ob poslušanju!</p>
+    <div class="mt-8">
+      <div class="aspect-video rounded-lg overflow-hidden">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/P03MxT6H_Xo" title="Uroš Ržišnik — Mati knapuska" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  `,
+        image: "https://img.youtube.com/vi/P03MxT6H_Xo/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+{
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
         date: "17.03.2025",
