@@ -33,6 +33,22 @@ const blogPosts = [
         image: "images/novice/drugi-vagon-vokal.jpg",
         tags: ["Glasba", "Snemanje"]
     },
+    {
+        id: 120,
+        title: "Kailash Kokopelli back in the studio!",
+        date: "08.07.2026",
+        readTime: "1 min branja",
+        excerpt: "Kailash Kokopelli back in the studio! We recorded some great vocal tracks for his next song. It’s been an honor to work with such an artist.",
+        content: `
+    <p class="mb-4">Kailash Kokopelli back in the studio!</p>
+    <p class="mb-6">We recorded some great vocal tracks for his next song. It’s been an honor to work with such an artist.</p>
+    <div class="mt-8">
+      <img src="images/novice/kailash-vokal.jpg" alt="Kailash Kokopelli in the studio" class="rounded-lg shadow-lg w-full" loading="lazy">
+    </div>
+  `,
+        image: "images/novice/kailash-vokal.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
 {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
