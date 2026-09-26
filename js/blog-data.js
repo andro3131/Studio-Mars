@@ -1,4 +1,21 @@
 const blogPosts = [
+    {
+        id: 118,
+        title: "Drugi vagon nazaj v studiu — drugi album se bliža vrelišču",
+        date: "17.09.2026",
+        readTime: "1 min branja",
+        excerpt: "Drugi vagon je nazaj! Snemanje drugega albuma se počasi bliža vrelišču. Od prvih posnetkov davnega leta 2017 so fantje orenk napredovali, tako glasbeno kot tudi z rezanjem salam, kar priča tudi ena od slikic :)",
+        content: `
+    <p class="mb-4">Drugi vagon je nazaj!</p>
+    <p class="mb-6">Snemanje drugega albuma se počasi bliža vrelišču. Od prvih posnetkov davnega leta 2017 so fantje orenk napredovali, tako glasbeno kot tudi z rezanjem salam, kar priča tudi ena od slikic :) In kaj menite, bo drugi CD prekosil prvega s še boljšimi hiti? :)</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+      <img src="images/novice/drugi-vagon-vokal.jpg" alt="Drugi vagon — snemanje vokala" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+      <img src="images/novice/drugi-vagon-pavza.jpg" alt="Drugi vagon — pavza v studiu" class="rounded-lg shadow-md w-full object-cover h-48" loading="lazy">
+    </div>
+  `,
+        image: "images/novice/drugi-vagon-vokal.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
 {
         id: 1,
         title: "Roman Opara z novo rock-n-roll skladbo",
