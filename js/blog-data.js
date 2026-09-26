@@ -1,5 +1,22 @@
 const blogPosts = [
     {
+        id: 119,
+        title: "Fajn kumad za Uroša Ržišnika",
+        date: "25.09.2026",
+        readTime: "1 min branja",
+        excerpt: "Pa smo naredili še en fajn kumad, za mojega kumarata Uroša Ržišnika. Muzika, ki nas popelje v tiste stare dobre čase. 🥰",
+        content: `
+    <p class="mb-6">Pa smo naredili še en fajn kumad, za mojega kumarata Uroša Ržišnika. Muzika, ki nas popelje v tiste stare dobre čase. 🥰</p>
+    <div class="mt-8">
+      <div class="aspect-video rounded-lg overflow-hidden">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zBQngMDBkJE" title="Uroš Ržišnik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  `,
+        image: "https://img.youtube.com/vi/zBQngMDBkJE/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
         id: 118,
         title: "Drugi vagon nazaj v studiu — drugi album se bliža vrelišču",
         date: "17.09.2026",
