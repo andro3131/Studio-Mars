@@ -69,6 +69,24 @@ const blogPosts = [
         tags: ["Glasba", "Snemanje"]
     },
     {
+        id: 127,
+        title: "Skupina Marinero — Na pomoč",
+        date: "24.05.2026",
+        readTime: "1 min branja",
+        excerpt: "Evo nekaj svežega, poletnega ... Skupina Marinero z novo polko Na pomoč!",
+        content: `
+    <p class="mb-4">Evo nekaj svežega, poletnega ... Skupina Marinero z novo polko Na pomoč!</p>
+    <p class="mb-6">Smo se pošteno zabavali tako v studiu kot ob snemanju videospota 😁. Zahvala tudi gasilskemu društvu Polšnik za pomoč! Skratka, bravo fantje za odličen komad, sem pa ujel med vrsticami, da je v pripravi že nov hit ... 😀</p>
+    <div class="mt-8">
+      <div class="aspect-video rounded-lg overflow-hidden">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TdEN_LI8Wrk" title="Skupina Marinero — Na pomoč" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  `,
+        image: "https://img.youtube.com/vi/TdEN_LI8Wrk/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
         id: 122,
         title: "Fernando Mejías v studiu",
         date: "04.07.2025",
@@ -121,6 +139,24 @@ const blogPosts = [
     </div>
   `,
         image: "https://img.youtube.com/vi/L439NaJv2as/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
+        id: 128,
+        title: "PRIVID — Filip Jagodič in BARB.si",
+        date: "24.05.2025",
+        readTime: "1 min branja",
+        excerpt: "Predstavljamo prav posebno pesem po imenu PRIVID.",
+        content: `
+    <p class="mb-4">Predstavljamo prav posebno pesem po imenu PRIVID. Odpela sta jo izjemna Filip Jagodič in BARB.si, besedilo pa je napisala Filipova mama Andreja Pader 😘 ❤️.</p>
+    <p class="mb-6">Izredno smo ponosni, da smo lahko prispevali glasbeno podlago, aranžma kot tudi video za to prelepo zgodbo, ki je v svojem bistvu hrepenenje po ljubezni in iskanju transcendence skozi čustveno popotovanje dveh duš. ❤️ Še nekaj besed o Filipu, fantu z neizmernim glasbenim talentom, fantu, ki je avtist, slep in ima cerebralno paralizo, glasba pa skozi njega na lahko bi rekli čaroben način vre na površje in poboža vse in vsakogar, ki se ga dotakne 😘. Barbara pa prav tako posebna glasbena duša in izjemna vokalistka, ki je prepevala že pri mnogih slovenskih izvajalcih, trenutno pa razvaja občinstvo s svoj skupino Barb.si 👏 🔥. In ne smemo pozabiti tudi na Andrejo, Filipovo mamo, ki je pričarala nepozabno besedilo, ki se dotika srca in duše. ❤️ Uživajte ob poslušanju!</p>
+    <div class="mt-8">
+      <div class="aspect-video rounded-lg overflow-hidden">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EJYPq4STQ6w" title="PRIVID — Filip Jagodič in BARB.si" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  `,
+        image: "https://img.youtube.com/vi/EJYPq4STQ6w/hqdefault.jpg",
         tags: ["Glasba", "Snemanje"]
     },
     {
