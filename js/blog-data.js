@@ -69,6 +69,24 @@ const blogPosts = [
         tags: ["Glasba", "Snemanje"]
     },
     {
+        id: 127,
+        title: "Skupina Marinero — Na pomoč",
+        date: "24.05.2026",
+        readTime: "1 min branja",
+        excerpt: "Evo nekaj svežega, poletnega ... Skupina Marinero z novo polko Na pomoč!",
+        content: `
+    <p class="mb-4">Evo nekaj svežega, poletnega ... Skupina Marinero z novo polko Na pomoč!</p>
+    <p class="mb-6">Smo se pošteno zabavali tako v studiu kot ob snemanju videospota 😁. Zahvala tudi gasilskemu društvu Polšnik za pomoč! Skratka, bravo fantje za odličen komad, sem pa ujel med vrsticami, da je v pripravi že nov hit ... 😀</p>
+    <div class="mt-8">
+      <div class="aspect-video rounded-lg overflow-hidden">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TdEN_LI8Wrk" title="Skupina Marinero — Na pomoč" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  `,
+        image: "https://img.youtube.com/vi/TdEN_LI8Wrk/hqdefault.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
         id: 122,
         title: "Fernando Mejías v studiu",
         date: "04.07.2025",
