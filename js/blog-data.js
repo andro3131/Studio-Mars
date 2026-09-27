@@ -17,6 +17,21 @@ const blogPosts = [
         tags: ["Glasba", "Snemanje"]
     },
     {
+        id: 129,
+        title: "Maja Marinčič – Divana v studiu",
+        date: "24.09.2026",
+        readTime: "1 min branja",
+        excerpt: "Maja Marinčič – Divana v elementu, ob snemanju njene nove avtorske pesmi 🎤. Še malo … stay tuned! 🔥",
+        content: `
+    <p class="mb-6">Maja Marinčič – Divana v elementu, ob snemanju njene nove avtorske pesmi 🎤. Še malo … stay tuned! 🔥</p>
+    <div class="mt-8">
+      <img src="images/novice/maja-divana-vokal.jpg" alt="Maja Marinčič – Divana v studiu" class="rounded-lg shadow-lg w-full" loading="lazy">
+    </div>
+  `,
+        image: "images/novice/maja-divana-vokal.jpg",
+        tags: ["Glasba", "Snemanje"]
+    },
+    {
         id: 118,
         title: "Drugi vagon nazaj v studiu — drugi album se bliža vrelišču",
         date: "17.09.2026",
